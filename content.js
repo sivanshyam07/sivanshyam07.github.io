@@ -106,6 +106,58 @@ window.PORTFOLIO = {
           alt: "Velocity versus flight time from the flight data",
           caption: "Flight velocity history."
         }
+         ,
+{
+  "title": "Bank Left",
+  "layout": "glider",
+  "visible": true,
+  "text": [
+    "For my Introduction to Aerospace Engineering class (AE 1601), a teammate and I designed and built a hand-made balsa wood glider capable of at least 20 feet of stable, straight flight. The design had to fit within a 16 × 16-inch box, contain more than 50% balsa wood by weight, and remain intact during testing.",
+    "My contribution focused on the calculations, design, and iteration from our initial dimensions, alongside some fabrication work using machine shop tools. We compared wing configurations and selected swept, tapered wings with a 7° dihedral angle to support stable flight.",
+    "Initial tests revealed that the glider was tail-heavy, so we added modeling clay to the nose to adjust its balance. This version flew approximately 20–25 feet. We then increased the overall dimensions by a factor of 4:3, expanding the wingspan from 12 to 16 inches and the fuselage length from 9 to 12 inches.",
+    "The final glider flew 54 feet, more than twice the initial flight distance, and met all of the project requirements. It demonstrated stable, straight flight and remained intact during testing.",
+    "The project helped me connect aerodynamic calculations and design choices with observed flight behavior. Working through the balance adjustments and redesign showed me how testing can guide improvements that calculations alone may not capture."
+  ],
+  "media": [
+    {
+      "type": "video",
+      "group": "hero",
+      "src": "bank-left-final-flight.mp4",
+      "poster": "bank-left-final-flight-poster.png",
+      "caption": "Final flight test. The final design achieved a reported flight distance of 54 ft."
+    },
+    {
+      "type": "image",
+      "group": "initial",
+      "src": "bank-left-initial.jpeg",
+      "alt": "Initial balsa wood glider design",
+      "caption": "Initial design: 12-inch wingspan and 9-inch fuselage."
+    },
+    {
+      "type": "video",
+      "group": "initial",
+      "src": "bank-left-early-test.mp4",
+      "poster": "bank-left-early-test-poster.png",
+      "caption": "An early outdoor flight test."
+    },
+    {
+      "type": "image",
+      "group": "final",
+      "src": "bank-left-final-top.jpeg",
+      "alt": "Top view of the final balsa wood glider",
+      "caption": "Final design: 16-inch wingspan and 12-inch fuselage."
+    },
+    {
+      "type": "image",
+      "group": "final",
+      "src": "bank-left-final-side.jpeg",
+      "alt": "Another view of the final glider",
+      "caption": "Another view of the final design."
+    }
+  ],
+  "links": []
+}
+
       ],
       links: []
     }
