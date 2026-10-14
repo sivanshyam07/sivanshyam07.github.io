@@ -69,6 +69,81 @@ window.PORTFOLIO = {
     intro: "A space for the things I design, build, test, and learn. Plenty of trial and error goes on here.",
 
     sections: [
+       {
+  id: "lox-methane-injector",
+  title: "LOX–Methane Injector Design",
+  category: "AE 3030 · Injector design and CFD",
+  visible: true,
+
+  summary: "Preliminary design and CFD analysis of a 16-element unlike-triplet injector for a 3,000 lbf LOX–methane engine. The study identified uneven methane distribution and oxygen-manifold recirculation.",
+  cover: "injector-face.jpeg",
+  coverAlt: "CAD view of the 16-element injector face",
+
+  text: [
+    "For a project in Aerodynamics ([AE 3030](https://syllabus.gatech.edu/sites/default/files/2026-04/AE3030_Syllabus_Summer2026.pdf)), our team developed a preliminary injector design for a pressure-fed liquid oxygen and liquid methane rocket engine targeting 3,000 lbf of thrust at a chamber pressure of 250 psia.",
+
+    "We compared showerhead, coaxial, pintle, and impinging jet injector designs before selecting an unlike-triplet impinging injector design. Each element uses one central methane jet and two angled oxygen jets directed toward a common impingement point. We selected this arrangement for its manageable geometry and real-world manufacturability.",
+
+    "Using analytical sizing relationships, we calculated the required orifice areas and passage dimensions for a nominal injector pressure drop of 50 psi. The final CAD design arranged 16 triplet elements across the injector face, with 16 methane passages and 32 oxygen passages. We developed separate propellant manifolds while considering the manufacturing constraints of direct metal laser sintering.",
+
+    "We evaluated the methane and oxygen flow paths separately in ANSYS Fluent. The preliminary results showed that methane preferentially flowed toward the outer elements and that there was significant recirculation within the oxygen manifold. These findings identified opportunities to improve flow distribution through smoother transitions and changes to the internal manifold geometry.",
+
+    "The project connected injector sizing, CAD, manufacturing constraints, and CFD within one problem. The analysis focused on internal flow distribution; external jet impingement, atomization, and combustion were outside its scope."
+  ],
+
+  media: [
+    {
+      type: "image",
+      src: "injector-face.jpeg",
+      alt: "CAD view of the injector face showing the triplet arrangement",
+      caption: "Injector face with 16 unlike-triplet elements."
+    },
+    {
+      type: "image",
+      src: "injector-triplet-geometry.jpeg",
+      alt: "Cross-sectional diagram of the unlike-triplet element geometry",
+      caption: "Element geometry and jet impingement arrangement."
+    },
+    {
+      type: "image",
+      src: "injector-flow-paths.jpeg",
+      alt: "Annotated cross section showing oxygen and methane flow paths",
+      caption: "Separate oxygen and methane flow paths through the injector."
+    },
+    {
+      type: "image",
+      src: "injector-manifold-section.jpeg",
+      alt: "CAD cross section of the internal injector manifolds",
+      caption: "Internal manifold geometry."
+    },
+    {
+      type: "image",
+      src: "injector-methane-mesh.jpeg",
+      alt: "Computational mesh of the methane manifold",
+      caption: "Methane-manifold mesh and boundary-layer refinement."
+    },
+    {
+      type: "image",
+      src: "injector-lox-mesh.jpeg",
+      alt: "Computational mesh of the liquid oxygen manifold",
+      caption: "Liquid-oxygen manifold mesh and boundary-layer refinement."
+    },
+    {
+      type: "image",
+      src: "injector-methane-cfd.jpeg",
+      alt: "Methane-manifold pressure contours and velocity streamlines",
+      caption: "Methane-manifold CFD results indicating preferential flow toward the outer elements."
+    },
+    {
+      type: "image",
+      src: "injector-lox-cfd.jpeg",
+      alt: "Liquid-oxygen manifold pressure contours and velocity streamlines",
+      caption: "Liquid-oxygen manifold CFD results showing internal recirculation."
+    }
+  ],
+
+  links: []
+},
       {
         id: "free-bird",
         title: "Free Bird",
