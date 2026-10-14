@@ -169,6 +169,12 @@ function mediaFigure(asset) {
 /* Full project and general content sections */
 
 function sections(items = []) {
+  const layouts = {
+    rocket: ["nose", "parts", "analysis"],
+    glider: ["initial", "final"],
+    injector: ["geometry", "mesh", "cfd"]
+  };
+
   items.filter(item => item.visible !== false).forEach(item => {
     const section = el("section", "section");
     const row = el("div", "section-heading");
@@ -183,73 +189,36 @@ function sections(items = []) {
     row.append(heading, body);
     section.append(row);
 
-    if (item.layout === "glider") {
-      section.classList.add("glider-project");
+    const groups = layouts[item.layout];
 
-      const gallery = el("div", "glider-gallery");
-      const initial = el("div", "glider-initial");
-      const final = el("div", "glider-final");
+    if (groups) {
+      section.classList.add(item.layout + "-project");
+
+      const gallery = el("div", item.layout + "-gallery");
+      const columns = {};
       const extras = el("div", "media-grid");
+
+      groups.forEach(group => {
+        columns[group] = el("div", item.layout + "-" + group);
+      });
 
       (item.media || []).forEach(asset => {
         const figure = mediaFigure(asset);
         if (!figure) return;
 
-        switch (asset.group) {
-          case "hero":
-            heading.append(figure);
-            break;
-          case "initial":
-            initial.append(figure);
-            break;
-          case "final":
-            final.append(figure);
-            break;
-          default:
-            extras.append(figure);
+        if (asset.group === "hero") {
+          heading.append(figure);
+        } else if (groups.includes(asset.group)) {
+          columns[asset.group].append(figure);
+        } else {
+          extras.append(figure);
         }
       });
 
-      [initial, final].forEach(column => {
-        if (column.childElementCount) gallery.append(column);
-      });
-
-      if (gallery.childElementCount) section.append(gallery);
-      if (extras.childElementCount) section.append(extras);
-
-    } else if (item.layout === "rocket") {
-      section.classList.add("rocket-project");
-
-      const gallery = el("div", "rocket-gallery");
-      const nose = el("div", "rocket-nose");
-      const parts = el("div", "rocket-parts");
-      const analysis = el("div", "rocket-analysis");
-      const extras = el("div", "media-grid");
-
-      (item.media || []).forEach(asset => {
-        const figure = mediaFigure(asset);
-        if (!figure) return;
-
-        switch (asset.group) {
-          case "hero":
-            heading.append(figure);
-            break;
-          case "nose":
-            nose.append(figure);
-            break;
-          case "parts":
-            parts.append(figure);
-            break;
-          case "analysis":
-            analysis.append(figure);
-            break;
-          default:
-            extras.append(figure);
+      groups.forEach(group => {
+        if (columns[group].childElementCount) {
+          gallery.append(columns[group]);
         }
-      });
-
-      [nose, parts, analysis].forEach(column => {
-        if (column.childElementCount) gallery.append(column);
       });
 
       if (gallery.childElementCount) section.append(gallery);
@@ -278,7 +247,6 @@ function sections(items = []) {
     main.append(section);
   });
 }
-
 /* Homepage */
 
 if (page === "home") {
