@@ -155,12 +155,12 @@ window.PORTFOLIO = {
             caption: "Initial design: 12-inch wingspan and 9-inch fuselage."
           },
           {
-            type: "video",
-            group: "initial",
-            src: "bank-left-early-test.mp4",
-            poster: "bank-left-early-test-poster.png",
-            caption: "An early outdoor flight test."
-          },
+  type: "video",
+  group: "initial",
+  src: "bank-left-other-test.mp4",
+  poster: "bank-left-other-test-poster.png",
+  caption: "An outdoor flight test of the initial design."
+},
           {
             type: "image",
             group: "final",
