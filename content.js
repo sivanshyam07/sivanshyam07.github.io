@@ -9,9 +9,9 @@ window.PORTFOLIO = {
   institution: "Georgia Institute of Technology",
   portrait: "", // Example: "assets/shyam.jpg"
   portraitAlt: "Shyam Sivan",
-  email: "", // Your personal email
-  linkedin: "", // Full https:// URL
-  resume: "", // Example: "assets/Shyam_Sivan_Resume.pdf"
+  email: "sivanshyam07@gmail.com", // Your personal email
+  linkedin: "https://www.linkedin.com/in/shyamsivan/", // Full https:// URL
+  resume: "assets/Shyam_Sivan_Resume.pdf", // Example: "assets/Shyam_Sivan_Resume.pdf"
   formEndpoint: "", // Verified endpoint from your chosen form service
   navigation: [
     { page: "home", label: "About", href: "index.html" },
@@ -22,16 +22,18 @@ window.PORTFOLIO = {
   home: {
     eyebrow: "ABOUT ME",
     intro: [
-      "I'm Shyam, an aerospace engineering student at Georgia Tech with a minor in astrophysics.",
-      "My engineering interests include propulsion and materials. Outside the classroom, I'm a big music and soccer fan."
-    ],
+  "I'm Shyam, an aerospace engineering student at Georgia Tech with a minor in astrophysics, based in Atlanta."
+],
     sections: [
-      { title: "Who am I?", text: ["I enjoy learning how things work, from rocket hardware to the materials that make up a structure. This site brings together my engineering work and the interests that keep me curious outside the classroom."], media: [], links: [] }
+      { title: "Who am I?", text: [
+      "Within aerospace engineering, my interests and experience span propulsion, materials and composites, and aerosciences.",
+      "Outside the classroom, I'm a huge music fan and a diehard Borussia Dortmund fan, with plenty of baseless hope that it'll be our year, every year."
+    ], media: [], links: [] }
     ],
     pathways: [
-      { number: "01", title: "What I'm working on", text: "Explore my engineering work, including injector design, structures, model rockets, and gliders as I add them here.", label: "Explore projects", href: "projects.html" },
-      { number: "02", title: "Beyond the classroom", text: "Get to know my hobbies, music taste, and opinions on the best soccer team.", label: "Get to know me", href: "beyond.html" },
-      { number: "03", title: "Let's connect", text: "Want to talk about a project, an opportunity, or a shared interest?", label: "Contact me", href: "contact.html" }
+      { number: "01", title: "What I'm working on", text: "Explore my engineering work.", label: "Explore projects", href: "projects.html" },
+      { number: "02", title: "Beyond the classroom", text: "Get to know me outside of the classroom.", label: "Get to know me", href: "beyond.html" },
+      { number: "03", title: "Let's connect", text: "Want to connect?", label: "Contact me", href: "contact.html" }
     ]
   },
   projects: {
