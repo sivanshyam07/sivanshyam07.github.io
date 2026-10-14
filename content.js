@@ -37,21 +37,21 @@ window.PORTFOLIO = {
       {
         number: "01",
         title: "What I'm working on",
-        text: "Explore my engineering work.",
+        text: "Design, simulation, fabrication, and the lessons from testing.",
         label: "Explore projects",
         href: "projects.html"
       },
       {
         number: "02",
         title: "Beyond the classroom",
-        text: "Get to know me outside of the classroom.",
+        text: "Music recommendations, soccer takes, and everything outside engineering.",
         label: "Get to know me",
         href: "beyond.html"
       },
       {
         number: "03",
         title: "Let's connect",
-        text: "Want to connect?",
+        text: "For opportunities, project ideas, or a conversation.",
         label: "Contact me",
         href: "contact.html"
       }
