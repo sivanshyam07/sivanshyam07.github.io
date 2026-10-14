@@ -6,6 +6,8 @@ window.PORTFOLIO = {
   portrait: "",
   portraitAlt: "Shyam Sivan",
   email: "sivanshyam07@gmail.com",
+  phone: "+1 (470) 350-9720",
+  gtEmail: "ssivan3@gatech.edu",
   linkedin: "https://www.linkedin.com/in/shyamsivan/",
   resume: "Shyam_Sivan_Resume.pdf",
   formEndpoint: "https://formsubmit.co/sivanshyam07@gmail.com",
