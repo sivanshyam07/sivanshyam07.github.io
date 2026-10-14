@@ -66,7 +66,7 @@ window.PORTFOLIO = {
   projects: {
     eyebrow: "ENGINEERING & RESEARCH",
     title: "Projects",
-    intro: "A space for the things I design, build, test, and learn.",
+    intro: "A space for the things I design, build, test, and learn. Plenty of trial and error goes on here.",
 
     sections: [
       {
