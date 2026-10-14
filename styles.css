@@ -148,3 +148,11 @@ body {
   background-size: auto, 960px 960px;
   background-repeat: repeat;
 }
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h1, h2, h3, .brand {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+}
