@@ -55,7 +55,7 @@ window.PORTFOLIO = {
         "type": "image",
         "src": "free-bird-rocket.png",
         "alt": "Completed Free Bird model rocket standing upright",
-        "caption": "The completed Free Bird rocket."
+        "caption": "The completed Free Bird."
       },
       {
         "type": "image",
