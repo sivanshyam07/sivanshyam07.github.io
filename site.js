@@ -168,7 +168,10 @@ function mediaFigure(asset) {
 
 /* Full project and general content sections */
 
-const layouts = {
+/* Full project and general content sections */
+
+function sections(items = []) {
+  const layouts = {
   rocket: ["nose", "parts", "analysis"],
   glider: ["initial", "final"],
   injector: ["geometry", "mesh", "cfd"],
