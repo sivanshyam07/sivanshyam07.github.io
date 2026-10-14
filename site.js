@@ -76,7 +76,31 @@ function sections(items = []) {
     row.append(heading, body);
     section.append(row);
 
-    if (item.layout === "rocket") {
+    if (item.layout === "glider") {
+  section.classList.add("glider-project");
+  const gallery = el("div", "glider-gallery");
+  const initial = el("div", "glider-initial");
+  const final = el("div", "glider-final");
+  const extras = el("div", "media-grid");
+
+  (item.media || []).forEach(asset => {
+    const figure = mediaFigure(asset);
+    if (!figure) return;
+    switch (asset.group) {
+      case "hero": heading.append(figure); break;
+      case "initial": initial.append(figure); break;
+      case "final": final.append(figure); break;
+      default: extras.append(figure);
+    }
+  });
+
+  [initial, final].forEach(column => {
+    if (column.childElementCount) gallery.append(column);
+  });
+  if (gallery.childElementCount) section.append(gallery);
+  if (extras.childElementCount) section.append(extras);
+} else if (item.layout === "rocket") {
+ {
       section.classList.add("rocket-project");
 
       const gallery = el("div", "rocket-gallery");
