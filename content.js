@@ -6,7 +6,7 @@ window.PORTFOLIO = {
   name: "Shyam Sivan",
   subtitle: "Aerospace Engineering · Astrophysics Minor",
   institution: "Georgia Institute of Technology",
-  portrait: "",
+  portrait: "shyam_sivan_portrait.jpg",
   portraitAlt: "Shyam Sivan",
   email: "sivanshyam07@gmail.com",
   phone: "+1 (470) 350-9720",
