@@ -39,7 +39,7 @@ window.PORTFOLIO = {
       {
         number: "01",
         title: "What I'm working on",
-        text: "Design, simulation, fabrication, and the lessons from testing.",
+        text: "Propulsion design, materials engineering, aerodynamic simulations, and more.",
         label: "Explore projects",
         href: "projects.html"
       },
