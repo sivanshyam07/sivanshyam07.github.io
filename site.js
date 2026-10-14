@@ -14,7 +14,7 @@ function safeURL(value) {
 
   try {
     const u = new URL(value, location.href);
-    return ["http:", "https:", "file:", "mailto:"].includes(u.protocol)
+    return ["http:", "https:", "file:", "mailto:", "tel:"].includes(u.protocol)
       ? value
       : "";
   } catch {
