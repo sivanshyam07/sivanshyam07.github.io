@@ -4,7 +4,30 @@ const page = document.body.dataset.page;
 function el(tag, cls, text) { const node=document.createElement(tag); if(cls)node.className=cls; if(text!==undefined)node.textContent=text; return node; }
 function safeURL(value) { if(!value || typeof value!=="string")return ""; try { const u=new URL(value,location.href); return ["http:","https:","file:","mailto:"].includes(u.protocol)?value:""; } catch{return "";} }
 function link(label,href,cls="text-link") { const a=el("a",cls,label); a.href=safeURL(href)||"#"; return a; }
-function paragraphs(parent,texts=[]) { texts.forEach(text=>parent.append(el("p","",text))); }
+function paragraphs(parent, texts = []) {
+  texts.forEach(text => {
+    const p = el("p");
+    const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+    let position = 0;
+
+    for (const match of text.matchAll(pattern)) {
+      p.append(document.createTextNode(
+        text.slice(position, match.index)
+      ));
+
+      if (safeURL(match[2])) {
+        p.append(link(match[1], match[2]));
+      } else {
+        p.append(document.createTextNode(match[1]));
+      }
+
+      position = match.index + match[0].length;
+    }
+
+    p.append(document.createTextNode(text.slice(position)));
+    parent.append(p);
+  });
+}
 const header=document.getElementById("header");
 const brand=link(data.name,"index.html","brand"); brand.append(el("span",""," /")); header.append(brand);
 const nav=el("nav"); nav.setAttribute("aria-label","Main navigation");
