@@ -153,6 +153,90 @@ window.PORTFOLIO = {
 
   links: []
 },
+       {
+  id: "recycled-pet-voxels",
+  title: "Recycled PET Voxel Structures",
+  category: "Daedalus Lab · Materials and structural research",
+  layout: "voxel",
+  visible: true,
+
+  summary: "Recycling plastic bottles into 3D-printing filament for modular voxel structures. Compression testing compared recycled PET with PLA and PETG across three assembly configurations.",
+  cover: "voxel-pet-block.jpeg",
+  coverAlt: "Modular voxel block printed using recycled PET",
+
+  text: [
+    "In a research project for the Daedalus Lab at Georgia Tech, we investigated whether recycled PET from plastic bottles could provide a more sustainable alternative with mechanical performance comparable to PLA and PETG for manufacturing modular voxel structural blocks. Our goal was to produce usable filament, print consistent components, and evaluate how the assembled structures behaved under compression. My contributions involved voxel design, material preparation, and compression test data reduction.",
+
+    "We converted plastic bottles into PET filament using an in-house built bottle strip cutter and filament making setup, then used the filament to print interconnected structural components. Alongside material development, we investigated voxel geometries that could be manufactured reliably and assembled with stable connections.",
+
+    "We compression-tested PLA, PETG, and recycled PET structures in 1×1×1, 2×2×2, and 3×3×3 configurations. Comparing their force-displacement curves allowed us to examine load capacity, deformation, and how structural behavior changed with assembly size.",
+
+    "The tested recycled PET specimens achieved higher peak loads than PETG in the 2×2×2 and 3×3×3 comparisons, reaching approximately 0.56 kN and 1.2 kN, respectively. These results supported further investigation of recycled PET as an alternate 3D printing filament, although broader conclusions would require repeated testing and better control of printing and manufacturing variability.",
+
+    "We also explored revised connection geometries and voxel designs to improve assembly, printability, and mechanical strength while limiting changes to component geometry and mass. The project connected sustainable engineering, additive manufacturing, structural design, and mechanical testing in one research project."
+  ],
+
+  media: [
+    {
+      type: "image",
+      group: "hero",
+      src: "voxel-pet-block.jpeg",
+      alt: "Recycled PET voxel block with interconnected structural members",
+      caption: "A voxel block printed using recycled PET."
+    },
+    {
+      type: "image",
+      group: "process",
+      src: "voxel-bottle-cutter.jpeg",
+      alt: "Bottle-strip cutting setup used for recycled PET filament production",
+      caption: "Preparing plastic bottles for filament production."
+    },
+    {
+      type: "image",
+      group: "process",
+      src: "voxel-filament.jpeg",
+      alt: "Recycled PET filament and filament-making equipment",
+      caption: "Recycled PET filament."
+    },
+    {
+      type: "image",
+      group: "process",
+      src: "voxel-assemblies.jpeg",
+      alt: "Printed voxel structures in different assembly configurations",
+      caption: "Printed components and assembled voxel structures."
+    },
+    {
+      type: "image",
+      group: "results",
+      src: "voxel-2x2-comparison.png",
+      alt: "Force-displacement comparison of 2×2×2 PET and PETG specimens",
+      caption: "2×2×2 configuration: PET and PETG compression results."
+    },
+    {
+      type: "image",
+      group: "results",
+      src: "voxel-3x3-comparison.png",
+      alt: "Force-displacement comparison of 3×3×3 PET and PETG specimens",
+      caption: "3×3×3 configuration: PET and PETG compression results."
+    },
+    {
+      type: "image",
+      group: "design",
+      src: "voxel-connection-a.jpeg",
+      alt: "CAD view of one voxel connection geometry",
+      caption: "Voxel connection geometry."
+    },
+    {
+      type: "image",
+      group: "design",
+      src: "voxel-connection-b.jpeg",
+      alt: "CAD view of an alternative voxel connection geometry",
+      caption: "An alternative connection geometry explored during development."
+    }
+  ],
+
+  links: []
+},
       {
         id: "free-bird",
         title: "Free Bird",
