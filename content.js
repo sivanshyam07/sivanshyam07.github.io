@@ -11,7 +11,7 @@ window.PORTFOLIO = {
   portraitAlt: "Shyam Sivan",
   email: "sivanshyam07@gmail.com", // Your personal email
   linkedin: "https://www.linkedin.com/in/shyamsivan/", // Full https:// URL
-  resume: "assets/Shyam_Sivan_Resume.pdf", // Example: "assets/Shyam_Sivan_Resume.pdf"
+  resume: "Shyam_Sivan_Resume.pdf", // Example: "assets/Shyam_Sivan_Resume.pdf"
   formEndpoint: "https://formsubmit.co/sivanshyam07@gmail.com", // Verified endpoint from your chosen form service
   navigation: [
     { page: "home", label: "About", href: "index.html" },
