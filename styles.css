@@ -27,7 +27,15 @@
   object-fit: contain;
   border-radius: 6px;
 }
+body[data-page="home"] .pathway {
+  min-height: 260px;
+  padding: 26px;
+  gap: 18px;
+}
 
+body[data-page="home"] .pathway .text-link {
+  margin-top: 8px;
+}
 .rocket-project .project-heading figure {
   max-width: 320px;
 }
