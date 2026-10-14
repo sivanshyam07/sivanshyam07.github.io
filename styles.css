@@ -659,3 +659,63 @@ footer {
     scroll-behavior: auto;
   }
 }
+/* Injector: title and two images left, description right */
+.injector-project .section-heading {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  align-items: start;
+}
+
+.injector-project .section-heading > div {
+  min-width: 0;
+}
+
+.injector-project .section-heading > div > p:first-child {
+  margin-top: 0;
+}
+
+.injector-project .project-heading figure {
+  max-width: 340px;
+}
+
+.injector-project .project-heading figure + figure {
+  margin-top: 28px;
+}
+
+/* Geometry | meshes | CFD */
+.injector-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.injector-geometry,
+.injector-mesh,
+.injector-cfd {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+.injector-project figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+@media (max-width: 760px) {
+  .injector-project .section-heading {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .injector-gallery {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
