@@ -207,3 +207,7 @@ body[data-page="home"] .pathway .text-link {
 footer {
   display: none;
 }
+.contact-grid .text-link {
+  font-family: inherit;
+  font-size: inherit;
+}
