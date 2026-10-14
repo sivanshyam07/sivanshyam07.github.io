@@ -155,7 +155,7 @@ window.PORTFOLIO = {
         coverAlt: "Final Bank Left balsa wood glider",
 
         text: [
-          "For my Introduction to Aerospace Engineering class (AE 1601), a teammate and I designed and built a hand-made balsa wood glider capable of at least 20 feet of stable, straight flight. The design had to fit within a 16 × 16-inch box, contain more than 50% balsa wood by weight, and remain intact during testing.",
+          "For my Introduction to Aerospace Engineering class ([AE 1601](https://syllabus.gatech.edu/sites/default/files/2026-08/AE1601_Syllabus%20Fall%202026_2.pdf)), a teammate and I designed and built a hand-made balsa wood glider capable of at least 20 feet of stable, straight flight. The design had to fit within a 16 × 16-inch box, contain more than 50% balsa wood by weight, and remain intact during testing.",
           "My contribution focused on the calculations, design, and iteration from our initial dimensions, alongside some fabrication work using machine shop tools. We compared wing configurations and selected swept, tapered wings with a 7° dihedral angle to support stable flight.",
           "Initial tests revealed that the glider was tail-heavy, so we added modeling clay to the nose to adjust its balance. This version flew approximately 20–25 feet. We then increased the overall dimensions by a factor of 4:3, expanding the wingspan from 12 to 16 inches and the fuselage length from 9 to 12 inches.",
           "The final glider flew 54 feet, more than twice the initial flight distance, and met all of the project requirements. It demonstrated stable, straight flight and remained intact during testing.",
