@@ -7,7 +7,7 @@ function link(label,href,cls="text-link") { const a=el("a",cls,label); a.href=sa
 function paragraphs(parent, texts = []) {
   texts.forEach(text => {
     const p = el("p");
-    const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const pattern = /\[([^\]]+)\]\s*\(([^)]+)\)/g;
     let position = 0;
 
     for (const match of text.matchAll(pattern)) {
