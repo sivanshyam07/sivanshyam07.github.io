@@ -404,7 +404,4 @@ if (safeURL(data.linkedin)) {
   }
 }
 
-const footer = document.getElementById("footer");
-footer.append(
-  el("span", "", "© " + new Date().getFullYear() + " " + data.name)
-);
+document.getElementById("footer").replaceChildren();
