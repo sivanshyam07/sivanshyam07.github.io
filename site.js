@@ -168,12 +168,12 @@ function mediaFigure(asset) {
 
 /* Full project and general content sections */
 
-function sections(items = []) {
-  const layouts = {
-    rocket: ["nose", "parts", "analysis"],
-    glider: ["initial", "final"],
-    injector: ["geometry", "mesh", "cfd"]
-  };
+const layouts = {
+  rocket: ["nose", "parts", "analysis"],
+  glider: ["initial", "final"],
+  injector: ["geometry", "mesh", "cfd"],
+  voxel: ["process", "results", "design"]
+};
 
   items.filter(item => item.visible !== false).forEach(item => {
     const section = el("section", "section");
