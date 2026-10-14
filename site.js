@@ -33,16 +33,107 @@ const brand=link(data.name,"index.html","brand"); brand.append(el("span",""," /"
 const nav=el("nav"); nav.setAttribute("aria-label","Main navigation");
 data.navigation.forEach(item=>{const a=link(item.label,item.href,"");if(item.page===page)a.setAttribute("aria-current","page");nav.append(a);}); header.append(nav);
 const main=document.getElementById("main");
-function sections(items=[]) {
-  items.filter(item=>item.visible!==false).forEach(item=>{
-    const section=el("section","section");const row=el("div","section-heading");row.append(el("h2","",item.title));const body=el("div");paragraphs(body,item.text);row.append(body);section.append(row);
-    const media=el("div","media-grid");
-    (item.media||[]).forEach(asset=>{if(!safeURL(asset.src))return;const figure=el("figure");
-      if(asset.type==="video"){const video=el("video");video.src=asset.src;video.controls=true;video.preload="metadata";if(safeURL(asset.poster))video.poster=asset.poster;video.append(document.createTextNode("Your browser does not support this video."));figure.append(video);}
-      else {const img=el("img");img.src=asset.src;img.alt=asset.alt||asset.caption||"";img.loading="lazy";figure.append(img);}
-      if(asset.caption)figure.append(el("figcaption","",asset.caption));media.append(figure);
-    });if(media.childElementCount)section.append(media);
-    const links=el("div","links");(item.links||[]).forEach(item=>{if(safeURL(item.href))links.append(link(item.label+" ↗",item.href));});section.append(links);main.append(section);
+function mediaFigure(asset) {
+  if (!safeURL(asset.src)) return null;
+
+  const figure = el("figure");
+
+  if (asset.type === "video") {
+    const video = el("video");
+    video.src = asset.src;
+    video.controls = true;
+    video.preload = "metadata";
+
+    if (safeURL(asset.poster)) {
+      video.poster = asset.poster;
+    }
+
+    figure.append(video);
+  } else {
+    const img = el("img");
+    img.src = asset.src;
+    img.alt = asset.alt || asset.caption || "";
+    img.loading = "lazy";
+    figure.append(img);
+  }
+
+  if (asset.caption) {
+    figure.append(el("figcaption", "", asset.caption));
+  }
+
+  return figure;
+}
+
+function sections(items = []) {
+  items.filter(item => item.visible !== false).forEach(item => {
+    const section = el("section", "section");
+    const row = el("div", "section-heading");
+    const heading = el("div", "project-heading");
+    const body = el("div");
+
+    heading.append(el("h2", "", item.title));
+    paragraphs(body, item.text);
+    row.append(heading, body);
+    section.append(row);
+
+    if (item.layout === "rocket") {
+      section.classList.add("rocket-project");
+
+      const gallery = el("div", "rocket-gallery");
+      const nose = el("div", "rocket-nose");
+      const parts = el("div", "rocket-parts");
+      const analysis = el("div", "rocket-analysis");
+      const extras = el("div", "media-grid");
+
+      (item.media || []).forEach(asset => {
+        const figure = mediaFigure(asset);
+        if (!figure) return;
+
+        switch (asset.group) {
+          case "hero":
+            heading.append(figure);
+            break;
+          case "nose":
+            nose.append(figure);
+            break;
+          case "parts":
+            parts.append(figure);
+            break;
+          case "analysis":
+            analysis.append(figure);
+            break;
+          default:
+            extras.append(figure);
+        }
+      });
+
+      [nose, parts, analysis].forEach(column => {
+        if (column.childElementCount) gallery.append(column);
+      });
+
+      if (gallery.childElementCount) section.append(gallery);
+      if (extras.childElementCount) section.append(extras);
+    } else {
+      const media = el("div", "media-grid");
+
+      (item.media || []).forEach(asset => {
+        const figure = mediaFigure(asset);
+        if (figure) media.append(figure);
+      });
+
+      if (media.childElementCount) section.append(media);
+    }
+
+    const links = el("div", "links");
+
+    (item.links || []).forEach(item => {
+      if (safeURL(item.href)) {
+        links.append(link(item.label + " ↗", item.href));
+      }
+    });
+
+    if (links.childElementCount) section.append(links);
+    main.append(section);
   });
 }
 if(page==="home"){
