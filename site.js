@@ -1,4 +1,5 @@
 /* Shared renderer. Most edits belong in content.js. */
+
 const data = window.PORTFOLIO;
 const page = document.body.dataset.page;
 
@@ -53,8 +54,11 @@ function paragraphs(parent, texts = []) {
   });
 }
 
+/* Shared navigation */
+
 const header = document.getElementById("header");
 const brand = link(data.name, "index.html", "brand");
+
 brand.append(el("span", "", " /"));
 header.append(brand);
 
@@ -63,13 +67,73 @@ nav.setAttribute("aria-label", "Main navigation");
 
 data.navigation.forEach(item => {
   const a = link(item.label, item.href, "");
-  if (item.page === page) a.setAttribute("aria-current", "page");
+
+  if (
+    item.page === page ||
+    (page === "project" && item.page === "projects")
+  ) {
+    a.setAttribute("aria-current", "page");
+  }
+
   nav.append(a);
 });
 
 header.append(nav);
 
 const main = document.getElementById("main");
+
+/* Projects overview */
+
+function projectIndex(items = []) {
+  const list = el("div", "project-list");
+
+  items.filter(item => item.visible !== false).forEach((item, index) => {
+    const row = link(
+      "",
+      "project.html?id=" + encodeURIComponent(item.id),
+      "project-preview"
+    );
+
+    row.setAttribute("aria-label", "Read about " + item.title);
+
+    const number = el(
+      "span",
+      "project-number",
+      String(index + 1).padStart(2, "0")
+    );
+
+    const copy = el("div", "project-preview-copy");
+    copy.append(el("h2", "", item.title));
+
+    if (item.category) {
+      copy.append(el("p", "project-category", item.category));
+    }
+
+    copy.append(
+      el("p", "project-summary", item.summary || item.text?.[0] || ""),
+      el("span", "text-link", "View project →")
+    );
+
+    row.append(number, copy);
+
+    const cover = item.cover ||
+      (item.media || []).find(asset => asset.type === "image")?.src;
+
+    if (safeURL(cover)) {
+      const image = el("img", "project-preview-image");
+      image.src = cover;
+      image.alt = item.coverAlt || item.title;
+      image.loading = "lazy";
+      row.append(image);
+    }
+
+    list.append(row);
+  });
+
+  main.append(list);
+}
+
+/* Images and videos */
 
 function mediaFigure(asset) {
   if (!safeURL(asset.src)) return null;
@@ -102,6 +166,8 @@ function mediaFigure(asset) {
   return figure;
 }
 
+/* Full project and general content sections */
+
 function sections(items = []) {
   items.filter(item => item.visible !== false).forEach(item => {
     const section = el("section", "section");
@@ -109,7 +175,10 @@ function sections(items = []) {
     const heading = el("div", "project-heading");
     const body = el("div");
 
-    heading.append(el("h2", "", item.title));
+    heading.append(
+      el(page === "project" ? "h1" : "h2", "", item.title)
+    );
+
     paragraphs(body, item.text);
     row.append(heading, body);
     section.append(row);
@@ -210,6 +279,8 @@ function sections(items = []) {
   });
 }
 
+/* Homepage */
+
 if (page === "home") {
   const hero = el("section", "hero");
   const intro = el("div");
@@ -233,10 +304,12 @@ if (page === "home") {
     portrait.append(img);
   } else {
     const placeholder = el("div", "portrait-placeholder");
+
     placeholder.append(
       el("strong", "", "SS"),
       el("span", "", "Portrait coming soon")
     );
+
     portrait.append(placeholder);
   }
 
@@ -267,6 +340,31 @@ if (page === "home") {
 
   main.append(paths);
 
+/* Individual project page */
+
+} else if (page === "project") {
+  const id = new URLSearchParams(location.search).get("id");
+
+  const project = data.projects.sections.find(
+    item => item.id === id && item.visible !== false
+  );
+
+  const back = el("div", "project-back");
+  back.append(link("← All projects", "projects.html"));
+  main.append(back);
+
+  if (project) {
+    document.title = project.title + " | " + data.name;
+    sections([project]);
+  } else {
+    main.append(
+      el("h1", "", "Project not found"),
+      el("p", "", "Choose a project from the Projects page.")
+    );
+  }
+
+/* Projects, Beyond the Classroom, and Contact pages */
+
 } else {
   const config = data[page];
   const intro = el("section", "page-intro");
@@ -282,34 +380,37 @@ if (page === "home") {
   if (page === "contact") {
     const grid = el("div", "contact-grid");
     const details = el("div");
+
     details.append(el("h2", "", "Come and say hi!"));
 
-if (data.phone) {
-  const p = el("p");
-  p.append(link(data.phone, "tel:" + data.phone.replace(/[^\d+]/g, "")));
-  details.append(p);
-}
+    if (data.phone) {
+      const p = el("p");
+      p.append(
+        link(data.phone, "tel:" + data.phone.replace(/[^\d+]/g, ""))
+      );
+      details.append(p);
+    }
 
-if (data.email) {
-  const p = el("p");
-  p.append(
-    link(data.email, "mailto:" + data.email),
-    document.createTextNode(" (preferred)")
-  );
-  details.append(p);
-}
+    if (data.email) {
+      const p = el("p");
+      p.append(
+        link(data.email, "mailto:" + data.email),
+        document.createTextNode(" (preferred)")
+      );
+      details.append(p);
+    }
 
-if (data.gtEmail) {
-  const p = el("p");
-  p.append(link(data.gtEmail, "mailto:" + data.gtEmail));
-  details.append(p);
-}
+    if (data.gtEmail) {
+      const p = el("p");
+      p.append(link(data.gtEmail, "mailto:" + data.gtEmail));
+      details.append(p);
+    }
 
-if (safeURL(data.linkedin)) {
-  const p = el("p");
-  p.append(link("LinkedIn ↗", data.linkedin));
-  details.append(p);
-}
+    if (safeURL(data.linkedin)) {
+      const p = el("p");
+      p.append(link("LinkedIn ↗", data.linkedin));
+      details.append(p);
+    }
 
     const form = el("form");
     form.method = "POST";
@@ -398,6 +499,10 @@ if (safeURL(data.linkedin)) {
       );
 
       main.append(empty);
+
+    } else if (page === "projects") {
+      projectIndex(config.sections);
+
     } else {
       sections(config.sections);
     }
