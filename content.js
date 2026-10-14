@@ -22,11 +22,11 @@ window.PORTFOLIO = {
   home: {
     eyebrow: "ABOUT ME",
     intro: [
-  "I'm Shyam, an aerospace engineering student at Georgia Tech with a minor in astrophysics! I'm from Lexington, South Carolina (represent🗣️) but I've been raised in Georgia since I was 5. I'm always down to learn and chat about anything, so don't hesitate to contact me about anything!"
+  "I'm Shyam, an aerospace engineering student at [Georgia Tech] (https://ae.gatech.edu/) with a minor in astrophysics! I'm from Lexington, South Carolina (represent🗣️) but I've been raised in Georgia since I was 5. I'm always down to learn and chat about anything, so don't hesitate to contact me about anything!"
 ],
     sections: [
       { title: "Who am I?", text: [
-      "Within aerospace engineering, my interests and experience span propulsion, materials, and aerosciences. My propulsion experience is through the time I've spent in my club, Propulsive Landers, while my materials and aerosciences experience comes from the Daedalus and Computational Combustion Lab, respectively.",
+      "Within aerospace engineering, my interests and experience span propulsion, materials, and aerosciences. My propulsion experience is through the time I've spent in my club, [Propulsive Landers] (https://gtpropulsivelanders.org/), while my materials and aerosciences experience comes from the Daedalus and Computational Combustion Lab, respectively.",
       "Outside the classroom, I'm a huge music fan (and always down to recommend a song!) and a diehard Borussia Dortmund fan, with plenty of baseless hope that it'll be our year, every year. I follow baseball and football as well, albeit very loosely, and I'm always open to learning about anything interesting from any subject!"
     ], media: [], links: [] }
     ],
