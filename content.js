@@ -72,6 +72,7 @@ window.PORTFOLIO = {
        {
   id: "lox-methane-injector",
   title: "LOX–Methane Injector Design",
+          layout: "injector",
   category: "AE 3030 · Injector design and CFD",
   visible: true,
 
@@ -92,55 +93,63 @@ window.PORTFOLIO = {
   ],
 
   media: [
-    {
-      type: "image",
-      src: "injector-face.jpeg",
-      alt: "CAD view of the injector face showing the triplet arrangement",
-      caption: "Injector face with 16 unlike-triplet elements."
-    },
-    {
-      type: "image",
-      src: "injector-triplet-geometry.jpeg",
-      alt: "Cross-sectional diagram of the unlike-triplet element geometry",
-      caption: "Element geometry and jet impingement arrangement."
-    },
-    {
-      type: "image",
-      src: "injector-flow-paths.jpeg",
-      alt: "Annotated cross section showing oxygen and methane flow paths",
-      caption: "Separate oxygen and methane flow paths through the injector."
-    },
-    {
-      type: "image",
-      src: "injector-manifold-section.jpeg",
-      alt: "CAD cross section of the internal injector manifolds",
-      caption: "Internal manifold geometry."
-    },
-    {
-      type: "image",
-      src: "injector-methane-mesh.jpeg",
-      alt: "Computational mesh of the methane manifold",
-      caption: "Methane-manifold mesh and boundary-layer refinement."
-    },
-    {
-      type: "image",
-      src: "injector-lox-mesh.jpeg",
-      alt: "Computational mesh of the liquid oxygen manifold",
-      caption: "Liquid-oxygen manifold mesh and boundary-layer refinement."
-    },
-    {
-      type: "image",
-      src: "injector-methane-cfd.jpeg",
-      alt: "Methane-manifold pressure contours and velocity streamlines",
-      caption: "Methane-manifold CFD results indicating preferential flow toward the outer elements."
-    },
-    {
-      type: "image",
-      src: "injector-lox-cfd.jpeg",
-      alt: "Liquid-oxygen manifold pressure contours and velocity streamlines",
-      caption: "Liquid-oxygen manifold CFD results showing internal recirculation."
-    }
-  ],
+  {
+    type: "image",
+    group: "hero",
+    src: "injector-face.jpeg",
+    alt: "CAD view of the injector face showing the triplet arrangement",
+    caption: "Injector face with 16 unlike-triplet elements."
+  },
+  {
+    type: "image",
+    group: "hero",
+    src: "injector-manifold-section.jpeg",
+    alt: "CAD cross section of the internal injector manifolds",
+    caption: "Internal manifold geometry."
+  },
+  {
+    type: "image",
+    group: "geometry",
+    src: "injector-triplet-geometry.jpeg",
+    alt: "Cross-sectional diagram of the unlike-triplet element geometry",
+    caption: "Element geometry and jet impingement arrangement."
+  },
+  {
+    type: "image",
+    group: "geometry",
+    src: "injector-flow-paths.jpeg",
+    alt: "Annotated cross section showing oxygen and methane flow paths",
+    caption: "Separate oxygen and methane flow paths through the injector."
+  },
+  {
+    type: "image",
+    group: "mesh",
+    src: "injector-methane-mesh.jpeg",
+    alt: "Computational mesh of the methane manifold",
+    caption: "Methane-manifold mesh and boundary-layer refinement."
+  },
+  {
+    type: "image",
+    group: "mesh",
+    src: "injector-lox-mesh.jpeg",
+    alt: "Computational mesh of the liquid oxygen manifold",
+    caption: "Liquid-oxygen manifold mesh and boundary-layer refinement."
+  },
+  {
+    type: "image",
+    group: "cfd",
+    src: "injector-methane-cfd.jpeg",
+    alt: "Methane-manifold pressure contours and velocity streamlines",
+    caption: "Methane-manifold CFD results indicating preferential flow toward the outer elements."
+  },
+  {
+    type: "image",
+    group: "cfd",
+    src: "injector-lox-cfd.jpeg",
+    alt: "Liquid-oxygen manifold pressure contours and velocity streamlines",
+    caption: "Liquid-oxygen manifold CFD results showing internal recirculation."
+  }
+],
 
   links: []
 },
