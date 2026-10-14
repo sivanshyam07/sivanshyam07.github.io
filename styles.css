@@ -719,3 +719,75 @@ footer {
     gap: 32px;
   }
 }
+/* Voxel research: description left, title and image right */
+.voxel-project .section-heading {
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+.voxel-project .section-heading > div {
+  min-width: 0;
+}
+
+.voxel-project .project-heading {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.voxel-project .section-heading > div:not(.project-heading) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.voxel-project .section-heading > div > p:first-child {
+  margin-top: 0;
+}
+
+/* Process | results | connection designs */
+.voxel-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+  margin-top: 48px;
+}
+
+.voxel-process,
+.voxel-results,
+.voxel-design {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+.voxel-project figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+@media (max-width: 760px) {
+  .voxel-project .section-heading {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .voxel-project .project-heading {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .voxel-project .section-heading > div:not(.project-heading) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .voxel-gallery {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
