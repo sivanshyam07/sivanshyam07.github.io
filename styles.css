@@ -157,3 +157,14 @@ h1, h2, h3, .brand {
   font-family: "Sora", sans-serif;
   font-weight: 700;
 }
+body[data-page="home"] .pathway {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 32px 0;
+}
+
+body[data-page="home"] .pathway .text-link {
+  margin-top: 2px;
+}
