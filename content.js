@@ -37,68 +37,80 @@ window.PORTFOLIO = {
     ]
   },
   projects: {
-    eyebrow: "ENGINEERING & RESEARCH", title: "Projects",
-    intro: "A space for the things I design, build, test, and learn.",
-    sections: [
-  {
-    "title": "Free Bird",
-    "visible": true,
-    "text": [
-      "For my Introduction to Aerospace Engineering class (AE 1601), our team designed and built a single-stage model rocket to carry and safely recover a PerfectFlite Pnut altimeter, with a target apogee of 125 feet.",
-      "My contribution focused on the SolidWorks CAD and OpenRocket simulation work, helping develop the rocket’s geometry and compare design configurations. We used SolidWorks, OpenRocket, and machine tools to take the design from a simulation to testable flight hardware.",
-      "Starting with an Estes Viking kit, we added a custom PETG nose cone, an enlarged payload bay for the altimeter, and a transition connecting the payload bay to the main body tube. The rocket also used four cardboard fins and a streamer recovery system.",
-      "The rocket reached an apogee of 98 feet and was successfully recovered. Our original OpenRocket simulation predicted 121 feet using an A8-3 motor. After observing other model rockets exceed their predicted altitudes, we switched to a ½A6-2 motor for the flight.",
-      "The project gave me hands-on experience connecting CAD, flight simulation, fabrication, and testing. It helped me understand the connection between simulated design and physical manufacturing, and how to iterate when initial plans don't work out."
-    ],
-    "media": [
-      {
-        "type": "image",
-        "src": "free-bird-rocket.png",
-        "alt": "Completed Free Bird model rocket standing upright",
-        "caption": "The completed Free Bird."
-      },
-      {
-        "type": "image",
-        "src": "free-bird-openrocket.png",
-        "alt": "Free Bird rocket configuration in OpenRocket",
-        "caption": "Rocket configuration modeled in OpenRocket."
-      },
-      {
-        "type": "image",
-        "src": "free-bird-transition.jpeg",
-        "alt": "SolidWorks model of the body tube transition",
-        "caption": "Transition between the payload bay and main body tube."
-      },
-      {
-        "type": "image",
-        "src": "free-bird-payload-bay.png",
-        "alt": "SolidWorks model of the cylindrical payload bay",
-        "caption": "Custom payload bay for the Pnut altimeter."
-      },
-      {
-        "type": "image",
-        "src": "free-bird-nose-cone.png",
-        "alt": "SolidWorks model of the rocket nose cone",
-        "caption": "Custom nose cone."
-      },
-      {
-        "type": "image",
-        "src": "free-bird-altitude.png",
-        "alt": "Measured altitude versus flight time",
-        "caption": "Flight altitude history; measured apogee: 98 ft."
-      },
-      {
-        "type": "image",
-        "src": "free-bird-velocity.png",
-        "alt": "Velocity versus flight time from the flight data",
-        "caption": "Flight velocity history."
-      }
-    ],
-    "links": []
-  }
-]
- // Add project sections using the example in README.md.
-  },
+  eyebrow: "ENGINEERING & RESEARCH",
+  title: "Projects",
+  intro: "A space for the things I design, build, test, and learn.",
+  sections: [
+    {
+      title: "Free Bird",
+      layout: "rocket",
+      visible: true,
+      text: [
+        "For my Introduction to Aerospace Engineering class ([AE 1601](https://syllabus.gatech.edu/sites/default/files/2026-08/AE1601_Syllabus%20Fall%202026_2.pdf)), our team designed and built a single-stage model rocket to carry and safely recover a PerfectFlite Pnut altimeter, with a target apogee of 125 feet.",
+
+        "My contribution focused on the SolidWorks CAD and OpenRocket simulation work, helping develop the rocket’s geometry and compare design configurations. We used SolidWorks, OpenRocket, and machine tools to take the design from a simulation to testable flight hardware.",
+
+        "Starting with an Estes Viking kit, we added a custom PETG nose cone, an enlarged payload bay for the altimeter, and a transition connecting the payload bay to the main body tube. The rocket also used four cardboard fins and a streamer recovery system.",
+
+        "The rocket reached an apogee of 98 feet and was successfully recovered. Our original OpenRocket simulation predicted 121 feet using an A8-3 motor. After observing other model rockets exceed their predicted altitudes, we switched to a ½A6-2 motor for the flight.",
+
+        "The project gave me hands-on experience connecting CAD, flight simulation, fabrication, and testing. It helped me understand the connection between simulated design and physical manufacturing, and how to iterate when initial plans don't work out."
+      ],
+      media: [
+        {
+          type: "image",
+          group: "hero",
+          src: "free-bird-rocket.png",
+          alt: "Completed Free Bird model rocket standing upright",
+          caption: "The completed Free Bird rocket."
+        },
+        {
+          type: "image",
+          group: "nose",
+          src: "free-bird-nose-cone.png",
+          alt: "SolidWorks model of the rocket nose cone",
+          caption: "Custom nose cone."
+        },
+        {
+          type: "image",
+          group: "parts",
+          src: "free-bird-transition.jpeg",
+          alt: "SolidWorks model of the body tube transition",
+          caption: "Transition between the payload bay and main body tube."
+        },
+        {
+          type: "image",
+          group: "parts",
+          src: "free-bird-payload-bay.png",
+          alt: "SolidWorks model of the cylindrical payload bay",
+          caption: "Custom payload bay for the Pnut altimeter."
+        },
+        {
+          type: "image",
+          group: "analysis",
+          src: "free-bird-openrocket.png",
+          alt: "Free Bird rocket configuration in OpenRocket",
+          caption: "Rocket configuration modeled in OpenRocket."
+        },
+        {
+          type: "image",
+          group: "analysis",
+          src: "free-bird-altitude.png",
+          alt: "Measured altitude versus flight time",
+          caption: "Flight altitude history; measured apogee: 98 ft."
+        },
+        {
+          type: "image",
+          group: "analysis",
+          src: "free-bird-velocity.png",
+          alt: "Velocity versus flight time from the flight data",
+          caption: "Flight velocity history."
+        }
+      ],
+      links: []
+    }
+  ]
+},
   beyond: {
     eyebrow: "THE OTHER SIDE", title: "Beyond the Classroom",
     intro: "Music, soccer, and the things I enjoy outside engineering.",
