@@ -1,4 +1,7 @@
-/* Edit text, links, photos, and videos here. */
+/* Edit portfolio text and media here.
+   Each project needs a unique id.
+   Set visible: false to hide a project. */
+
 window.PORTFOLIO = {
   name: "Shyam Sivan",
   subtitle: "Aerospace Engineering · Astrophysics Minor",
@@ -22,13 +25,13 @@ window.PORTFOLIO = {
   home: {
     eyebrow: "ABOUT ME",
     intro: [
-      "I'm Shyam, an aerospace engineering student at [Georgia Tech] (https://ae.gatech.edu/) with a minor in astrophysics! I'm from Lexington, South Carolina (represent🗣️) but I've been raised in Georgia since I was 5. I'm always down to learn and chat about anything, so don't hesitate to contact me about anything!"
+      "I'm Shyam, an aerospace engineering student at [Georgia Tech](https://ae.gatech.edu/) with a minor in astrophysics! I'm from Lexington, South Carolina (represent🗣️) but I've been raised in Georgia since I was 5. I'm always down to learn and chat about anything, so don't hesitate to contact me about anything!"
     ],
     sections: [
       {
         title: "Who am I?",
         text: [
-          "Within aerospace engineering, my interests and experience span propulsion, materials, and aerosciences. My propulsion experience is through the time I've spent in my club, [Propulsive Landers] (https://gtpropulsivelanders.org/), while my materials and aerosciences experience comes from the Daedalus and Computational Combustion Lab, respectively.",
+          "Within aerospace engineering, my interests and experience span propulsion, materials, and aerosciences. My propulsion experience is through the time I've spent in my club, [Propulsive Landers](https://gtpropulsivelanders.org/), while my materials and aerosciences experience comes from the Daedalus and Computational Combustion Lab, respectively.",
           "Outside the classroom, I'm a huge music fan (and always down to recommend a song!) and a diehard Borussia Dortmund fan, with plenty of baseless hope that it'll be our year, every year. I follow baseball and football as well, albeit very loosely, and I'm always open to learning about anything interesting from any subject!"
         ],
         media: [],
@@ -64,11 +67,19 @@ window.PORTFOLIO = {
     eyebrow: "ENGINEERING & RESEARCH",
     title: "Projects",
     intro: "A space for the things I design, build, test, and learn.",
+
     sections: [
       {
+        id: "free-bird",
         title: "Free Bird",
+        category: "AE 1601 · Model rocketry",
         layout: "rocket",
         visible: true,
+
+        summary: "A single-stage model rocket designed in SolidWorks and OpenRocket to carry an altimeter toward a 125 ft target apogee. Built and flight-tested, reaching 98 ft.",
+        cover: "free-bird-rocket.png",
+        coverAlt: "Completed Free Bird model rocket",
+
         text: [
           "For my Introduction to Aerospace Engineering class ([AE 1601](https://syllabus.gatech.edu/sites/default/files/2026-08/AE1601_Syllabus%20Fall%202026_2.pdf)), our team designed and built a single-stage model rocket to carry and safely recover a PerfectFlite Pnut altimeter, with a target apogee of 125 feet.",
           "My contribution focused on the SolidWorks CAD and OpenRocket simulation work, helping develop the rocket’s geometry and compare design configurations. We used SolidWorks, OpenRocket, and machine tools to take the design from a simulation to testable flight hardware.",
@@ -76,6 +87,7 @@ window.PORTFOLIO = {
           "The rocket reached an apogee of 98 feet and was successfully recovered. Our original OpenRocket simulation predicted 121 feet using an A8-3 motor. After observing other model rockets exceed their predicted altitudes, we switched to a ½A6-2 motor for the flight.",
           "The project gave me hands-on experience connecting CAD, flight simulation, fabrication, and testing. It helped me understand the connection between simulated design and physical manufacturing, and how to iterate when initial plans don't work out."
         ],
+
         media: [
           {
             type: "image",
@@ -127,13 +139,21 @@ window.PORTFOLIO = {
             caption: "Flight velocity history."
           }
         ],
+
         links: []
       },
 
       {
+        id: "bank-left",
         title: "Bank Left",
+        category: "AE 1601 · Glider design",
         layout: "glider",
         visible: true,
+
+        summary: "A hand-built balsa wood glider developed through aerodynamic calculations and flight-test iteration. The final design flew 54 ft, more than twice the initial distance.",
+        cover: "bank-left-final-top.jpeg",
+        coverAlt: "Final Bank Left balsa wood glider",
+
         text: [
           "For my Introduction to Aerospace Engineering class (AE 1601), a teammate and I designed and built a hand-made balsa wood glider capable of at least 20 feet of stable, straight flight. The design had to fit within a 16 × 16-inch box, contain more than 50% balsa wood by weight, and remain intact during testing.",
           "My contribution focused on the calculations, design, and iteration from our initial dimensions, alongside some fabrication work using machine shop tools. We compared wing configurations and selected swept, tapered wings with a 7° dihedral angle to support stable flight.",
@@ -141,6 +161,7 @@ window.PORTFOLIO = {
           "The final glider flew 54 feet, more than twice the initial flight distance, and met all of the project requirements. It demonstrated stable, straight flight and remained intact during testing.",
           "The project helped me connect aerodynamic calculations and design choices with observed flight behavior. Working through the balance adjustments and redesign showed me how testing can guide improvements that calculations alone may not capture."
         ],
+
         media: [
           {
             type: "video",
@@ -157,12 +178,12 @@ window.PORTFOLIO = {
             caption: "Initial design: 12-inch wingspan and 9-inch fuselage."
           },
           {
-  type: "video",
-  group: "initial",
-  src: "bank-left-other-test.mp4",
-  poster: "bank-left-other-test-poster.png",
-  caption: "An outdoor flight test of the initial design."
-},
+            type: "video",
+            group: "initial",
+            src: "bank-left-other-test.mp4",
+            poster: "bank-left-other-test-poster.png",
+            caption: "An outdoor flight test of the initial design."
+          },
           {
             type: "image",
             group: "final",
@@ -178,6 +199,7 @@ window.PORTFOLIO = {
             caption: "Another view of the final design."
           }
         ],
+
         links: []
       }
     ]
