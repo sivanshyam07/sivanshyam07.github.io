@@ -204,3 +204,6 @@ body[data-page="home"] .pathway .text-link {
     min-height: 260px;
   }
 }
+footer {
+  display: none;
+}
