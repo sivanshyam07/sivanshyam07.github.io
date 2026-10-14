@@ -7,11 +7,11 @@ window.PORTFOLIO = {
   name: "Shyam Sivan",
   subtitle: "Aerospace Engineering · Astrophysics Minor",
   institution: "Georgia Institute of Technology",
-  portrait: "", // Example: "assets/shyam.jpg"
+  portrait: "", // Example: "shyam.jpg"
   portraitAlt: "Shyam Sivan",
   email: "sivanshyam07@gmail.com", // Your personal email
   linkedin: "https://www.linkedin.com/in/shyamsivan/", // Full https:// URL
-  resume: "Shyam_Sivan_Resume.pdf", // Example: "assets/Shyam_Sivan_Resume.pdf"
+  resume: "Shyam_Sivan_Resume.pdf", // Example: "Shyam_Sivan_Resume.pdf"
   formEndpoint: "https://formsubmit.co/sivanshyam07@gmail.com", // Verified endpoint from your chosen form service
   navigation: [
     { page: "home", label: "About", href: "index.html" },
@@ -53,43 +53,43 @@ window.PORTFOLIO = {
     "media": [
       {
         "type": "image",
-        "src": "assets/free-bird-rocket.png",
+        "src": "free-bird-rocket.png",
         "alt": "Completed Free Bird model rocket standing upright",
         "caption": "The completed Free Bird rocket."
       },
       {
         "type": "image",
-        "src": "assets/free-bird-openrocket.png",
+        "src": "free-bird-openrocket.png",
         "alt": "Free Bird rocket configuration in OpenRocket",
         "caption": "Rocket configuration modeled in OpenRocket."
       },
       {
         "type": "image",
-        "src": "assets/free-bird-transition.jpeg",
+        "src": "free-bird-transition.jpeg",
         "alt": "SolidWorks model of the body tube transition",
         "caption": "Transition between the payload bay and main body tube."
       },
       {
         "type": "image",
-        "src": "assets/free-bird-payload-bay.png",
+        "src": "free-bird-payload-bay.png",
         "alt": "SolidWorks model of the cylindrical payload bay",
         "caption": "Custom payload bay for the Pnut altimeter."
       },
       {
         "type": "image",
-        "src": "assets/free-bird-nose-cone.png",
+        "src": "free-bird-nose-cone.png",
         "alt": "SolidWorks model of the rocket nose cone",
         "caption": "Custom nose cone."
       },
       {
         "type": "image",
-        "src": "assets/free-bird-altitude.png",
+        "src": "free-bird-altitude.png",
         "alt": "Measured altitude versus flight time",
         "caption": "Flight altitude history; measured apogee: 98 ft."
       },
       {
         "type": "image",
-        "src": "assets/free-bird-velocity.png",
+        "src": "free-bird-velocity.png",
         "alt": "Velocity versus flight time from the flight data",
         "caption": "Flight velocity history."
       }
