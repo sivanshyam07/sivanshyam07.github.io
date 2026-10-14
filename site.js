@@ -282,21 +282,34 @@ if (page === "home") {
   if (page === "contact") {
     const grid = el("div", "contact-grid");
     const details = el("div");
-    details.append(el("h2", "", "Say hello."));
+    details.append(el("h2", "", "Come and say hi!"));
 
-    if (data.email) {
-      details.append(link(data.email, "mailto:" + data.email));
-    }
+if (data.phone) {
+  const p = el("p");
+  p.append(link(data.phone, "tel:" + data.phone.replace(/[^\d+]/g, "")));
+  details.append(p);
+}
 
-    if (safeURL(data.linkedin)) {
-      const p = el("p");
-      p.append(link("LinkedIn ↗", data.linkedin));
-      details.append(p);
-    }
+if (data.email) {
+  const p = el("p");
+  p.append(
+    link(data.email, "mailto:" + data.email),
+    document.createTextNode(" (preferred)")
+  );
+  details.append(p);
+}
 
-    if (!data.email && !data.linkedin) {
-      details.append(el("p", "", "Contact details coming soon."));
-    }
+if (data.gtEmail) {
+  const p = el("p");
+  p.append(link(data.gtEmail, "mailto:" + data.gtEmail));
+  details.append(p);
+}
+
+if (safeURL(data.linkedin)) {
+  const p = el("p");
+  p.append(link("LinkedIn ↗", data.linkedin));
+  details.append(p);
+}
 
     const form = el("form");
     form.method = "POST";
