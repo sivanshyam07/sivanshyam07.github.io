@@ -46,4 +46,6 @@ if(page==="home"){
     if(!(config.sections||[]).some(item=>item.visible!==false)){const empty=el("section","empty");empty.append(el("h2","",page==="projects"?"Project stories coming soon.":"More about me, coming soon."),el("p","",page==="projects"?"I'll be adding the work, photos, and details behind my engineering projects here.":"I'll be sharing music, soccer, and other interests here."));main.append(empty);}else sections(config.sections);
   }
 }
-const footer=document.getElementById("footer");footer.append(el("span","","© "+new Date().getFullYear()+" "+data.name),el("span","","Aerospace · Materials · Curiosity"));
+const footer=document.getElementById("footer");footer.append(
+  el("span", "", "© " + new Date().getFullYear() + " " + data.name)
+);
