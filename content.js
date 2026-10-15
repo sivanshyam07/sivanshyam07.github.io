@@ -360,12 +360,49 @@ window.PORTFOLIO = {
   },
 
   beyond: {
-    eyebrow: "THE OTHER SIDE",
-    title: "Beyond the Classroom",
-    intro: "Music, soccer, and the things I enjoy outside engineering.",
-    sections: []
-  },
+  eyebrow: "THE OTHER SIDE",
+  title: "Beyond the Classroom",
+  intro: "The interests and experiences that make me, me.",
 
+  sections: [
+    {
+      id: "music",
+      title: "Music",
+      image: "",
+      imageAlt: "",
+      text: [],
+      media: [],
+      links: []
+    },
+    {
+      id: "sports",
+      title: "Sports",
+      image: "",
+      imageAlt: "",
+      text: [],
+      media: [],
+      links: []
+    },
+    {
+      id: "model-un",
+      title: "Model UN",
+      image: "",
+      imageAlt: "",
+      text: [],
+      media: [],
+      links: []
+    },
+    {
+      id: "about-me",
+      title: "A Little More About Me",
+      image: "",
+      imageAlt: "",
+      text: [],
+      media: [],
+      links: []
+    }
+  ]
+},
   contact: {
     eyebrow: "GET IN TOUCH",
     title: "Let's connect!",
