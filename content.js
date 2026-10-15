@@ -177,63 +177,49 @@ window.PORTFOLIO = {
   ],
 
   media: [
-    {
-      type: "image",
-      group: "hero",
-      src: "voxel-pet-block.jpeg",
-      alt: "Recycled PET voxel block with interconnected structural members",
-      caption: "A voxel block printed using recycled PET."
-    },
-    {
-      type: "image",
-      group: "process",
-      src: "voxel-bottle-cutter.jpeg",
-      alt: "Bottle-strip cutting setup used for recycled PET filament production",
-      caption: "Preparing plastic bottles for filament production."
-    },
-    {
-      type: "image",
-      group: "process",
-      src: "voxel-filament.jpeg",
-      alt: "Recycled PET filament and filament-making equipment",
-      caption: "Recycled PET filament."
-    },
-    {
-      type: "image",
-      group: "process",
-      src: "voxel-assemblies.jpeg",
-      alt: "Printed voxel structures in different assembly configurations",
-      caption: "Printed components and assembled voxel structures."
-    },
-    {
-      type: "image",
-      group: "results",
-      src: "voxel-2x2-comparison.png",
-      alt: "Force-displacement comparison of 2×2×2 PET and PETG specimens",
-      caption: "2×2×2 configuration: PET and PETG compression results."
-    },
-    {
-      type: "image",
-      group: "results",
-      src: "voxel-3x3-comparison.png",
-      alt: "Force-displacement comparison of 3×3×3 PET and PETG specimens",
-      caption: "3×3×3 configuration: PET and PETG compression results."
-    },
-    {
-      type: "image",
-      group: "design",
-      src: "voxel-connection-a.jpeg",
-      alt: "CAD view of one voxel connection geometry",
-      caption: "Voxel connection geometry."
-    },
-    {
-      type: "image",
-      group: "design",
-      src: "voxel-connection-b.jpeg",
-      alt: "CAD view of an alternative voxel connection geometry",
-      caption: "An alternative connection geometry explored during development."
-    }
-  ],
+  {
+    type: "image",
+    group: "hero",
+    src: "voxel-pet-block.jpeg",
+    alt: "Recycled PET voxel block",
+    caption: "A voxel block printed using recycled PET."
+  },
+  {
+    type: "image",
+    group: "process",
+    src: "voxel-bottle-cutter.jpeg",
+    alt: "Bottle-strip cutting setup",
+    caption: "Preparing plastic bottles for filament production."
+  },
+  {
+    type: "image",
+    group: "process",
+    src: "voxel-filament.jpeg",
+    alt: "Recycled PET filament and filament-making equipment",
+    caption: "Recycled PET filament."
+  },
+  {
+    type: "image",
+    group: "process",
+    src: "voxel-assemblies.jpeg",
+    alt: "Printed voxel structures in different configurations",
+    caption: "Printed components and assembled voxel structures."
+  },
+  {
+    type: "image",
+    group: "results",
+    src: "voxel-2x2-comparison.png",
+    alt: "Compression results for 2×2×2 PET and PETG structures",
+    caption: "2×2×2 configuration: PET and PETG."
+  },
+  {
+    type: "image",
+    group: "results",
+    src: "voxel-3x3-comparison.png",
+    alt: "Compression results for 3×3×3 PET and PETG structures",
+    caption: "3×3×3 configuration: PET and PETG."
+  }
+],
 
   links: []
 },
