@@ -336,6 +336,8 @@ if (page === "home") {
 
 /* Projects, Beyond the Classroom, and Contact pages */
 
+} else if (page === "beyond") {
+  renderBeyond();
 } else {
   const config = data[page];
   const intro = el("section", "page-intro");
