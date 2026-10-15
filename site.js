@@ -483,3 +483,110 @@ if (page === "home") {
 }
 
 document.getElementById("footer").replaceChildren();
+function renderBeyond() {
+  const config = data.beyond;
+  const id = new URLSearchParams(location.search).get("id");
+  const items = config.sections.filter(item => item.visible !== false);
+  const intro = el("section", "page-intro");
+
+  /* Individual interest section */
+  if (id !== null) {
+    const back = el("div", "project-back");
+    back.append(link("← Beyond the Classroom", "beyond.html"));
+    main.append(back);
+
+    const item = items.find(item => item.id === id);
+
+    intro.append(
+      el("div", "eyebrow", config.eyebrow),
+      el("h1", "", item ? item.title : "Section not found")
+    );
+
+    main.append(intro);
+    if (!item) return;
+
+    document.title = item.title + " | " + data.name;
+
+    const detail = el("section", "interest-detail");
+
+    if (item.text && item.text.length) {
+      paragraphs(detail, item.text);
+    } else {
+      detail.append(el("p", "", "More coming soon."));
+    }
+
+    if (safeURL(item.image)) {
+      const figure = mediaFigure({
+        type: "image",
+        src: item.image,
+        alt: item.imageAlt || item.title
+      });
+
+      if (figure) detail.append(figure);
+    }
+
+    (item.media || []).forEach(asset => {
+      const figure = mediaFigure(asset);
+      if (figure) detail.append(figure);
+    });
+
+    const links = el("div", "links");
+
+    (item.links || []).forEach(item => {
+      if (safeURL(item.href)) {
+        links.append(link(item.label + " ↗", item.href));
+      }
+    });
+
+    if (links.childElementCount) detail.append(links);
+    main.append(detail);
+    return;
+  }
+
+  /* Four-card overview */
+  intro.append(
+    el("div", "eyebrow", config.eyebrow),
+    el("h1", "", config.title),
+    el("p", "", config.intro)
+  );
+
+  main.append(intro);
+
+  const grid = el("div", "interest-grid");
+
+  items.forEach((item, index) => {
+    const card = link(
+      "",
+      "beyond.html?id=" + encodeURIComponent(item.id),
+      "interest-card"
+    );
+
+    const visual = el("div", "interest-visual");
+
+    if (safeURL(item.image)) {
+      const img = el("img");
+      img.src = item.image;
+      img.alt = item.imageAlt || item.title;
+      img.loading = "lazy";
+      visual.append(img);
+    } else {
+      visual.append(
+        el(
+          "span",
+          "interest-placeholder",
+          String(index + 1).padStart(2, "0")
+        )
+      );
+    }
+
+    card.append(
+      visual,
+      el("h2", "", item.title),
+      el("span", "text-link", "Explore →")
+    );
+
+    grid.append(card);
+  });
+
+  main.append(grid);
+}
