@@ -514,7 +514,6 @@ function renderBeyond() {
     } else {
       detail.append(el("p", "", "More coming soon."));
     }
-    }
 
     (item.media || []).forEach(asset => {
       const figure = mediaFigure(asset);
