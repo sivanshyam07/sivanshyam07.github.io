@@ -359,50 +359,44 @@ window.PORTFOLIO = {
     ]
   },
 
-  beyond: {
-  eyebrow: "THE OTHER SIDE",
-  title: "Beyond the Classroom",
-  intro: "The interests and experiences that make me, me.",
+    beyond: {
+    eyebrow: "THE OTHER SIDE",
+    title: "Beyond the Classroom",
+    intro: "The interests and experiences that make me, me.",
 
-  sections: [
-    {
-      id: "music",
-      title: "Music",
-      image: "",
-      imageAlt: "",
-      text: [],
-      media: [],
-      links: []
-    },
-    {
-      id: "sports",
-      title: "Sports",
-      image: "",
-      imageAlt: "",
-      text: [],
-      media: [],
-      links: []
-    },
-    {
-      id: "model-un",
-      title: "Model UN",
-      image: "",
-      imageAlt: "",
-      text: [],
-      media: [],
-      links: []
-    },
-    {
-      id: "about-me",
-      title: "A Little More About Me",
-      image: "",
-      imageAlt: "",
-      text: [],
-      media: [],
-      links: []
-    }
-  ]
-},
+    sections: [
+      {
+        id: "music",
+        title: "Music",
+        description: "What’s on repeat and what I’ll always recommend.",
+        image: "music-collage.png",
+        imageAlt: "A collage of twenty album covers",
+        text: [],
+        media: [],
+        links: []
+      },
+      {
+        id: "sports",
+        title: "Sports",
+        description: "My local and overseas allegiances.",
+        image: "sports-collage-matched.png",
+        imageAlt: "Borussia Dortmund, Atlanta Falcons, Atlanta United, and Atlanta Braves",
+        text: [],
+        media: [],
+        links: []
+      },
+      {
+        id: "life-experiences",
+        title: "Life & Experiences",
+        description: "Trips, extracurriculars, and whatever I’ve been doing for fun.",
+        image: "life-experiences.jpg",
+        imageAlt: "Galaxy NGC 6384 surrounded by stars",
+        text: [],
+        media: [],
+        links: []
+      }
+    ]
+  },
   contact: {
     eyebrow: "GET IN TOUCH",
     title: "Let's connect!",
