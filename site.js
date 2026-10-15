@@ -579,11 +579,20 @@ function renderBeyond() {
       );
     }
 
-    card.append(
-      visual,
-      el("h2", "", item.title),
-      el("span", "text-link", "Explore →")
-    );
+        const copy = el("div", "interest-copy");
+    copy.append(el("h2", "", item.title));
+
+    if (item.description) {
+      copy.append(
+        el("p", "interest-description", item.description)
+      );
+    }
+
+    const arrow = el("span", "interest-arrow", "↗");
+    arrow.setAttribute("aria-hidden", "true");
+    copy.append(arrow);
+
+    card.append(visual, copy);
 
     grid.append(card);
   });
