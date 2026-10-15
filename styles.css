@@ -1066,3 +1066,13 @@ body[data-page="beyond"]
     padding: 0 4px 6px;
   }
 }
+body[data-page="beyond"]
+.interest-card[href*="id=life-experiences"] .interest-visual {
+  aspect-ratio: 8 / 3;
+}
+
+body[data-page="beyond"]
+.interest-card[href*="id=life-experiences"] .interest-visual img {
+  object-fit: cover;
+  object-position: center;
+}
