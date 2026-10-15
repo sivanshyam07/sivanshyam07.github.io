@@ -791,3 +791,61 @@ footer {
     gap: 32px;
   }
 }
+/* Voxel: process photos first, graphs underneath */
+.voxel-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 28px;
+}
+
+.voxel-process {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: min(100%, 850px);
+  margin-inline: auto;
+}
+
+.voxel-process figure img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+}
+
+.voxel-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  width: 100%;
+}
+
+.voxel-results figure img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+
+@media (max-width: 760px) {
+  .voxel-process {
+    gap: 14px;
+  }
+
+  .voxel-process figure img {
+    height: 150px;
+  }
+
+  .voxel-results {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .voxel-process {
+    grid-template-columns: 1fr;
+  }
+
+  .voxel-process figure img {
+    height: 220px;
+  }
+}
