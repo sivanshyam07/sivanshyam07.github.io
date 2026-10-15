@@ -514,14 +514,6 @@ function renderBeyond() {
     } else {
       detail.append(el("p", "", "More coming soon."));
     }
-
-    if (safeURL(item.image)) {
-      const figure = mediaFigure({
-        type: "image",
-        src: item.image,
-        alt: item.imageAlt || item.title
-      });
-
       if (figure) detail.append(figure);
     }
 
