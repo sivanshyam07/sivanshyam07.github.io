@@ -489,3 +489,142 @@ window.PORTFOLIO.beyond = {
     }
   ]
 };
+(() => {
+  const beyond = window.PORTFOLIO.beyond;
+  const music = beyond.sections.find(item => item.id === "music");
+  const sports = beyond.sections.find(item => item.id === "sports");
+  const photos = beyond.sections.find(item => item.id === "photos");
+
+  music.text = [
+    "I listen to a pretty wide variety of music, and I’m always open to recommendations, both giving and receiving, so don't hesitate to drop a song you want me to listen to at any time!",
+    "I’m also getting into playing music again; I used to play trumpet, and I’m learning guitar (emphasis on learning)."
+  ];
+
+  music.playlist.note =
+    "My one mega playlist [weird, I know]. I use Apple Music, so this Spotify version might not be completely up to date.";
+
+  // Each song: title, artist, Spotify track ID, album artwork URL.
+  const song = (title, artist, id, artwork) => [
+    title,
+    artist,
+    "https://open.spotify.com/track/" + id,
+    artwork
+  ];
+
+  music.favorites = [
+    {
+      title: "On repeat",
+      songs: [
+        song(
+          "Drink",
+          "Destroy Boys",
+          "1BPrb82sw4NISXgRfdBFRS",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02217ee98fee9f81b160931439"
+        ),
+        song(
+          "Kiss",
+          "Lucille",
+          "2YZcBYcve5hmoxwWqiegqT",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a0c2ec92764e61b99ef0f265"
+        ),
+        song(
+          "Roommates",
+          "Malcolm Todd",
+          "5vPUv0xziXbV4lnWeVNXNq",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022c1f34ecc1929fb59908aad1"
+        ),
+        song(
+          "Strawberry Blonde",
+          "Under High Street",
+          "3nvP8i9h7VvC5s48O1i1Ub",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0206b9897152f15906978a1b3f"
+        ),
+        song(
+          "Mayari",
+          "bunii",
+          "2HugUG5L0maVwEPooB0Eux",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cb01ca766545665bbb368383"
+        )
+      ]
+    },
+    {
+      title: "All-time favorites",
+      songs: [
+        song(
+          "Kitchen Lights",
+          "Westside Gunn & Stove God Cooks",
+          "4mlP10ICLhXt2QmUf0GkpB",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02814b3b56864bb7d9ebfcdbf2"
+        ),
+        song(
+          "Devil in a New Dress",
+          "Kanye West & Rick Ross",
+          "1UGD3lW3tDmgZfAVDh6w7r",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d9194aa18fa4c9362b47464f"
+        ),
+        song(
+          "GONE, GONE / THANK YOU",
+          "Tyler, The Creator",
+          "1hz7SRTGUNAtIQ46qiNv2p",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0230a635de2bb0caa4e26f6abb"
+        ),
+        song(
+          "Self Care",
+          "Mac Miller",
+          "5bJ1DrEM4hNCafcDd1oxHx",
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02175c577a61aa13d4fb4b6534"
+        ),
+        song(
+          "One Beer",
+          "MF DOOM",
+          "4BnrGx9tWNF8aiXl1UhDBa",
+          "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0252f194d02c39909d1b284799"
+        )
+      ]
+    }
+  ];
+
+  sports.text[2] =
+    "Obviously, I have to follow the Atlanta teams too. I loved watching Josef Martínez when he was here, and I’m getting more into football and baseball through the Falcons and Braves. My first soccer game in person wasn’t until August 2025 (absolutely criminal that it took that long).";
+
+  const captions = {
+    "photo-azhimala.jpg":
+      "Shiva statue at Aazhimala Shiva Temple, Kerala, summer 2022.",
+
+    "photo-vancouver-clock.jpg":
+      "Steam clock at Gastown, Vancouver, summer 2023.",
+
+    "photo-glacier-bay.jpg":
+      "Mountains and water at Glacier Bay National Park, Alaska, summer 2023.",
+
+    "video-mendenhall.mp4":
+      "Waterfall at Mendenhall Lake, Alaska, summer 2023.",
+
+    "video-skagway.mp4":
+      "Mountain views on the Skagway train ride, Alaska, summer 2023.",
+
+    "photo-sao-jorge.jpg":
+      "City view at Castelo de São Jorge, Lisbon, Dec 2025.",
+
+    "photo-lisbon-christmas.jpg":
+      "Christmas lights in Lisbon, Dec 2025.",
+
+    "photo-sao-vicente.jpg":
+      "Sunset at São Vicente, Lisbon, Dec 2025.",
+
+    "sports-hertha-lisbon.jpg":
+      "Hertha Berlin sticker in Lisbon, Dec 2025.",
+
+    "photo-puerto-rico-coast.jpg":
+      "Coastal cliffs in Puerto Rico, Dec 2024.",
+
+    "photo-puerto-rico-waterfall.jpg":
+      "Waterfall at Ala de la Piedra, Puerto Rico, Dec 2024."
+  };
+
+  [...photos.media, ...sports.media].forEach(asset => {
+    if (captions[asset.src]) {
+      asset.caption = captions[asset.src];
+    }
+  });
+})();
