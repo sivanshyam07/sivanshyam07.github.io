@@ -611,9 +611,26 @@ function renderBeyond() {
         const section = el("section");
         section.append(el("h2", "", group.title));
         const list = el("ol", "btc-songs");
-        group.songs.forEach(([song, artist]) => {
+                group.songs.forEach(([song, artist, href, cover]) => {
           const row = el("li");
-          row.append(el("strong", "", song), el("span", "", artist));
+
+          const img = el("img", "btc-album-cover");
+          img.src = cover;
+          img.alt = "";
+          img.loading = "lazy";
+
+          const copy = el("div", "btc-song-copy");
+
+          const title = link(song, href, "btc-song-title");
+          title.target = "_blank";
+          title.rel = "noopener";
+
+          copy.append(
+            title,
+            el("span", "", artist)
+          );
+
+          row.append(img, copy);
           list.append(row);
         });
         section.append(list);
