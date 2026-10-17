@@ -1119,3 +1119,44 @@ body[data-page="beyond"]
   .btc-snoopy { max-width:240px; }
 }
 @media(max-width:420px) { .btc-gallery { columns:1; } }
+.btc-songs {
+  padding-left: 0;
+  list-style: none;
+}
+
+.btc-songs li {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+}
+
+.btc-songs .btc-album-cover {
+  display: block;
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.btc-song-copy {
+  min-width: 0;
+}
+
+.btc-song-title {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btc-song-title:hover {
+  color: #d7adff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.btc-song-title:focus-visible {
+  outline: 2px solid #d7adff;
+  outline-offset: 4px;
+}
