@@ -1076,3 +1076,46 @@ body[data-page="beyond"]
   object-fit: cover;
   object-position: center;
 }
+
+/* Beyond pages: paste at the bottom of styles.css */
+.btc-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin-bottom:64px; }
+.btc-card { display:block; min-width:0; padding:18px; border:1px solid #49365f; border-radius:24px; background:rgba(21,18,32,.92); color:inherit; text-decoration:none; }
+.btc-card:hover { border-color:#c4a2ee; }
+.btc-card:focus-visible,.btc-snoopy:focus-visible { outline:2px solid #d7adff; outline-offset:5px; }
+.btc-cover { overflow:hidden; border-radius:12px; aspect-ratio:5/4; }
+.btc-cover>img { display:block; width:100%; height:100%; object-fit:cover; }
+.btc-copy { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:10px 16px; padding:20px 4px 4px; }
+.btc-copy h2 { margin:0; font-size:clamp(1.35rem,2.4vw,1.85rem); }
+.btc-copy p { grid-column:1/-1; margin:0; color:#b9b0c8; line-height:1.6; }
+.btc-arrow { color:#d7adff; font-size:1.8rem; }
+.btc-card-wide { grid-column:1/-1; display:grid; grid-template-columns:minmax(0,3fr) minmax(0,2fr); align-items:center; gap:28px; }
+.btc-card-wide .btc-cover { aspect-ratio:2/1; background:#100c19; }
+.btc-card-wide .btc-copy { padding:12px; }
+.btc-map { display:block; width:100%; height:100%; }
+.btc-back { display:inline-block; margin-top:24px; }
+.btc-detail { padding-bottom:64px; }
+.btc-detail>p { max-width:850px; }
+.btc-gallery { columns:3; column-gap:10px; margin-top:28px; }
+.btc-photo { display:inline-block; vertical-align:top; width:100%; margin:0 0 10px; break-inside:avoid; }
+.btc-photo img,.btc-photo video { display:block; width:100%; height:auto; border-radius:5px; }
+.btc-photo figcaption { padding:7px 2px 4px; color:#b9b0c8; font-size:.8rem; line-height:1.45; }
+.btc-full-image { display:block; }
+.btc-playlist { display:grid; grid-template-columns:minmax(0,240px) minmax(0,1fr); gap:32px; align-items:center; margin:36px 0 48px; }
+.btc-snoopy { display:block; color:#d7adff; text-decoration:none; }
+.btc-snoopy img { display:block; width:100%; height:auto; border-radius:12px; }
+.btc-snoopy span { display:block; margin-top:10px; }
+.btc-playlist h2 { margin-top:0; }
+.btc-favorites { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:36px; }
+.btc-favorites h2 { font-size:1.4rem; }
+.btc-songs { padding-left:25px; }
+.btc-songs li { padding:12px 0; border-bottom:1px solid #35293f; }
+.btc-songs strong,.btc-songs span { display:block; }
+.btc-songs span { margin-top:4px; color:#b9b0c8; }
+@media(max-width:800px) { .btc-gallery { columns:2; } }
+@media(max-width:650px) {
+  .btc-cards,.btc-favorites,.btc-playlist { grid-template-columns:minmax(0,1fr); }
+  .btc-card-wide { grid-column:auto; grid-template-columns:minmax(0,1fr); gap:0; }
+  .btc-card-wide .btc-copy { padding:20px 4px 4px; }
+  .btc-snoopy { max-width:240px; }
+}
+@media(max-width:420px) { .btc-gallery { columns:1; } }

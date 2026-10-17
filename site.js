@@ -485,107 +485,168 @@ if (page === "home") {
 document.getElementById("footer").replaceChildren();
 function renderBeyond() {
   const config = data.beyond;
-  const id = new URLSearchParams(location.search).get("id");
   const items = config.sections.filter(item => item.visible !== false);
+  const requested = new URLSearchParams(location.search).get("id");
+  const id = ["life-experiences", "about-me", "model-un"].includes(requested)
+    ? "photos" : requested;
+
+  function map() {
+    const ns = "http://www.w3.org/2000/svg";
+    function svg(tag, attrs = {}) {
+      const node = document.createElementNS(ns, tag);
+      Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
+      return node;
+    }
+    const root = svg("svg", {
+      viewBox: "0 0 1000 500", role: "img", class: "btc-map",
+      "aria-label": "Visited countries and US states"
+    });
+    root.append(svg("rect", { width:1000, height:500, fill:"#100c19" }));
+    const loading = svg("text", { x:30, y:250, fill:"#b9b0c8", "font-size":22 });
+    loading.textContent = "Loading travel map…";
+    root.append(loading);
+    fetch("travel-regions.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Map file not found");
+        return response.json();
+      })
+      .then(atlas => {
+        loading.remove();
+        const visited = config.travel || {};
+        atlas.regions.forEach(region => {
+          const selected = (visited[region.group] || []).includes(region.code);
+          const tentative = region.group === "states" &&
+            (visited.tentativeStates || []).includes(region.code);
+          const shape = svg("path", {
+            d:region.d, fill:selected ? "#c3a0ef" : tentative ? "#756284" : "#302638",
+            stroke:"#100c19", "stroke-width":region.group === "countries" ? .6 : 1,
+            "fill-rule":"evenodd"
+          });
+          const title = svg("title");
+          title.textContent = region.name + (selected ? " — visited" : tentative ? " — tentative" : "");
+          shape.append(title);
+          root.append(shape);
+        });
+        atlas.labels.forEach(label => {
+          const text = svg("text", { x:label.x, y:label.y, fill:"#b9b0c8", "font-size":17, "font-family":"sans-serif" });
+          text.textContent = label.text;
+          root.append(text);
+        });
+        const legend = [[20,"#c3a0ef","Visited"]];
+        if ((visited.tentativeStates || []).length) legend.push([175,"#756284","Tentative"]);
+        legend.forEach(([x,color,label]) => {
+          root.append(svg("rect", { x, y:440, width:14, height:14, rx:3, fill:color }));
+          const text = svg("text", { x:x+23, y:453, fill:"#b9b0c8", "font-size":17, "font-family":"sans-serif" });
+          text.textContent = label;
+          root.append(text);
+        });
+      })
+      .catch(() => { loading.textContent = "Upload travel-regions.json to show the map."; });
+    return root;
+  }
+
+
+  function gallery(media = []) {
+    const grid = el("div", "btc-gallery");
+    media.forEach(asset => {
+      if (!safeURL(asset.src)) return;
+      const figure = el("figure", "btc-photo");
+      if (asset.type === "video") {
+        const video = el("video");
+        video.src = asset.src;
+        video.controls = true;
+        video.playsInline = true;
+        video.preload = "none";
+        video.setAttribute("aria-label", asset.alt || asset.caption || "Travel video");
+        if (safeURL(asset.poster)) video.poster = asset.poster;
+        figure.append(video);
+      } else {
+        const a = link("", asset.src, "btc-full-image");
+        a.target = "_blank";
+        a.rel = "noopener";
+        const img = el("img");
+        img.src = asset.src;
+        img.alt = asset.alt || asset.caption || "Photo";
+        img.loading = "lazy";
+        a.append(img);
+        figure.append(a);
+      }
+      if (asset.caption) figure.append(el("figcaption", "", asset.caption));
+      grid.append(figure);
+    });
+    return grid;
+  }
+
   const intro = el("section", "page-intro");
-
-  /* Individual interest section */
   if (id !== null) {
-    const back = el("div", "project-back");
-    back.append(link("← Beyond the Classroom", "beyond.html"));
-    main.append(back);
-
+    main.append(link("← Beyond the Classroom", "beyond.html", "text-link btc-back"));
     const item = items.find(item => item.id === id);
-
-    intro.append(
-      el("div", "eyebrow", config.eyebrow),
-      el("h1", "", item ? item.title : "Section not found")
-    );
-
+    intro.append(el("div", "eyebrow", config.eyebrow),
+      el("h1", "", item ? item.title : "Section not found"));
+    if (item) intro.append(el("p", "", item.description));
     main.append(intro);
     if (!item) return;
-
     document.title = item.title + " | " + data.name;
+    const detail = el("section", "btc-detail");
+    paragraphs(detail, item.text || []);
 
-    const detail = el("section", "interest-detail");
-
-    if (item.text && item.text.length) {
-      paragraphs(detail, item.text);
-    } else {
-      detail.append(el("p", "", "More coming soon."));
+    if (item.playlist) {
+      const block = el("section", "btc-playlist");
+      const a = link("", item.playlist.href, "btc-snoopy");
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.setAttribute("aria-label", "Open my mega playlist on Spotify (new tab)");
+      const img = el("img");
+      img.src = item.playlist.image;
+      img.alt = "Snoopy — open my Spotify playlist";
+      a.append(img, el("span", "", "Open my playlist ↗"));
+      const copy = el("div");
+      copy.append(el("h2", "", "The mega playlist"), el("p", "", item.playlist.note));
+      block.append(a, copy);
+      detail.append(block);
     }
-
-    (item.media || []).forEach(asset => {
-      const figure = mediaFigure(asset);
-      if (figure) detail.append(figure);
-    });
-
-    const links = el("div", "links");
-
-    (item.links || []).forEach(item => {
-      if (safeURL(item.href)) {
-        links.append(link(item.label + " ↗", item.href));
-      }
-    });
-
-    if (links.childElementCount) detail.append(links);
+    if (item.favorites) {
+      const favorites = el("div", "btc-favorites");
+      item.favorites.forEach(group => {
+        const section = el("section");
+        section.append(el("h2", "", group.title));
+        const list = el("ol", "btc-songs");
+        group.songs.forEach(([song, artist]) => {
+          const row = el("li");
+          row.append(el("strong", "", song), el("span", "", artist));
+          list.append(row);
+        });
+        section.append(list);
+        favorites.append(section);
+      });
+      detail.append(favorites);
+    }
+    if (item.media) detail.append(gallery(item.media));
     main.append(detail);
     return;
   }
 
-  /* Four-card overview */
-  intro.append(
-    el("div", "eyebrow", config.eyebrow),
-    el("h1", "", config.title),
-    el("p", "", config.intro)
-  );
-
+  intro.append(el("div", "eyebrow", config.eyebrow),
+    el("h1", "", config.title), el("p", "", config.intro));
   main.append(intro);
-
-  const grid = el("div", "interest-grid");
-
-  items.forEach((item, index) => {
-    const card = link(
-      "",
-      "beyond.html?id=" + encodeURIComponent(item.id),
-      "interest-card"
-    );
-
-    const visual = el("div", "interest-visual");
-
-    if (safeURL(item.image)) {
+  const cards = el("div", "btc-cards");
+  items.forEach(item => {
+    const card = link("", "beyond.html?id=" + encodeURIComponent(item.id),
+      "btc-card" + (item.kind === "photos" ? " btc-card-wide" : ""));
+    const visual = el("div", "btc-cover");
+    if (item.kind === "photos") visual.append(map());
+    else if (safeURL(item.image)) {
       const img = el("img");
       img.src = item.image;
       img.alt = item.imageAlt || item.title;
-      img.loading = "lazy";
       visual.append(img);
-    } else {
-      visual.append(
-        el(
-          "span",
-          "interest-placeholder",
-          String(index + 1).padStart(2, "0")
-        )
-      );
     }
-
-        const copy = el("div", "interest-copy");
-    copy.append(el("h2", "", item.title));
-
-    if (item.description) {
-      copy.append(
-        el("p", "interest-description", item.description)
-      );
-    }
-
-    const arrow = el("span", "interest-arrow", "↗");
+    const copy = el("div", "btc-copy");
+    const arrow = el("span", "btc-arrow", "↗");
     arrow.setAttribute("aria-hidden", "true");
-    copy.append(arrow);
-
+    copy.append(el("h2", "", item.title), arrow, el("p", "", item.description));
     card.append(visual, copy);
-
-    grid.append(card);
+    cards.append(card);
   });
-
-  main.append(grid);
+  main.append(cards);
 }

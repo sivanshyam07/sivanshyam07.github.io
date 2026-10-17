@@ -1,0 +1,10 @@
+FINAL COMPLETE BEYOND UPDATE
+
+Extract this ZIP. Upload all files inside upload-these into the same GitHub repository folder as index.html. Replace content.js, site.js and styles.css when asked.
+No HTML changes are needed. No earlier ZIPs or code snippets are needed.
+The JavaScript and CSS edits are already applied to these files; do not paste the snippets again after uploading them.
+
+Edit the final window.PORTFOLIO.beyond block at the bottom of content.js for future changes.
+Countries: USA, Canada, India, Portugal. Puerto Rico is separate. States: CA NV AZ AL TN FL GA SC NC VA DC MD NY NJ MN MA PA AK. No tentative states.
+
+Captions omit unconfirmed dates. July 26 was interpreted as July 2026 for FanFest.

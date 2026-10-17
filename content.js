@@ -403,3 +403,89 @@ window.PORTFOLIO = {
     intro: "For opportunities, collaborations, or a conversation about a shared interest."
   }
 };
+
+/* Paste at the END of content.js, after the existing closing }; */
+window.PORTFOLIO.beyond = {
+  eyebrow: "THE OTHER SIDE",
+  title: "Beyond the Classroom",
+  intro: "Music, sports, and photos from wherever I end up.",
+  travel: {
+    countries: ["USA", "CAN", "IND", "PRT"],
+    territories: ["PRI"],
+    states: [
+      "CA", "NV", "AZ", "AL", "TN", "FL", "GA", "SC", "NC",
+      "VA", "DC", "MD", "NY", "NJ", "MN", "MA", "PA", "AK"
+    ],
+    tentativeStates: []
+  },
+  sections: [
+    {
+      id: "music", title: "Music", kind: "music",
+      description: "What’s on repeat and what I’ll always recommend.",
+      image: "music-collage.png", imageAlt: "Twenty of my favorite album covers",
+      text: [
+        "I listen to a pretty wide variety of music, and I’m always open to recommendations—giving and receiving.",
+        "I’m also getting into playing music again. I used to play trumpet, and I’m learning guitar."
+      ],
+      playlist: {
+        image: "music-snoopy.png",
+        href: "https://open.spotify.com/playlist/11fr5tV0yhsAbRM3de9jnG",
+        note: "One mega playlist. Weird, I know. I use Apple Music, so this Spotify version might not be completely up to date."
+      },
+      favorites: [
+        { title: "On repeat", songs: [
+          ["Drink", "Destroy Boys"], ["Kiss", "Lucille"],
+          ["Roommates", "Malcolm Todd"], ["Strawberry Blonde", "Under High Street"],
+          ["Mayari", "bunii"]
+        ] },
+        { title: "Always recommend", songs: [
+          ["Kitchen Lights", "Westside Gunn & Stove God Cooks"],
+          ["Devil in a New Dress", "Kanye West & Rick Ross"],
+          ["GONE, GONE / THANK YOU", "Tyler, The Creator"],
+          ["Self Care", "Mac Miller"], ["One Beer", "MF DOOM"]
+        ] }
+      ]
+    },
+    {
+      id: "sports", title: "Sports", kind: "sports",
+      description: "My local and overseas allegiances.",
+      image: "sports-collage-matched.png", imageAlt: "Dortmund and Atlanta sports",
+      text: [
+        "I started following soccer around 2015 after watching the Bundesliga. I liked the way Dortmund played and especially enjoyed watching Aubameyang, Marco Reus, and Roman Weidenfeller. I primarily played goalkeeper, so Weidenfeller stood out to me. I’ve stuck with Dortmund ever since.",
+        "I started following Brighton around 2020 for much the same reason. Roma has a different origin story: my first soccer jersey was a Roma shirt I bought at Heathrow on the way to Lisbon.",
+        "The Atlanta teams are the local allegiances. I loved watching Josef Martínez when he was here, and I’m getting more into football and baseball through the Falcons and Braves. My first soccer game in person wasn’t until August 2025—criminal that it took that long."
+      ],
+      media: [
+        { src: "sports-hawks-sumo.jpg", caption: "Sumo at a Hawks game, Oct 2025." },
+        { src: "sports-hertha-lisbon.jpg", caption: "Hertha Berlin sticker in Lisbon." },
+        { src: "sports-dortmund-keychain.jpg", caption: "Part of my Dortmund haul: a bottle opener keychain, alongside a shirt, hoodie, and jersey." },
+        { src: "sports-world-cup-fanfest.jpg", caption: "Watching the World Cup at FanFest in Atlanta, Jul 2026." },
+        { src: "sports-first-match.jpg", caption: "My first soccer game in person at Mercedes-Benz Stadium, Aug 2025." }
+      ]
+    },
+    {
+      id: "photos", title: "Photos", kind: "photos",
+      description: "Random photos from the places I visited.",
+      media: [
+        { src: "photo-azhimala.jpg", caption: "Shiva statue at Aazhimala Shiva Temple, Kerala." },
+        { src: "photo-las-vegas.jpg", caption: "Welcome sign at Las Vegas, Dec 2022." },
+        { src: "photo-venetian.jpg", caption: "Gondolas at The Venetian, Las Vegas, Dec 2022." },
+        { src: "photo-horseshoe-sunset.jpg", caption: "Christmas sunset at Horseshoe Bend, Dec 2022." },
+        { src: "photo-vancouver-clock.jpg", caption: "Steam clock at Gastown, Vancouver, summer 2023." },
+        { src: "photo-glacier-bay.jpg", caption: "Mountains and water at Glacier Bay National Park, Alaska." },
+        { src: "photo-cumming-quarry.jpg", caption: "Quarry at Cumming, Georgia, Apr 2024." },
+        { src: "photo-puerto-rico-coast.jpg", caption: "Coastal cliffs in Puerto Rico, Dec 2024." },
+        { src: "photo-puerto-rico-waterfall.jpg", caption: "Waterfall at Ala de la Piedra, Puerto Rico." },
+        { src: "photo-sao-jorge.jpg", caption: "City view at Castelo de São Jorge, Lisbon, Dec 2025." },
+        { src: "photo-lisbon-christmas.jpg", caption: "Christmas lights in Lisbon." },
+        { src: "photo-sao-vicente.jpg", caption: "Sunset at São Vicente, Lisbon." },
+        { src: "photo-porto-covo.jpg", caption: "Rocky coastline at Porto Covo, Portugal." },
+        { src: "photo-northside-sunset.jpg", caption: "Sunset outside Northside Hospital, May 2026." },
+        { src: "photo-midtown-night.jpg", caption: "Midtown Atlanta from my balcony, Oct 2026." },
+        { type: "video", src: "video-la-jolla.mp4", poster: "poster-la-jolla.jpg", caption: "Waves at La Jolla, California, Dec 2022." },
+        { type: "video", src: "video-mendenhall.mp4", poster: "poster-mendenhall.jpg", caption: "Waterfall at Mendenhall Lake, Alaska, Jun 2023." },
+        { type: "video", src: "video-skagway.mp4", poster: "poster-skagway.jpg", caption: "Mountain views on the Skagway train ride, Alaska." }
+      ]
+    }
+  ]
+};
