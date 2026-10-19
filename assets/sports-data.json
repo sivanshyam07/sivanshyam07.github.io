@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-19T06:49:09+00:00",
+  "updatedAt": "2026-10-19T18:43:00+00:00",
   "source": "ESPN / MLB",
   "teams": [
     {
@@ -362,6 +362,12 @@
         }
       ],
       "sourceURL": "https://www.espn.com/soccer/standings/_/league/ger.1",
+      "coach": {
+        "title": "Head coach",
+        "name": "Niko Kovač",
+        "source": "https://www.bvb.de/de/en/teams/football/coaches/niko-kovac.html",
+        "verifiedAt": "2026-10-19"
+      },
       "roster": [
         {
           "id": "174521",
@@ -556,7 +562,7 @@
           "position": "F"
         }
       ],
-      "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+      "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
       "competitions": [
         {
           "id": "ger.1",
@@ -916,6 +922,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/standings/_/league/ger.1",
+          "coach": {
+            "title": "Head coach",
+            "name": "Niko Kovač",
+            "source": "https://www.bvb.de/de/en/teams/football/coaches/niko-kovac.html",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "174521",
@@ -1110,9 +1122,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 German Bundesliga",
           "teamStats": [
             [
@@ -1247,6 +1259,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/fixtures/_/league/ger.dfb_pokal",
+          "coach": {
+            "title": "Head coach",
+            "name": "Niko Kovač",
+            "source": "https://www.bvb.de/de/en/teams/football/coaches/niko-kovac.html",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "174521",
@@ -1441,9 +1459,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "DFB-Pokal",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 German Bundesliga",
           "teamStats": [
             [
@@ -2095,6 +2113,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/standings/_/league/uefa.champions",
+          "coach": {
+            "title": "Head coach",
+            "name": "Niko Kovač",
+            "source": "https://www.bvb.de/de/en/teams/football/coaches/niko-kovac.html",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "174521",
@@ -2289,9 +2313,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "Champions League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 German Bundesliga",
           "teamStats": [
             [
@@ -2462,13 +2486,7 @@
             }
           ]
         }
-      ],
-      "coach": {
-        "title": "Head coach",
-        "name": "Niko Kovač",
-        "source": "https://www.bvb.de/de/en/teams/football/coaches/niko-kovac.html",
-        "verifiedAt": "2026-10-19"
-      }
+      ]
     },
     {
       "id": "brighton",
@@ -2855,6 +2873,12 @@
         }
       ],
       "sourceURL": "https://www.espn.com/soccer/standings/_/league/eng.1",
+      "coach": {
+        "title": "Head coach",
+        "name": "Fabian Hürzeler",
+        "source": "https://www.brightonandhovealbion.com/mens-first-team-coaches",
+        "verifiedAt": "2026-10-19"
+      },
       "roster": [
         {
           "id": "111114",
@@ -3055,7 +3079,7 @@
           "position": "F"
         }
       ],
-      "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+      "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
       "competitions": [
         {
           "id": "eng.1",
@@ -3441,6 +3465,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/standings/_/league/eng.1",
+          "coach": {
+            "title": "Head coach",
+            "name": "Fabian Hürzeler",
+            "source": "https://www.brightonandhovealbion.com/mens-first-team-coaches",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "111114",
@@ -3641,9 +3671,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 English Premier League",
           "teamStats": [
             [
@@ -3778,6 +3808,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/fixtures/_/league/eng.league_cup",
+          "coach": {
+            "title": "Head coach",
+            "name": "Fabian Hürzeler",
+            "source": "https://www.brightonandhovealbion.com/mens-first-team-coaches",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "111114",
@@ -3978,9 +4014,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "Carabao Cup",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 English Premier League",
           "teamStats": [
             [
@@ -4614,6 +4650,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/standings/_/league/uefa.europa.conf",
+          "coach": {
+            "title": "Head coach",
+            "name": "Fabian Hürzeler",
+            "source": "https://www.brightonandhovealbion.com/mens-first-team-coaches",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "111114",
@@ -4814,9 +4856,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "Conference League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 English Premier League",
           "teamStats": [
             [
@@ -4974,13 +5016,7 @@
             }
           ]
         }
-      ],
-      "coach": {
-        "title": "Head coach",
-        "name": "Fabian Hürzeler",
-        "source": "https://www.brightonandhovealbion.com/mens-first-team-coaches",
-        "verifiedAt": "2026-10-19"
-      }
+      ]
     },
     {
       "id": "roma",
@@ -5070,21 +5106,8 @@
           ]
         },
         {
-          "id": "2925",
-          "position": "6",
-          "name": "Cagliari",
-          "values": [
-            "6",
-            "4",
-            "1",
-            "1",
-            "+3",
-            "13"
-          ]
-        },
-        {
           "id": "4057",
-          "position": "7",
+          "position": "6",
           "name": "Frosinone",
           "values": [
             "7",
@@ -5092,6 +5115,19 @@
             "1",
             "2",
             "+4",
+            "13"
+          ]
+        },
+        {
+          "id": "2925",
+          "position": "7",
+          "name": "Cagliari",
+          "values": [
+            "7",
+            "4",
+            "1",
+            "2",
+            "-1",
             "13"
           ]
         },
@@ -5174,8 +5210,21 @@
           ]
         },
         {
-          "id": "107",
+          "id": "4007",
           "position": "14",
+          "name": "Monza",
+          "values": [
+            "7",
+            "2",
+            "1",
+            "4",
+            "-2",
+            "7"
+          ]
+        },
+        {
+          "id": "107",
+          "position": "15",
           "name": "Bologna",
           "values": [
             "7",
@@ -5184,19 +5233,6 @@
             "4",
             "-4",
             "5"
-          ]
-        },
-        {
-          "id": "4007",
-          "position": "15",
-          "name": "Monza",
-          "values": [
-            "6",
-            "1",
-            "1",
-            "4",
-            "-6",
-            "4"
           ]
         },
         {
@@ -5367,6 +5403,12 @@
         }
       ],
       "sourceURL": "https://www.espn.com/soccer/standings/_/league/ita.1",
+      "coach": {
+        "title": "Head coach",
+        "name": "Gian Piero Gasperini",
+        "source": "https://www.asroma.com/en/teams/staff-men/gian-piero-gasperini",
+        "verifiedAt": "2026-10-19"
+      },
       "roster": [
         {
           "id": "206587",
@@ -5537,7 +5579,7 @@
           "position": "F"
         }
       ],
-      "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+      "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
       "competitions": [
         {
           "id": "ita.1",
@@ -5626,21 +5668,8 @@
               ]
             },
             {
-              "id": "2925",
-              "position": "6",
-              "name": "Cagliari",
-              "values": [
-                "6",
-                "4",
-                "1",
-                "1",
-                "+3",
-                "13"
-              ]
-            },
-            {
               "id": "4057",
-              "position": "7",
+              "position": "6",
               "name": "Frosinone",
               "values": [
                 "7",
@@ -5648,6 +5677,19 @@
                 "1",
                 "2",
                 "+4",
+                "13"
+              ]
+            },
+            {
+              "id": "2925",
+              "position": "7",
+              "name": "Cagliari",
+              "values": [
+                "7",
+                "4",
+                "1",
+                "2",
+                "-1",
                 "13"
               ]
             },
@@ -5730,8 +5772,21 @@
               ]
             },
             {
-              "id": "107",
+              "id": "4007",
               "position": "14",
+              "name": "Monza",
+              "values": [
+                "7",
+                "2",
+                "1",
+                "4",
+                "-2",
+                "7"
+              ]
+            },
+            {
+              "id": "107",
+              "position": "15",
               "name": "Bologna",
               "values": [
                 "7",
@@ -5740,19 +5795,6 @@
                 "4",
                 "-4",
                 "5"
-              ]
-            },
-            {
-              "id": "4007",
-              "position": "15",
-              "name": "Monza",
-              "values": [
-                "6",
-                "1",
-                "1",
-                "4",
-                "-6",
-                "4"
               ]
             },
             {
@@ -5923,6 +5965,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/standings/_/league/ita.1",
+          "coach": {
+            "title": "Head coach",
+            "name": "Gian Piero Gasperini",
+            "source": "https://www.asroma.com/en/teams/staff-men/gian-piero-gasperini",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "206587",
@@ -6093,9 +6141,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 Italian Serie A",
           "teamStats": [
             [
@@ -6202,6 +6250,12 @@
           "current": null,
           "recent": [],
           "sourceURL": "https://www.espn.com/soccer/fixtures/_/league/ita.coppa_italia",
+          "coach": {
+            "title": "Head coach",
+            "name": "Gian Piero Gasperini",
+            "source": "https://www.asroma.com/en/teams/staff-men/gian-piero-gasperini",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "206587",
@@ -6372,9 +6426,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "Coppa Italia",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 Italian Serie A",
           "teamStats": [
             [
@@ -6984,6 +7038,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/standings/_/league/uefa.champions",
+          "coach": {
+            "title": "Head coach",
+            "name": "Gian Piero Gasperini",
+            "source": "https://www.asroma.com/en/teams/staff-men/gian-piero-gasperini",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "206587",
@@ -7154,9 +7214,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "Champions League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026-27 Italian Serie A",
           "teamStats": [
             [
@@ -7343,13 +7403,7 @@
             }
           ]
         }
-      ],
-      "coach": {
-        "title": "Head coach",
-        "name": "Gian Piero Gasperini",
-        "source": "https://www.asroma.com/en/teams/staff-men/gian-piero-gasperini",
-        "verifiedAt": "2026-10-19"
-      }
+      ]
     },
     {
       "id": "atlanta-united",
@@ -7671,6 +7725,12 @@
         }
       ],
       "sourceURL": "https://www.espn.com/soccer/standings/_/league/usa.1",
+      "coach": {
+        "title": "Head coach",
+        "name": "Gerardo “Tata” Martino",
+        "source": "https://www.atlutd.com/club/coaching-staff/tata-martino",
+        "verifiedAt": "2026-10-19"
+      },
       "roster": [
         {
           "id": "109193",
@@ -7865,7 +7925,7 @@
           "position": "F"
         }
       ],
-      "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+      "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
       "competitions": [
         {
           "id": "usa.1",
@@ -8186,6 +8246,12 @@
             }
           ],
           "sourceURL": "https://www.espn.com/soccer/standings/_/league/usa.1",
+          "coach": {
+            "title": "Head coach",
+            "name": "Gerardo “Tata” Martino",
+            "source": "https://www.atlutd.com/club/coaching-staff/tata-martino",
+            "verifiedAt": "2026-10-19"
+          },
           "roster": [
             {
               "id": "109193",
@@ -8380,9 +8446,9 @@
               "position": "F"
             }
           ],
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "season": "2026 MLS",
           "teamStats": [
             [
@@ -8457,13 +8523,7 @@
             }
           ]
         }
-      ],
-      "coach": {
-        "title": "Head coach",
-        "name": "Gerardo “Tata” Martino",
-        "source": "https://www.atlutd.com/club/coaching-staff/tata-martino",
-        "verifiedAt": "2026-10-19"
-      }
+      ]
     },
     {
       "id": "falcons",
@@ -8486,9 +8546,9 @@
       ],
       "standings": [
         {
-          "id": "25",
+          "id": "16",
           "position": "1",
-          "name": "49ers",
+          "name": "Vikings",
           "values": [
             "5",
             "0",
@@ -8497,9 +8557,9 @@
           ]
         },
         {
-          "id": "16",
+          "id": "25",
           "position": "2",
-          "name": "Vikings",
+          "name": "49ers",
           "values": [
             "5",
             "0",
@@ -8764,6 +8824,12 @@
         }
       ],
       "sourceURL": "https://www.espn.com/nfl/standings",
+      "coach": {
+        "title": "Head coach",
+        "name": "Kevin Stefanski",
+        "source": "https://www.atlantafalcons.com/team/coaches-roster/kevin-stefanski",
+        "verifiedAt": "2026-10-19"
+      },
       "roster": [
         {
           "id": "4568510",
@@ -8782,6 +8848,12 @@
           "name": "Zachariah Branch",
           "number": "17",
           "position": "WR"
+        },
+        {
+          "id": "14012",
+          "name": "Andy Dalton",
+          "number": "—",
+          "position": "QB"
         },
         {
           "id": "4361409",
@@ -8872,12 +8944,6 @@
           "name": "Brian Robinson Jr.",
           "number": "15",
           "position": "RB"
-        },
-        {
-          "id": "2972515",
-          "name": "Cooper Rush",
-          "number": "13",
-          "position": "QB"
         },
         {
           "id": "5344782",
@@ -9240,7 +9306,7 @@
           "position": "WR"
         }
       ],
-      "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+      "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
       "competitions": [
         {
           "id": "nfl",
@@ -9262,9 +9328,9 @@
           ],
           "standings": [
             {
-              "id": "25",
+              "id": "16",
               "position": "1",
-              "name": "49ers",
+              "name": "Vikings",
               "values": [
                 "5",
                 "0",
@@ -9273,9 +9339,9 @@
               ]
             },
             {
-              "id": "16",
+              "id": "25",
               "position": "2",
-              "name": "Vikings",
+              "name": "49ers",
               "values": [
                 "5",
                 "0",
@@ -9540,9 +9606,15 @@
             }
           ],
           "sourceURL": "https://www.espn.com/nfl/standings",
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "coach": {
+            "title": "Head coach",
+            "name": "Kevin Stefanski",
+            "source": "https://www.atlantafalcons.com/team/coaches-roster/kevin-stefanski",
+            "verifiedAt": "2026-10-19"
+          },
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "statsNote": "2026 regular season",
           "form": [
             "L",
@@ -9560,17 +9632,17 @@
               "players": [
                 {
                   "name": "Michael Penix Jr.",
-                  "value": "719",
-                  "extra": "3 TD · 1 INT"
-                },
-                {
-                  "name": "Cooper Rush",
-                  "value": "229",
-                  "extra": "1 TD · 4 INT"
+                  "value": "944",
+                  "extra": "6 TD · 1 INT"
                 },
                 {
                   "name": "Jack Strand",
                   "value": "59",
+                  "extra": "0 TD · 1 INT"
+                },
+                {
+                  "name": "Tua Tagovailoa",
+                  "value": "34",
                   "extra": "0 TD · 1 INT"
                 }
               ]
@@ -9592,8 +9664,8 @@
                   "extra": "4 TD"
                 },
                 {
-                  "name": "Cooper Rush",
-                  "value": "20",
+                  "name": "Jack Strand",
+                  "value": "16",
                   "extra": "0 TD"
                 }
               ]
@@ -9610,14 +9682,14 @@
                   "extra": "0 TD"
                 },
                 {
+                  "name": "Jahan Dotson",
+                  "value": "236",
+                  "extra": "2 TD"
+                },
+                {
                   "name": "Kyle Pitts Sr.",
                   "value": "169",
                   "extra": "3 TD"
-                },
-                {
-                  "name": "Jahan Dotson",
-                  "value": "149",
-                  "extra": "1 TD"
                 }
               ]
             }
@@ -9645,13 +9717,7 @@
             ]
           ]
         }
-      ],
-      "coach": {
-        "title": "Head coach",
-        "name": "Kevin Stefanski",
-        "source": "https://www.atlantafalcons.com/team/coaches-roster/kevin-stefanski",
-        "verifiedAt": "2026-10-19"
-      }
+      ]
     },
     {
       "id": "braves",
@@ -9928,6 +9994,12 @@
         }
       ],
       "sourceURL": "https://www.espn.com/mlb/standings",
+      "coach": {
+        "title": "Manager",
+        "name": "Walt Weiss",
+        "source": "https://www.mlb.com/braves/roster/coaches",
+        "verifiedAt": "2026-10-19"
+      },
       "roster": [
         {
           "id": "5125812",
@@ -10170,7 +10242,7 @@
           "position": "DH"
         }
       ],
-      "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+      "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
       "competitions": [
         {
           "id": "mlb",
@@ -10446,9 +10518,15 @@
             }
           ],
           "sourceURL": "https://www.espn.com/mlb/standings",
-          "rosterUpdatedAt": "2026-10-19T06:49:09+00:00",
+          "coach": {
+            "title": "Manager",
+            "name": "Walt Weiss",
+            "source": "https://www.mlb.com/braves/roster/coaches",
+            "verifiedAt": "2026-10-19"
+          },
+          "rosterUpdatedAt": "2026-10-19T18:43:00+00:00",
           "label": "League",
-          "updatedAt": "2026-10-19T06:49:09+00:00",
+          "updatedAt": "2026-10-19T18:43:00+00:00",
           "statsNote": "2026 regular season",
           "form": [
             "W",
@@ -10559,135 +10637,141 @@
             ]
           ]
         }
-      ],
-      "coach": {
-        "title": "Manager",
-        "name": "Walt Weiss",
-        "source": "https://www.mlb.com/braves/roster/coaches",
-        "verifiedAt": "2026-10-19"
-      }
+      ]
     }
   ],
   "matchCache": {
-    "eng.1:401879290:331": {
+    "ita.1:401874928:104": {
       "players": [
         {
-          "id": "291609",
-          "name": "Bart Verbruggen",
+          "id": "238798",
+          "name": "Mile Svilar",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "147106",
-          "name": "Lewis Dunk",
+          "id": "242593",
+          "name": "Evan Ndicka",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "364962",
-          "name": "Luka Vuskovic",
+          "id": "222529",
+          "name": "Mario Hermoso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "212597",
+          "name": "Gianluca Mancini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "285226",
+          "name": "Manu Koné",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "169213",
+          "name": "Bryan Cristante",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "332354",
+          "name": "Wesley",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "409371",
+          "name": "Emanuele Lulli",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "259481",
+          "name": "Donyell Malen",
+          "goals": 3.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387204",
+          "name": "Rodrigo Mora",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164839",
+          "name": "Paulo Dybala",
+          "goals": 0.0,
+          "assists": 3.0
+        },
+        {
+          "id": "340705",
+          "name": "Daniele Ghilardi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "398120",
+          "name": "Giorgio De Marzi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "336104",
+          "name": "Konstantinos Koulierakis",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "323974",
+          "name": "Matìas Soulè",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "206587",
+          "name": "Pierluigi Gollini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "364223",
+          "name": "Jan Ziólkowski",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "360235",
+          "name": "Niccolò Pisilli",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "216017",
-          "name": "Olivier Boscagli",
+          "id": "323807",
+          "name": "Neil El Aynaoui",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "238318",
-          "name": "Ferdi Kadioglu",
+          "id": "250284",
+          "name": "Santiago Castro",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "359097",
-          "name": "Malick Yalcouyé",
+          "id": "377894",
+          "name": "Robinio Vaz",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "304242",
-          "name": "Yasin Ayari",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "132659",
-          "name": "Pascal Gross",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387655",
-          "name": "Charalambos Kostoulas",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "301327",
-          "name": "Maxim De Cuyper",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "192278",
-          "name": "Diego Gómez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "111114",
-          "name": "Jason Steele",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "399697",
-          "name": "Nehemiah Oriola",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "359400",
-          "name": "Ibrahim Osman",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387489",
-          "name": "Chema Andrés",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "306033",
-          "name": "Jaouen Hadjam",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "274285",
-          "name": "Costinha",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "261087",
-          "name": "Matt O'Riley",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "318522",
-          "name": "Promise David",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "246771",
-          "name": "Pascal Struijk",
+          "id": "164826",
+          "name": "Nahuel Molina",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -10696,125 +10780,276 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "eng.1:401879274:331": {
+    "ita.1:401874945:104": {
       "players": [
         {
-          "id": "291609",
-          "name": "Bart Verbruggen",
+          "id": "238798",
+          "name": "Mile Svilar",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "246771",
-          "name": "Pascal Struijk",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "364962",
-          "name": "Luka Vuskovic",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "216017",
-          "name": "Olivier Boscagli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "238318",
-          "name": "Ferdi Kadioglu",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "304242",
-          "name": "Yasin Ayari",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "132659",
-          "name": "Pascal Gross",
-          "goals": 1.0,
-          "assists": 1.0
-        },
-        {
-          "id": "387489",
-          "name": "Chema Andrés",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387655",
-          "name": "Charalambos Kostoulas",
-          "goals": 1.0,
-          "assists": 1.0
-        },
-        {
-          "id": "301327",
-          "name": "Maxim De Cuyper",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "192278",
-          "name": "Diego Gómez",
+          "id": "212597",
+          "name": "Gianluca Mancini",
           "goals": 0.0,
           "assists": 1.0
         },
         {
-          "id": "278061",
-          "name": "Georginio Rutter",
+          "id": "222529",
+          "name": "Mario Hermoso",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "274285",
-          "name": "Costinha",
+          "id": "340705",
+          "name": "Daniele Ghilardi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "318522",
-          "name": "Promise David",
+          "id": "169213",
+          "name": "Bryan Cristante",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "359097",
-          "name": "Malick Yalcouyé",
+          "id": "285226",
+          "name": "Manu Koné",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "261087",
-          "name": "Matt O'Riley",
+          "id": "332354",
+          "name": "Wesley",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "409371",
+          "name": "Emanuele Lulli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "359400",
-          "name": "Ibrahim Osman",
+          "id": "259481",
+          "name": "Donyell Malen",
+          "goals": 2.0,
+          "assists": 0.0
+        },
+        {
+          "id": "323974",
+          "name": "Matìas Soulè",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164839",
+          "name": "Paulo Dybala",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "111114",
-          "name": "Jason Steele",
+          "id": "398120",
+          "name": "Giorgio De Marzi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "289942",
-          "name": "Michael Svoboda",
+          "id": "146335",
+          "name": "Marten de Roon",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "306033",
-          "name": "Jaouen Hadjam",
+          "id": "250284",
+          "name": "Santiago Castro",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "336104",
+          "name": "Konstantinos Koulierakis",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "271555",
+          "name": "Leonardo Balerdi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164826",
+          "name": "Nahuel Molina",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "206587",
+          "name": "Pierluigi Gollini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "360235",
+          "name": "Niccolò Pisilli",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242593",
+          "name": "Evan Ndicka",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387204",
+          "name": "Rodrigo Mora",
+          "goals": 1.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "ita.1:401874781:104": {
+      "players": [
+        {
+          "id": "238798",
+          "name": "Mile Svilar",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242593",
+          "name": "Evan Ndicka",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "222529",
+          "name": "Mario Hermoso",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "212597",
+          "name": "Gianluca Mancini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "285226",
+          "name": "Manu Koné",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "169213",
+          "name": "Bryan Cristante",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387204",
+          "name": "Rodrigo Mora",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "332354",
+          "name": "Wesley",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "409371",
+          "name": "Emanuele Lulli",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "259481",
+          "name": "Donyell Malen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164839",
+          "name": "Paulo Dybala",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "250284",
+          "name": "Santiago Castro",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "297300",
+          "name": "Devyne Rensch",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "271555",
+          "name": "Leonardo Balerdi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "323974",
+          "name": "Matìas Soulè",
+          "goals": 1.0,
+          "assists": 1.0
+        },
+        {
+          "id": "404546",
+          "name": "Antonio Arena",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "360235",
+          "name": "Niccolò Pisilli",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164826",
+          "name": "Nahuel Molina",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "206587",
+          "name": "Pierluigi Gollini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "146335",
+          "name": "Marten de Roon",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "398120",
+          "name": "Giorgio De Marzi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "340705",
+          "name": "Daniele Ghilardi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "336104",
+          "name": "Konstantinos Koulierakis",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -10823,125 +11058,137 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "eng.1:401879282:331": {
+    "ita.1:401874950:104": {
       "players": [
         {
-          "id": "291609",
-          "name": "Bart Verbruggen",
+          "id": "238798",
+          "name": "Mile Svilar",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "147106",
-          "name": "Lewis Dunk",
+          "id": "271555",
+          "name": "Leonardo Balerdi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "222529",
+          "name": "Mario Hermoso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "212597",
+          "name": "Gianluca Mancini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "360235",
+          "name": "Niccolò Pisilli",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "364962",
-          "name": "Luka Vuskovic",
+          "id": "169213",
+          "name": "Bryan Cristante",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "216017",
-          "name": "Olivier Boscagli",
+          "id": "164826",
+          "name": "Nahuel Molina",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "238318",
-          "name": "Ferdi Kadioglu",
+          "id": "409371",
+          "name": "Emanuele Lulli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "359097",
-          "name": "Malick Yalcouyé",
+          "id": "259481",
+          "name": "Donyell Malen",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "304242",
-          "name": "Yasin Ayari",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "132659",
-          "name": "Pascal Gross",
-          "goals": 1.0,
-          "assists": 2.0
-        },
-        {
-          "id": "387655",
-          "name": "Charalambos Kostoulas",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "301327",
-          "name": "Maxim De Cuyper",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "192278",
-          "name": "Diego Gómez",
+          "id": "323974",
+          "name": "Matìas Soulè",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "318522",
-          "name": "Promise David",
+          "id": "164839",
+          "name": "Paulo Dybala",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "274285",
-          "name": "Costinha",
+          "id": "146335",
+          "name": "Marten de Roon",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "261087",
-          "name": "Matt O'Riley",
+          "id": "398120",
+          "name": "Giorgio De Marzi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "111114",
-          "name": "Jason Steele",
+          "id": "340705",
+          "name": "Daniele Ghilardi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "413274",
-          "name": "Younes Ibrahim",
+          "id": "250284",
+          "name": "Santiago Castro",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "306033",
-          "name": "Jaouen Hadjam",
+          "id": "204320",
+          "name": "Lorenzo Pellegrini",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "246771",
-          "name": "Pascal Struijk",
+          "id": "336104",
+          "name": "Konstantinos Koulierakis",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "387489",
-          "name": "Chema Andrés",
+          "id": "285226",
+          "name": "Manu Koné",
           "goals": 0.0,
-          "assists": 1.0
+          "assists": 0.0
         },
         {
-          "id": "359400",
-          "name": "Ibrahim Osman",
+          "id": "297300",
+          "name": "Devyne Rensch",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "206587",
+          "name": "Pierluigi Gollini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387204",
+          "name": "Rodrigo Mora",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "332354",
+          "name": "Wesley",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -10950,125 +11197,276 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "eng.1:401879317:331": {
+    "ita.1:401874753:104": {
       "players": [
         {
-          "id": "291609",
-          "name": "Bart Verbruggen",
+          "id": "238798",
+          "name": "Mile Svilar",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "147106",
-          "name": "Lewis Dunk",
+          "id": "271555",
+          "name": "Leonardo Balerdi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "364962",
-          "name": "Luka Vuskovic",
+          "id": "222529",
+          "name": "Mario Hermoso",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "238318",
-          "name": "Ferdi Kadioglu",
+          "id": "212597",
+          "name": "Gianluca Mancini",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "285226",
+          "name": "Manu Koné",
+          "goals": 2.0,
+          "assists": 0.0
+        },
+        {
+          "id": "169213",
+          "name": "Bryan Cristante",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "282186",
-          "name": "Mats Wieffer",
+          "id": "164826",
+          "name": "Nahuel Molina",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "332354",
+          "name": "Wesley",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "359097",
-          "name": "Malick Yalcouyé",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "216017",
-          "name": "Olivier Boscagli",
+          "id": "259481",
+          "name": "Donyell Malen",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "132659",
-          "name": "Pascal Gross",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387655",
-          "name": "Charalambos Kostoulas",
+          "id": "323974",
+          "name": "Matìas Soulè",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "301327",
-          "name": "Maxim De Cuyper",
+          "id": "164839",
+          "name": "Paulo Dybala",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "192278",
-          "name": "Diego Gómez",
+          "id": "409371",
+          "name": "Emanuele Lulli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "274285",
-          "name": "Costinha",
+          "id": "398120",
+          "name": "Giorgio De Marzi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "111114",
-          "name": "Jason Steele",
+          "id": "360235",
+          "name": "Niccolò Pisilli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "327170",
-          "name": "Amario Cozier-Duberry",
+          "id": "204320",
+          "name": "Lorenzo Pellegrini",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "399697",
-          "name": "Nehemiah Oriola",
+          "id": "146335",
+          "name": "Marten de Roon",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "306033",
-          "name": "Jaouen Hadjam",
+          "id": "250284",
+          "name": "Santiago Castro",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "261087",
-          "name": "Matt O'Riley",
+          "id": "340705",
+          "name": "Daniele Ghilardi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "318522",
-          "name": "Promise David",
+          "id": "297300",
+          "name": "Devyne Rensch",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "246771",
-          "name": "Pascal Struijk",
+          "id": "242593",
+          "name": "Evan Ndicka",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "359400",
-          "name": "Ibrahim Osman",
+          "id": "336104",
+          "name": "Konstantinos Koulierakis",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "206587",
+          "name": "Pierluigi Gollini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387204",
+          "name": "Rodrigo Mora",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "ita.1:401874940:104": {
+      "players": [
+        {
+          "id": "206587",
+          "name": "Pierluigi Gollini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242593",
+          "name": "Evan Ndicka",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "222529",
+          "name": "Mario Hermoso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "212597",
+          "name": "Gianluca Mancini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "285226",
+          "name": "Manu Koné",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "146335",
+          "name": "Marten de Roon",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "332354",
+          "name": "Wesley",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164826",
+          "name": "Nahuel Molina",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "259481",
+          "name": "Donyell Malen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "204320",
+          "name": "Lorenzo Pellegrini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164839",
+          "name": "Paulo Dybala",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "297300",
+          "name": "Devyne Rensch",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "409371",
+          "name": "Emanuele Lulli",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "323974",
+          "name": "Matìas Soulè",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "250284",
+          "name": "Santiago Castro",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "234300",
+          "name": "Devis Vásquez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "398120",
+          "name": "Giorgio De Marzi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387204",
+          "name": "Rodrigo Mora",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "360235",
+          "name": "Niccolò Pisilli",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "340705",
+          "name": "Daniele Ghilardi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "271555",
+          "name": "Leonardo Balerdi",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -11204,125 +11602,125 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761458:18418": {
+    "eng.1:401879317:331": {
       "players": [
         {
-          "id": "109193",
-          "name": "Lucas Hoyos",
+          "id": "291609",
+          "name": "Bart Verbruggen",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "262061",
-          "name": "Juan Berrocal",
+          "id": "147106",
+          "name": "Lewis Dunk",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "243195",
-          "name": "Enea Mihaj",
+          "id": "364962",
+          "name": "Luka Vuskovic",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "361498",
-          "name": "Elías Baez",
+          "id": "238318",
+          "name": "Ferdi Kadioglu",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "240783",
-          "name": "Ronald Hernández",
+          "id": "282186",
+          "name": "Mats Wieffer",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "330082",
-          "name": "Tomás Jacob",
+          "id": "359097",
+          "name": "Malick Yalcouyé",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "216017",
+          "name": "Olivier Boscagli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "243384",
-          "name": "Steven Alzate",
+          "id": "132659",
+          "name": "Pascal Gross",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387655",
+          "name": "Charalambos Kostoulas",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "402315",
-          "name": "Cooper Sanchez",
+          "id": "301327",
+          "name": "Maxim De Cuyper",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "242439",
-          "name": "Emmanuel Latte Lath",
+          "id": "192278",
+          "name": "Diego Gómez",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "221128",
-          "name": "Saba Lobjanidze",
+          "id": "274285",
+          "name": "Costinha",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "48128",
-          "name": "Miguel Almirón",
+          "id": "111114",
+          "name": "Jason Steele",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "188454",
-          "name": "Stian Gregersen",
+          "id": "327170",
+          "name": "Amario Cozier-Duberry",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "303125",
-          "name": "Pedro Amador",
+          "id": "399697",
+          "name": "Nehemiah Oriola",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "308892",
-          "name": "Luke Brennan",
+          "id": "306033",
+          "name": "Jaouen Hadjam",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "235093",
-          "name": "Cayman Togashi",
+          "id": "261087",
+          "name": "Matt O'Riley",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
+          "id": "318522",
+          "name": "Promise David",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "255802",
-          "name": "Tristan Muyumba",
+          "id": "246771",
+          "name": "Pascal Struijk",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "371431",
-          "name": "Adrian Gill",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
+          "id": "359400",
+          "name": "Ibrahim Osman",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -11331,125 +11729,125 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761440:18418": {
+    "eng.1:401879290:331": {
       "players": [
         {
-          "id": "109193",
-          "name": "Lucas Hoyos",
+          "id": "291609",
+          "name": "Bart Verbruggen",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "262061",
-          "name": "Juan Berrocal",
+          "id": "147106",
+          "name": "Lewis Dunk",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "243195",
-          "name": "Enea Mihaj",
+          "id": "364962",
+          "name": "Luka Vuskovic",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "216017",
+          "name": "Olivier Boscagli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "361498",
-          "name": "Elías Baez",
+          "id": "238318",
+          "name": "Ferdi Kadioglu",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "240783",
-          "name": "Ronald Hernández",
+          "id": "359097",
+          "name": "Malick Yalcouyé",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "243384",
-          "name": "Steven Alzate",
+          "id": "304242",
+          "name": "Yasin Ayari",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "330082",
-          "name": "Tomás Jacob",
+          "id": "132659",
+          "name": "Pascal Gross",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "221128",
-          "name": "Saba Lobjanidze",
+          "id": "387655",
+          "name": "Charalambos Kostoulas",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "402315",
-          "name": "Cooper Sanchez",
+          "id": "301327",
+          "name": "Maxim De Cuyper",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "192278",
+          "name": "Diego Gómez",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "242439",
-          "name": "Emmanuel Latte Lath",
+          "id": "111114",
+          "name": "Jason Steele",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "48128",
-          "name": "Miguel Almirón",
+          "id": "399697",
+          "name": "Nehemiah Oriola",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "138636",
-          "name": "Matt Edwards",
+          "id": "359400",
+          "name": "Ibrahim Osman",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "188454",
-          "name": "Stian Gregersen",
+          "id": "387489",
+          "name": "Chema Andrés",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
+          "id": "306033",
+          "name": "Jaouen Hadjam",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "308892",
-          "name": "Luke Brennan",
+          "id": "274285",
+          "name": "Costinha",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "385044",
-          "name": "Jayden Hibbert",
+          "id": "261087",
+          "name": "Matt O'Riley",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "371431",
-          "name": "Adrian Gill",
+          "id": "318522",
+          "name": "Promise David",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "419246",
-          "name": "Toto Majub",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
+          "id": "246771",
+          "name": "Pascal Struijk",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -11458,125 +11856,252 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761474:18418": {
+    "eng.1:401879282:331": {
       "players": [
         {
-          "id": "109193",
-          "name": "Lucas Hoyos",
+          "id": "291609",
+          "name": "Bart Verbruggen",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "262061",
-          "name": "Juan Berrocal",
+          "id": "147106",
+          "name": "Lewis Dunk",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "364962",
+          "name": "Luka Vuskovic",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "243195",
-          "name": "Enea Mihaj",
+          "id": "216017",
+          "name": "Olivier Boscagli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "361498",
-          "name": "Elías Baez",
+          "id": "238318",
+          "name": "Ferdi Kadioglu",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "359097",
+          "name": "Malick Yalcouyé",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "304242",
+          "name": "Yasin Ayari",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "132659",
+          "name": "Pascal Gross",
+          "goals": 1.0,
+          "assists": 2.0
+        },
+        {
+          "id": "387655",
+          "name": "Charalambos Kostoulas",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "301327",
+          "name": "Maxim De Cuyper",
           "goals": 0.0,
           "assists": 1.0
         },
         {
-          "id": "330082",
-          "name": "Tomás Jacob",
+          "id": "192278",
+          "name": "Diego Gómez",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "255802",
-          "name": "Tristan Muyumba",
+          "id": "318522",
+          "name": "Promise David",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "402315",
-          "name": "Cooper Sanchez",
+          "id": "274285",
+          "name": "Costinha",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "243384",
-          "name": "Steven Alzate",
+          "id": "261087",
+          "name": "Matt O'Riley",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "242439",
-          "name": "Emmanuel Latte Lath",
+          "id": "111114",
+          "name": "Jason Steele",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "413274",
+          "name": "Younes Ibrahim",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "306033",
+          "name": "Jaouen Hadjam",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "246771",
+          "name": "Pascal Struijk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387489",
+          "name": "Chema Andrés",
           "goals": 0.0,
           "assists": 1.0
         },
         {
-          "id": "48128",
-          "name": "Miguel Almirón",
+          "id": "359400",
+          "name": "Ibrahim Osman",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "eng.1:401879274:331": {
+      "players": [
+        {
+          "id": "291609",
+          "name": "Bart Verbruggen",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 2.0,
-          "assists": 0.0
-        },
-        {
-          "id": "221128",
-          "name": "Saba Lobjanidze",
+          "id": "246771",
+          "name": "Pascal Struijk",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "308892",
-          "name": "Luke Brennan",
+          "id": "364962",
+          "name": "Luka Vuskovic",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "240783",
-          "name": "Ronald Hernández",
+          "id": "216017",
+          "name": "Olivier Boscagli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "214446",
-          "name": "Sergio Santos",
+          "id": "238318",
+          "name": "Ferdi Kadioglu",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "385044",
-          "name": "Jayden Hibbert",
+          "id": "304242",
+          "name": "Yasin Ayari",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "303125",
-          "name": "Pedro Amador",
+          "id": "132659",
+          "name": "Pascal Gross",
+          "goals": 1.0,
+          "assists": 1.0
+        },
+        {
+          "id": "387489",
+          "name": "Chema Andrés",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387655",
+          "name": "Charalambos Kostoulas",
+          "goals": 1.0,
+          "assists": 1.0
+        },
+        {
+          "id": "301327",
+          "name": "Maxim De Cuyper",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "138636",
-          "name": "Matt Edwards",
+          "id": "192278",
+          "name": "Diego Gómez",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "278061",
+          "name": "Georginio Rutter",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "188454",
-          "name": "Stian Gregersen",
+          "id": "274285",
+          "name": "Costinha",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "297328",
-          "name": "Matías Galarza",
+          "id": "318522",
+          "name": "Promise David",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "359097",
+          "name": "Malick Yalcouyé",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "261087",
+          "name": "Matt O'Riley",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "359400",
+          "name": "Ibrahim Osman",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "111114",
+          "name": "Jason Steele",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "289942",
+          "name": "Michael Svoboda",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "306033",
+          "name": "Jaouen Hadjam",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -11712,125 +12237,633 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "eng.1:401879261:331": {
+    "usa.1:761440:18418": {
       "players": [
         {
-          "id": "291609",
-          "name": "Bart Verbruggen",
+          "id": "109193",
+          "name": "Lucas Hoyos",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "147106",
-          "name": "Lewis Dunk",
+          "id": "262061",
+          "name": "Juan Berrocal",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "364962",
-          "name": "Luka Vuskovic",
+          "id": "243195",
+          "name": "Enea Mihaj",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "216017",
-          "name": "Olivier Boscagli",
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "221128",
+          "name": "Saba Lobjanidze",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242439",
+          "name": "Emmanuel Latte Lath",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "419246",
+          "name": "Toto Majub",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761458:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "262061",
+          "name": "Juan Berrocal",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242439",
+          "name": "Emmanuel Latte Lath",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "221128",
+          "name": "Saba Lobjanidze",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "303125",
+          "name": "Pedro Amador",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761474:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "262061",
+          "name": "Juan Berrocal",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
           "goals": 0.0,
           "assists": 1.0
         },
         {
-          "id": "238318",
-          "name": "Ferdi Kadioglu",
+          "id": "330082",
+          "name": "Tomás Jacob",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "304242",
-          "name": "Yasin Ayari",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387489",
-          "name": "Chema Andrés",
+          "id": "255802",
+          "name": "Tristan Muyumba",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "132659",
-          "name": "Pascal Gross",
+          "id": "402315",
+          "name": "Cooper Sanchez",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "387655",
-          "name": "Charalambos Kostoulas",
-          "goals": 1.0,
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242439",
+          "name": "Emmanuel Latte Lath",
+          "goals": 0.0,
           "assists": 1.0
         },
         {
-          "id": "301327",
-          "name": "Maxim De Cuyper",
+          "id": "48128",
+          "name": "Miguel Almirón",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "192278",
-          "name": "Diego Gómez",
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 2.0,
+          "assists": 0.0
+        },
+        {
+          "id": "221128",
+          "name": "Saba Lobjanidze",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "214446",
+          "name": "Sergio Santos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "303125",
+          "name": "Pedro Amador",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "297328",
+          "name": "Matías Galarza",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761485:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "359400",
-          "name": "Ibrahim Osman",
+          "id": "255802",
+          "name": "Tristan Muyumba",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "328011",
-          "name": "Jack Hinshelwood",
+          "id": "297328",
+          "name": "Matías Galarza",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242439",
+          "name": "Emmanuel Latte Lath",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "359097",
-          "name": "Malick Yalcouyé",
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 0.0,
+          "assists": 3.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "274285",
-          "name": "Costinha",
+          "id": "385044",
+          "name": "Jayden Hibbert",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "261087",
-          "name": "Matt O'Riley",
+          "id": "214446",
+          "name": "Sergio Santos",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "111114",
-          "name": "Jason Steele",
+          "id": "243384",
+          "name": "Steven Alzate",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "306033",
-          "name": "Jaouen Hadjam",
+          "id": "240783",
+          "name": "Ronald Hernández",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "289942",
-          "name": "Michael Svoboda",
+          "id": "221128",
+          "name": "Saba Lobjanidze",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "278061",
-          "name": "Georginio Rutter",
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "303125",
+          "name": "Pedro Amador",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761502:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "297328",
+          "name": "Matías Galarza",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "242439",
+          "name": "Emmanuel Latte Lath",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "221128",
+          "name": "Saba Lobjanidze",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "303125",
+          "name": "Pedro Amador",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -12093,133 +13126,6 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761502:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "188454",
-          "name": "Stian Gregersen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297328",
-          "name": "Matías Galarza",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "402315",
-          "name": "Cooper Sanchez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "242439",
-          "name": "Emmanuel Latte Lath",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "221128",
-          "name": "Saba Lobjanidze",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "303125",
-          "name": "Pedro Amador",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243384",
-          "name": "Steven Alzate",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "240783",
-          "name": "Ronald Hernández",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
     "usa.1:761547:18418": {
       "players": [
         {
@@ -12339,133 +13245,6 @@
         {
           "id": "235093",
           "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "usa.1:761485:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "188454",
-          "name": "Stian Gregersen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297328",
-          "name": "Matías Galarza",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "402315",
-          "name": "Cooper Sanchez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "242439",
-          "name": "Emmanuel Latte Lath",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 0.0,
-          "assists": 3.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "214446",
-          "name": "Sergio Santos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243384",
-          "name": "Steven Alzate",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "240783",
-          "name": "Ronald Hernández",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "221128",
-          "name": "Saba Lobjanidze",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "303125",
-          "name": "Pedro Amador",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -12728,6 +13507,133 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
+    "usa.1:761590:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "303125",
+          "name": "Pedro Amador",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "297328",
+          "name": "Matías Galarza",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "242439",
+          "name": "Emmanuel Latte Lath",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "221128",
+          "name": "Saba Lobjanidze",
+          "goals": 2.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 2.0
+        },
+        {
+          "id": "262061",
+          "name": "Juan Berrocal",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "290024",
+          "name": "Will Reilly",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "304153",
+          "name": "Jay Fortune",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
     "usa.1:761602:18418": {
       "players": [
         {
@@ -12974,514 +13880,6 @@
         {
           "id": "243384",
           "name": "Steven Alzate",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "usa.1:761590:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "188454",
-          "name": "Stian Gregersen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "303125",
-          "name": "Pedro Amador",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297328",
-          "name": "Matías Galarza",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "402315",
-          "name": "Cooper Sanchez",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "242439",
-          "name": "Emmanuel Latte Lath",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "221128",
-          "name": "Saba Lobjanidze",
-          "goals": 2.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 0.0,
-          "assists": 2.0
-        },
-        {
-          "id": "262061",
-          "name": "Juan Berrocal",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "290024",
-          "name": "Will Reilly",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "304153",
-          "name": "Jay Fortune",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "usa.1:761702:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "181657",
-          "name": "Júnior Alonso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "290024",
-          "name": "Will Reilly",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "380821",
-          "name": "Adyn Torres",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "188454",
-          "name": "Stian Gregersen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "3106014",
-          "name": "Arif Kovac",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "419246",
-          "name": "Toto Majub",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "371431",
-          "name": "Adrian Gill",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "240783",
-          "name": "Ronald Hernández",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "usa.1:761670:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "181657",
-          "name": "Júnior Alonso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "290024",
-          "name": "Will Reilly",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "402315",
-          "name": "Cooper Sanchez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "188454",
-          "name": "Stian Gregersen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "3102525",
-          "name": "Ignacio Suarez-Couri",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "371431",
-          "name": "Adrian Gill",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "419246",
-          "name": "Toto Majub",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "3106014",
-          "name": "Arif Kovac",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "240783",
-          "name": "Ronald Hernández",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "usa.1:761682:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "181657",
-          "name": "Júnior Alonso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "188454",
-          "name": "Stian Gregersen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "402315",
-          "name": "Cooper Sanchez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "290024",
-          "name": "Will Reilly",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "3102525",
-          "name": "Ignacio Suarez-Couri",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "3106014",
-          "name": "Arif Kovac",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "371431",
-          "name": "Adrian Gill",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "419246",
-          "name": "Toto Majub",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "240783",
-          "name": "Ronald Hernández",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -13744,7 +14142,7 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761759:18418": {
+    "usa.1:761670:18418": {
       "players": [
         {
           "id": "109193",
@@ -13759,20 +14157,8 @@
           "assists": 0.0
         },
         {
-          "id": "184465",
-          "name": "Paulo Díaz",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
+          "id": "243195",
+          "name": "Enea Mihaj",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -13781,6 +14167,18 @@
           "name": "Will Reilly",
           "goals": 0.0,
           "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 1.0
         },
         {
           "id": "255802",
@@ -13795,20 +14193,20 @@
           "assists": 0.0
         },
         {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
           "id": "48128",
           "name": "Miguel Almirón",
-          "goals": 0.0,
+          "goals": 1.0,
           "assists": 0.0
         },
         {
           "id": "185897",
           "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -13819,32 +14217,20 @@
           "assists": 0.0
         },
         {
-          "id": "214446",
-          "name": "Sergio Santos",
+          "id": "188454",
+          "name": "Stian Gregersen",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "240783",
-          "name": "Ronald Hernández",
+          "id": "3102525",
+          "name": "Ignacio Suarez-Couri",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "371431",
-          "name": "Adrian Gill",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "3135787",
-          "name": "Andrew Jardines",
+          "id": "308892",
+          "name": "Luke Brennan",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -13855,14 +14241,280 @@
           "assists": 0.0
         },
         {
-          "id": "243384",
-          "name": "Steven Alzate",
+          "id": "371431",
+          "name": "Adrian Gill",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "372649",
-          "name": "Enzo Dovlo",
+          "id": "419246",
+          "name": "Toto Majub",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "3106014",
+          "name": "Arif Kovac",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761682:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "181657",
+          "name": "Júnior Alonso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "290024",
+          "name": "Will Reilly",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "3102525",
+          "name": "Ignacio Suarez-Couri",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "3106014",
+          "name": "Arif Kovac",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "419246",
+          "name": "Toto Majub",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761702:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "181657",
+          "name": "Júnior Alonso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "290024",
+          "name": "Will Reilly",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "380821",
+          "name": "Adyn Torres",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "188454",
+          "name": "Stian Gregersen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "3106014",
+          "name": "Arif Kovac",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "419246",
+          "name": "Toto Majub",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -14252,6 +14904,133 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
+    "usa.1:761759:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "181657",
+          "name": "Júnior Alonso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "184465",
+          "name": "Paulo Díaz",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "290024",
+          "name": "Will Reilly",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "214446",
+          "name": "Sergio Santos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240783",
+          "name": "Ronald Hernández",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "3135787",
+          "name": "Andrew Jardines",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "372649",
+          "name": "Enzo Dovlo",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
     "usa.1:761777:18418": {
       "players": [
         {
@@ -14379,7 +15158,7 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761830:18418": {
+    "usa.1:761787:18418": {
       "players": [
         {
           "id": "109193",
@@ -14388,16 +15167,16 @@
           "assists": 0.0
         },
         {
-          "id": "243195",
-          "name": "Enea Mihaj",
+          "id": "181657",
+          "name": "Júnior Alonso",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "330082",
-          "name": "Tomás Jacob",
+          "id": "184465",
+          "name": "Paulo Díaz",
           "goals": 0.0,
-          "assists": 1.0
+          "assists": 0.0
         },
         {
           "id": "361498",
@@ -14406,8 +15185,20 @@
           "assists": 0.0
         },
         {
-          "id": "138636",
-          "name": "Matt Edwards",
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "304153",
+          "name": "Jay Fortune",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -14418,38 +15209,20 @@
           "assists": 0.0
         },
         {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "270889",
-          "name": "Giuliano Galoppo",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
           "id": "202099",
           "name": "Breel Embolo",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "402315",
-          "name": "Cooper Sanchez",
+          "id": "48128",
+          "name": "Miguel Almirón",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "291252",
-          "name": "Cameron Dunbar",
+          "id": "185897",
+          "name": "Alexey Miranchuk",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -14460,14 +15233,8 @@
           "assists": 0.0
         },
         {
-          "id": "304153",
-          "name": "Jay Fortune",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "360086",
-          "name": "Daniel Chica",
+          "id": "214446",
+          "name": "Sergio Santos",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -14478,20 +15245,32 @@
           "assists": 0.0
         },
         {
-          "id": "243384",
-          "name": "Steven Alzate",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "214446",
-          "name": "Sergio Santos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
           "id": "385044",
           "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -14633,6 +15412,260 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
+    "usa.1:761828:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "181657",
+          "name": "Júnior Alonso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "184465",
+          "name": "Paulo Díaz",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "270889",
+          "name": "Giuliano Galoppo",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "359927",
+          "name": "Mauricio Amaro",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "202099",
+          "name": "Breel Embolo",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "214446",
+          "name": "Sergio Santos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "304153",
+          "name": "Jay Fortune",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761830:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "359927",
+          "name": "Mauricio Amaro",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "270889",
+          "name": "Giuliano Galoppo",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "202099",
+          "name": "Breel Embolo",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "291252",
+          "name": "Cameron Dunbar",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "304153",
+          "name": "Jay Fortune",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "360086",
+          "name": "Daniel Chica",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "290024",
+          "name": "Will Reilly",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "214446",
+          "name": "Sergio Santos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "235093",
+          "name": "Cayman Togashi",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
     "usa.1:761850:18418": {
       "players": [
         {
@@ -14760,7 +15793,7 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761787:18418": {
+    "usa.1:761864:18418": {
       "players": [
         {
           "id": "109193",
@@ -14781,21 +15814,27 @@
           "assists": 0.0
         },
         {
+          "id": "359927",
+          "name": "Mauricio Amaro",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
           "id": "361498",
           "name": "Elías Baez",
           "goals": 0.0,
-          "assists": 0.0
+          "assists": 1.0
         },
         {
-          "id": "330082",
-          "name": "Tomás Jacob",
+          "id": "138636",
+          "name": "Matt Edwards",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
+          "id": "270889",
+          "name": "Giuliano Galoppo",
+          "goals": 1.0,
           "assists": 0.0
         },
         {
@@ -14805,21 +15844,9 @@
           "assists": 0.0
         },
         {
-          "id": "359927",
-          "name": "Mauricio Amaro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "202099",
-          "name": "Breel Embolo",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
           "id": "48128",
           "name": "Miguel Almirón",
-          "goals": 0.0,
+          "goals": 1.0,
           "assists": 0.0
         },
         {
@@ -14829,8 +15856,14 @@
           "assists": 0.0
         },
         {
-          "id": "371431",
-          "name": "Adrian Gill",
+          "id": "202099",
+          "name": "Breel Embolo",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -14841,8 +15874,20 @@
           "assists": 0.0
         },
         {
-          "id": "290024",
-          "name": "Will Reilly",
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "371431",
+          "name": "Adrian Gill",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -14853,26 +15898,8 @@
           "assists": 0.0
         },
         {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
           "id": "211678",
           "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -14881,138 +15908,162 @@
           "name": "Cayman Togashi",
           "goals": 0.0,
           "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "usa.1:761828:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "181657",
-          "name": "Júnior Alonso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "184465",
-          "name": "Paulo Díaz",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "270889",
-          "name": "Giuliano Galoppo",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "359927",
-          "name": "Mauricio Amaro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "202099",
-          "name": "Breel Embolo",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "214446",
-          "name": "Sergio Santos",
-          "goals": 0.0,
-          "assists": 0.0
         },
         {
           "id": "402315",
           "name": "Cooper Sanchez",
           "goals": 0.0,
           "assists": 0.0
-        },
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "ita.1:401874935:104": {
+      "players": [
         {
-          "id": "304153",
-          "name": "Jay Fortune",
+          "id": "206587",
+          "name": "Pierluigi Gollini",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "211678",
-          "name": "Fafà Picault",
+          "id": "242593",
+          "name": "Evan Ndicka",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "308892",
-          "name": "Luke Brennan",
+          "id": "336104",
+          "name": "Konstantinos Koulierakis",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "243195",
-          "name": "Enea Mihaj",
+          "id": "271555",
+          "name": "Leonardo Balerdi",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "371431",
-          "name": "Adrian Gill",
+          "id": "360235",
+          "name": "Niccolò Pisilli",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "138636",
-          "name": "Matt Edwards",
+          "id": "146335",
+          "name": "Marten de Roon",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "385044",
-          "name": "Jayden Hibbert",
+          "id": "297300",
+          "name": "Devyne Rensch",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "409371",
+          "name": "Emanuele Lulli",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "250284",
+          "name": "Santiago Castro",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387204",
+          "name": "Rodrigo Mora",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "323974",
+          "name": "Matìas Soulè",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "222529",
+          "name": "Mario Hermoso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "234300",
+          "name": "Devis Vásquez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "398120",
+          "name": "Giorgio De Marzi",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "204320",
+          "name": "Lorenzo Pellegrini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "332354",
+          "name": "Wesley",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "377387",
+          "name": "Mandjou Camara",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "409634",
+          "name": "Lorenzo Paratici",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "404546",
+          "name": "Antonio Arena",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "164826",
+          "name": "Nahuel Molina",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "212597",
+          "name": "Gianluca Mancini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "3098218",
+          "name": "Alessandro Di Nunzio",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "340705",
+          "name": "Daniele Ghilardi",
           "goals": 0.0,
           "assists": 0.0
         }
       ],
       "goalsComplete": true,
       "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
+      "checkedAt": "2026-10-19T18:43:00+00:00"
     },
     "ger.1:401884816:124": {
       "players": [
@@ -15395,520 +16446,6 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "usa.1:761864:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "181657",
-          "name": "Júnior Alonso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "184465",
-          "name": "Paulo Díaz",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "359927",
-          "name": "Mauricio Amaro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "270889",
-          "name": "Giuliano Galoppo",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "304153",
-          "name": "Jay Fortune",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "202099",
-          "name": "Breel Embolo",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "214446",
-          "name": "Sergio Santos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243384",
-          "name": "Steven Alzate",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "371431",
-          "name": "Adrian Gill",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "235093",
-          "name": "Cayman Togashi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "402315",
-          "name": "Cooper Sanchez",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "usa.1:761880:18418": {
-      "players": [
-        {
-          "id": "109193",
-          "name": "Lucas Hoyos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "181657",
-          "name": "Júnior Alonso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "184465",
-          "name": "Paulo Díaz",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "361498",
-          "name": "Elías Baez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "330082",
-          "name": "Tomás Jacob",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "359927",
-          "name": "Mauricio Amaro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "270889",
-          "name": "Giuliano Galoppo",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "255802",
-          "name": "Tristan Muyumba",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "202099",
-          "name": "Breel Embolo",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "48128",
-          "name": "Miguel Almirón",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "185897",
-          "name": "Alexey Miranchuk",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "385044",
-          "name": "Jayden Hibbert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243384",
-          "name": "Steven Alzate",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "243195",
-          "name": "Enea Mihaj",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "214446",
-          "name": "Sergio Santos",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "402315",
-          "name": "Cooper Sanchez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "304153",
-          "name": "Jay Fortune",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "211678",
-          "name": "Fafà Picault",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "308892",
-          "name": "Luke Brennan",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "138636",
-          "name": "Matt Edwards",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ita.1:401874945:104": {
-      "players": [
-        {
-          "id": "238798",
-          "name": "Mile Svilar",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "212597",
-          "name": "Gianluca Mancini",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "222529",
-          "name": "Mario Hermoso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "340705",
-          "name": "Daniele Ghilardi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "169213",
-          "name": "Bryan Cristante",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "285226",
-          "name": "Manu Koné",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "332354",
-          "name": "Wesley",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "409371",
-          "name": "Emanuele Lulli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "259481",
-          "name": "Donyell Malen",
-          "goals": 2.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323974",
-          "name": "Matìas Soulè",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164839",
-          "name": "Paulo Dybala",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "398120",
-          "name": "Giorgio De Marzi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "146335",
-          "name": "Marten de Roon",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "250284",
-          "name": "Santiago Castro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "336104",
-          "name": "Konstantinos Koulierakis",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "271555",
-          "name": "Leonardo Balerdi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164826",
-          "name": "Nahuel Molina",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "206587",
-          "name": "Pierluigi Gollini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "360235",
-          "name": "Niccolò Pisilli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "242593",
-          "name": "Evan Ndicka",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387204",
-          "name": "Rodrigo Mora",
-          "goals": 1.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ger.1:401884769:124": {
-      "players": [
-        {
-          "id": "238544",
-          "name": "Gregor Kobel",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "220714",
-          "name": "Waldemar Anton",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "286828",
-          "name": "Nico Schlotterbeck",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "371500",
-          "name": "Kouakou Gadou",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "281122",
-          "name": "Felix Nmecha",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "324820",
-          "name": "Jobe Bellingham",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "310709",
-          "name": "Daniel Svensson",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "222991",
-          "name": "Julian Ryerson",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "186381",
-          "name": "Serhou Guirassy",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "290639",
-          "name": "Maximilian Beier",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "349733",
-          "name": "Ethan Nwaneri",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "399455",
-          "name": "Kauã Prates",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "357801",
-          "name": "Konstantinos Karetsas",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "291629",
-          "name": "Fábio Silva",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "294317",
-          "name": "Carney Chukwuemeka",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "220703",
-          "name": "Ramy Bensebaini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "240912",
-          "name": "Joey Veerman",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "173907",
-          "name": "Marcel Sabitzer",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "403781",
-          "name": "Mathis Albert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "178380",
-          "name": "Alexander Meyer",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
     "ger.1:401884789:124": {
       "players": [
         {
@@ -16163,978 +16700,132 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "ita.1:401874928:104": {
+    "eng.1:401879261:331": {
       "players": [
         {
-          "id": "238798",
-          "name": "Mile Svilar",
+          "id": "291609",
+          "name": "Bart Verbruggen",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "242593",
-          "name": "Evan Ndicka",
+          "id": "147106",
+          "name": "Lewis Dunk",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "222529",
-          "name": "Mario Hermoso",
+          "id": "364962",
+          "name": "Luka Vuskovic",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "212597",
-          "name": "Gianluca Mancini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "285226",
-          "name": "Manu Koné",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "169213",
-          "name": "Bryan Cristante",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "332354",
-          "name": "Wesley",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "409371",
-          "name": "Emanuele Lulli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "259481",
-          "name": "Donyell Malen",
-          "goals": 3.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387204",
-          "name": "Rodrigo Mora",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164839",
-          "name": "Paulo Dybala",
-          "goals": 0.0,
-          "assists": 3.0
-        },
-        {
-          "id": "340705",
-          "name": "Daniele Ghilardi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "398120",
-          "name": "Giorgio De Marzi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "336104",
-          "name": "Konstantinos Koulierakis",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323974",
-          "name": "Matìas Soulè",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "206587",
-          "name": "Pierluigi Gollini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "364223",
-          "name": "Jan Ziólkowski",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "360235",
-          "name": "Niccolò Pisilli",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323807",
-          "name": "Neil El Aynaoui",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "250284",
-          "name": "Santiago Castro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "377894",
-          "name": "Robinio Vaz",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164826",
-          "name": "Nahuel Molina",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ita.1:401874753:104": {
-      "players": [
-        {
-          "id": "238798",
-          "name": "Mile Svilar",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "271555",
-          "name": "Leonardo Balerdi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "222529",
-          "name": "Mario Hermoso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "212597",
-          "name": "Gianluca Mancini",
+          "id": "216017",
+          "name": "Olivier Boscagli",
           "goals": 0.0,
           "assists": 1.0
         },
         {
-          "id": "285226",
-          "name": "Manu Koné",
-          "goals": 2.0,
-          "assists": 0.0
-        },
-        {
-          "id": "169213",
-          "name": "Bryan Cristante",
+          "id": "238318",
+          "name": "Ferdi Kadioglu",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "164826",
-          "name": "Nahuel Molina",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "332354",
-          "name": "Wesley",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "259481",
-          "name": "Donyell Malen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323974",
-          "name": "Matìas Soulè",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164839",
-          "name": "Paulo Dybala",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "409371",
-          "name": "Emanuele Lulli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "398120",
-          "name": "Giorgio De Marzi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "360235",
-          "name": "Niccolò Pisilli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "204320",
-          "name": "Lorenzo Pellegrini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "146335",
-          "name": "Marten de Roon",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "250284",
-          "name": "Santiago Castro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "340705",
-          "name": "Daniele Ghilardi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297300",
-          "name": "Devyne Rensch",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "242593",
-          "name": "Evan Ndicka",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "336104",
-          "name": "Konstantinos Koulierakis",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "206587",
-          "name": "Pierluigi Gollini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387204",
-          "name": "Rodrigo Mora",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ita.1:401874950:104": {
-      "players": [
-        {
-          "id": "238798",
-          "name": "Mile Svilar",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "271555",
-          "name": "Leonardo Balerdi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "222529",
-          "name": "Mario Hermoso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "212597",
-          "name": "Gianluca Mancini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "360235",
-          "name": "Niccolò Pisilli",
+          "id": "304242",
+          "name": "Yasin Ayari",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "169213",
-          "name": "Bryan Cristante",
+          "id": "387489",
+          "name": "Chema Andrés",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "164826",
-          "name": "Nahuel Molina",
+          "id": "132659",
+          "name": "Pascal Gross",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "409371",
-          "name": "Emanuele Lulli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "259481",
-          "name": "Donyell Malen",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323974",
-          "name": "Matìas Soulè",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164839",
-          "name": "Paulo Dybala",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "146335",
-          "name": "Marten de Roon",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "398120",
-          "name": "Giorgio De Marzi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "340705",
-          "name": "Daniele Ghilardi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "250284",
-          "name": "Santiago Castro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "204320",
-          "name": "Lorenzo Pellegrini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "336104",
-          "name": "Konstantinos Koulierakis",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "285226",
-          "name": "Manu Koné",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297300",
-          "name": "Devyne Rensch",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "206587",
-          "name": "Pierluigi Gollini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387204",
-          "name": "Rodrigo Mora",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "332354",
-          "name": "Wesley",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ita.1:401874935:104": {
-      "players": [
-        {
-          "id": "206587",
-          "name": "Pierluigi Gollini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "242593",
-          "name": "Evan Ndicka",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "336104",
-          "name": "Konstantinos Koulierakis",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "271555",
-          "name": "Leonardo Balerdi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "360235",
-          "name": "Niccolò Pisilli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "146335",
-          "name": "Marten de Roon",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297300",
-          "name": "Devyne Rensch",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "409371",
-          "name": "Emanuele Lulli",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "250284",
-          "name": "Santiago Castro",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387204",
-          "name": "Rodrigo Mora",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323974",
-          "name": "Matìas Soulè",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "222529",
-          "name": "Mario Hermoso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "234300",
-          "name": "Devis Vásquez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "398120",
-          "name": "Giorgio De Marzi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "204320",
-          "name": "Lorenzo Pellegrini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "332354",
-          "name": "Wesley",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "377387",
-          "name": "Mandjou Camara",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "409634",
-          "name": "Lorenzo Paratici",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "404546",
-          "name": "Antonio Arena",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164826",
-          "name": "Nahuel Molina",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "212597",
-          "name": "Gianluca Mancini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "3098218",
-          "name": "Alessandro Di Nunzio",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "340705",
-          "name": "Daniele Ghilardi",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ita.1:401874781:104": {
-      "players": [
-        {
-          "id": "238798",
-          "name": "Mile Svilar",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "242593",
-          "name": "Evan Ndicka",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "222529",
-          "name": "Mario Hermoso",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "212597",
-          "name": "Gianluca Mancini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "285226",
-          "name": "Manu Koné",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "169213",
-          "name": "Bryan Cristante",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387204",
-          "name": "Rodrigo Mora",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "332354",
-          "name": "Wesley",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "409371",
-          "name": "Emanuele Lulli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "259481",
-          "name": "Donyell Malen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164839",
-          "name": "Paulo Dybala",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "250284",
-          "name": "Santiago Castro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297300",
-          "name": "Devyne Rensch",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "271555",
-          "name": "Leonardo Balerdi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323974",
-          "name": "Matìas Soulè",
+          "id": "387655",
+          "name": "Charalambos Kostoulas",
           "goals": 1.0,
           "assists": 1.0
         },
         {
-          "id": "404546",
-          "name": "Antonio Arena",
+          "id": "301327",
+          "name": "Maxim De Cuyper",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "360235",
-          "name": "Niccolò Pisilli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164826",
-          "name": "Nahuel Molina",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "206587",
-          "name": "Pierluigi Gollini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "146335",
-          "name": "Marten de Roon",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "398120",
-          "name": "Giorgio De Marzi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "340705",
-          "name": "Daniele Ghilardi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "336104",
-          "name": "Konstantinos Koulierakis",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ita.1:401874940:104": {
-      "players": [
-        {
-          "id": "206587",
-          "name": "Pierluigi Gollini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "242593",
-          "name": "Evan Ndicka",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "222529",
-          "name": "Mario Hermoso",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "212597",
-          "name": "Gianluca Mancini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "285226",
-          "name": "Manu Koné",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "146335",
-          "name": "Marten de Roon",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "332354",
-          "name": "Wesley",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164826",
-          "name": "Nahuel Molina",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "259481",
-          "name": "Donyell Malen",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "204320",
-          "name": "Lorenzo Pellegrini",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "164839",
-          "name": "Paulo Dybala",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "297300",
-          "name": "Devyne Rensch",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "409371",
-          "name": "Emanuele Lulli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "323974",
-          "name": "Matìas Soulè",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "250284",
-          "name": "Santiago Castro",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "234300",
-          "name": "Devis Vásquez",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "398120",
-          "name": "Giorgio De Marzi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387204",
-          "name": "Rodrigo Mora",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "360235",
-          "name": "Niccolò Pisilli",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "340705",
-          "name": "Daniele Ghilardi",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "271555",
-          "name": "Leonardo Balerdi",
-          "goals": 0.0,
-          "assists": 0.0
-        }
-      ],
-      "goalsComplete": true,
-      "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
-    },
-    "ger.dfb_pokal:401875201:124": {
-      "players": [
-        {
-          "id": "178380",
-          "name": "Alexander Meyer",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "220714",
-          "name": "Waldemar Anton",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387437",
-          "name": "Filippo Mané",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "310709",
-          "name": "Daniel Svensson",
+          "id": "192278",
+          "name": "Diego Gómez",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "222991",
-          "name": "Julian Ryerson",
-          "goals": 0.0,
-          "assists": 2.0
-        },
-        {
-          "id": "281122",
-          "name": "Felix Nmecha",
+          "id": "359400",
+          "name": "Ibrahim Osman",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "240912",
-          "name": "Joey Veerman",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "173907",
-          "name": "Marcel Sabitzer",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "291629",
-          "name": "Fábio Silva",
+          "id": "328011",
+          "name": "Jack Hinshelwood",
           "goals": 1.0,
           "assists": 0.0
         },
         {
-          "id": "403781",
-          "name": "Mathis Albert",
+          "id": "359097",
+          "name": "Malick Yalcouyé",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "403833",
-          "name": "Samuele Inácio",
-          "goals": 2.0,
-          "assists": 0.0
-        },
-        {
-          "id": "357801",
-          "name": "Konstantinos Karetsas",
+          "id": "274285",
+          "name": "Costinha",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "294317",
-          "name": "Carney Chukwuemeka",
+          "id": "261087",
+          "name": "Matt O'Riley",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "399455",
-          "name": "Kauã Prates",
+          "id": "111114",
+          "name": "Jason Steele",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "186381",
-          "name": "Serhou Guirassy",
+          "id": "306033",
+          "name": "Jaouen Hadjam",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "413817",
-          "name": "Luca Reggiani",
+          "id": "289942",
+          "name": "Michael Svoboda",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "324820",
-          "name": "Jobe Bellingham",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "290639",
-          "name": "Maximilian Beier",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "174521",
-          "name": "Patrick Drewes",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "371500",
-          "name": "Kouakou Gadou",
+          "id": "278061",
+          "name": "Georginio Rutter",
           "goals": 0.0,
           "assists": 0.0
         }
       ],
       "goalsComplete": true,
       "assistsComplete": true,
-      "checkedAt": "2026-10-19T06:49:09+00:00"
+      "checkedAt": "2026-10-19T18:43:00+00:00"
     },
     "eng.league_cup:401914261:331": {
       "players": [
@@ -17262,6 +16953,133 @@
       "goalsComplete": true,
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "usa.1:761880:18418": {
+      "players": [
+        {
+          "id": "109193",
+          "name": "Lucas Hoyos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "181657",
+          "name": "Júnior Alonso",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "184465",
+          "name": "Paulo Díaz",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "361498",
+          "name": "Elías Baez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "330082",
+          "name": "Tomás Jacob",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "359927",
+          "name": "Mauricio Amaro",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "270889",
+          "name": "Giuliano Galoppo",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "255802",
+          "name": "Tristan Muyumba",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "202099",
+          "name": "Breel Embolo",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "48128",
+          "name": "Miguel Almirón",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "185897",
+          "name": "Alexey Miranchuk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "385044",
+          "name": "Jayden Hibbert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243384",
+          "name": "Steven Alzate",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "243195",
+          "name": "Enea Mihaj",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "214446",
+          "name": "Sergio Santos",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "402315",
+          "name": "Cooper Sanchez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "304153",
+          "name": "Jay Fortune",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "211678",
+          "name": "Fafà Picault",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "308892",
+          "name": "Luke Brennan",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "138636",
+          "name": "Matt Edwards",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T18:43:00+00:00"
     },
     "uefa.champions:401915444:104": {
       "players": [
@@ -17541,7 +17359,152 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "uefa.champions:401915393:124": {
+    "uefa.europa.conf:401915853:331": {
+      "players": [
+        {
+          "id": "291609",
+          "name": "Bart Verbruggen",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "289942",
+          "name": "Michael Svoboda",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "147106",
+          "name": "Lewis Dunk",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "216017",
+          "name": "Olivier Boscagli",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "274285",
+          "name": "Costinha",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "359097",
+          "name": "Malick Yalcouyé",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "328011",
+          "name": "Jack Hinshelwood",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "132659",
+          "name": "Pascal Gross",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "278061",
+          "name": "Georginio Rutter",
+          "goals": 2.0,
+          "assists": 1.0
+        },
+        {
+          "id": "359400",
+          "name": "Ibrahim Osman",
+          "goals": 0.0,
+          "assists": 2.0
+        },
+        {
+          "id": "261087",
+          "name": "Matt O'Riley",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "301327",
+          "name": "Maxim De Cuyper",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "413274",
+          "name": "Younes Ibrahim",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "411697",
+          "name": "Shane Nti",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387655",
+          "name": "Charalambos Kostoulas",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "364962",
+          "name": "Luka Vuskovic",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "318522",
+          "name": "Promise David",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "192278",
+          "name": "Diego Gómez",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "304242",
+          "name": "Yasin Ayari",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "111114",
+          "name": "Jason Steele",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "248761",
+          "name": "Tom McGill",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "238318",
+          "name": "Ferdi Kadioglu",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387489",
+          "name": "Chema Andrés",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T06:49:09+00:00"
+    },
+    "ger.1:401884769:124": {
       "players": [
         {
           "id": "238544",
@@ -17556,8 +17519,8 @@
           "assists": 0.0
         },
         {
-          "id": "220703",
-          "name": "Ramy Bensebaini",
+          "id": "286828",
+          "name": "Nico Schlotterbeck",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -17568,8 +17531,201 @@
           "assists": 0.0
         },
         {
+          "id": "281122",
+          "name": "Felix Nmecha",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "324820",
+          "name": "Jobe Bellingham",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "310709",
+          "name": "Daniel Svensson",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "222991",
+          "name": "Julian Ryerson",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "186381",
+          "name": "Serhou Guirassy",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "290639",
+          "name": "Maximilian Beier",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "349733",
+          "name": "Ethan Nwaneri",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "399455",
+          "name": "Kauã Prates",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "357801",
+          "name": "Konstantinos Karetsas",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "291629",
+          "name": "Fábio Silva",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "294317",
+          "name": "Carney Chukwuemeka",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "220703",
+          "name": "Ramy Bensebaini",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
           "id": "240912",
           "name": "Joey Veerman",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "173907",
+          "name": "Marcel Sabitzer",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "403781",
+          "name": "Mathis Albert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "178380",
+          "name": "Alexander Meyer",
+          "goals": 0.0,
+          "assists": 0.0
+        }
+      ],
+      "goalsComplete": true,
+      "assistsComplete": true,
+      "checkedAt": "2026-10-19T18:43:00+00:00"
+    },
+    "ger.dfb_pokal:401875201:124": {
+      "players": [
+        {
+          "id": "178380",
+          "name": "Alexander Meyer",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "220714",
+          "name": "Waldemar Anton",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387437",
+          "name": "Filippo Mané",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "310709",
+          "name": "Daniel Svensson",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "222991",
+          "name": "Julian Ryerson",
+          "goals": 0.0,
+          "assists": 2.0
+        },
+        {
+          "id": "281122",
+          "name": "Felix Nmecha",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "240912",
+          "name": "Joey Veerman",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "173907",
+          "name": "Marcel Sabitzer",
+          "goals": 0.0,
+          "assists": 1.0
+        },
+        {
+          "id": "291629",
+          "name": "Fábio Silva",
+          "goals": 1.0,
+          "assists": 0.0
+        },
+        {
+          "id": "403781",
+          "name": "Mathis Albert",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "403833",
+          "name": "Samuele Inácio",
+          "goals": 2.0,
+          "assists": 0.0
+        },
+        {
+          "id": "357801",
+          "name": "Konstantinos Karetsas",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "294317",
+          "name": "Carney Chukwuemeka",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "399455",
+          "name": "Kauã Prates",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "186381",
+          "name": "Serhou Guirassy",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "413817",
+          "name": "Luca Reggiani",
           "goals": 0.0,
           "assists": 0.0
         },
@@ -17586,98 +17742,14 @@
           "assists": 0.0
         },
         {
-          "id": "310709",
-          "name": "Daniel Svensson",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "291629",
-          "name": "Fábio Silva",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "403833",
-          "name": "Samuele Inácio",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "357801",
-          "name": "Konstantinos Karetsas",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "281122",
-          "name": "Felix Nmecha",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "403781",
-          "name": "Mathis Albert",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "399455",
-          "name": "Kauã Prates",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "222991",
-          "name": "Julian Ryerson",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
           "id": "174521",
           "name": "Patrick Drewes",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "173907",
-          "name": "Marcel Sabitzer",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "413817",
-          "name": "Luca Reggiani",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "349733",
-          "name": "Ethan Nwaneri",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "186381",
-          "name": "Serhou Guirassy",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "178380",
-          "name": "Alexander Meyer",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "387437",
-          "name": "Filippo Mané",
-          "goals": 0.0,
-          "assists": 0.0
-        },
-        {
-          "id": "294317",
-          "name": "Carney Chukwuemeka",
+          "id": "371500",
+          "name": "Kouakou Gadou",
           "goals": 0.0,
           "assists": 0.0
         }
@@ -17819,143 +17891,143 @@
       "assistsComplete": true,
       "checkedAt": "2026-10-19T06:49:09+00:00"
     },
-    "uefa.europa.conf:401915853:331": {
+    "uefa.champions:401915393:124": {
       "players": [
         {
-          "id": "291609",
-          "name": "Bart Verbruggen",
+          "id": "238544",
+          "name": "Gregor Kobel",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "289942",
-          "name": "Michael Svoboda",
+          "id": "220714",
+          "name": "Waldemar Anton",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "147106",
-          "name": "Lewis Dunk",
+          "id": "220703",
+          "name": "Ramy Bensebaini",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "216017",
-          "name": "Olivier Boscagli",
+          "id": "371500",
+          "name": "Kouakou Gadou",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "274285",
-          "name": "Costinha",
+          "id": "240912",
+          "name": "Joey Veerman",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "359097",
-          "name": "Malick Yalcouyé",
+          "id": "324820",
+          "name": "Jobe Bellingham",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "328011",
-          "name": "Jack Hinshelwood",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "132659",
-          "name": "Pascal Gross",
+          "id": "290639",
+          "name": "Maximilian Beier",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "278061",
-          "name": "Georginio Rutter",
-          "goals": 2.0,
-          "assists": 1.0
-        },
-        {
-          "id": "359400",
-          "name": "Ibrahim Osman",
-          "goals": 0.0,
-          "assists": 2.0
-        },
-        {
-          "id": "261087",
-          "name": "Matt O'Riley",
-          "goals": 1.0,
-          "assists": 0.0
-        },
-        {
-          "id": "301327",
-          "name": "Maxim De Cuyper",
+          "id": "310709",
+          "name": "Daniel Svensson",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "413274",
-          "name": "Younes Ibrahim",
-          "goals": 0.0,
-          "assists": 1.0
-        },
-        {
-          "id": "411697",
-          "name": "Shane Nti",
+          "id": "291629",
+          "name": "Fábio Silva",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "387655",
-          "name": "Charalambos Kostoulas",
+          "id": "403833",
+          "name": "Samuele Inácio",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "364962",
-          "name": "Luka Vuskovic",
+          "id": "357801",
+          "name": "Konstantinos Karetsas",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "318522",
-          "name": "Promise David",
+          "id": "281122",
+          "name": "Felix Nmecha",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "192278",
-          "name": "Diego Gómez",
+          "id": "403781",
+          "name": "Mathis Albert",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "304242",
-          "name": "Yasin Ayari",
+          "id": "399455",
+          "name": "Kauã Prates",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "111114",
-          "name": "Jason Steele",
+          "id": "222991",
+          "name": "Julian Ryerson",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "248761",
-          "name": "Tom McGill",
+          "id": "174521",
+          "name": "Patrick Drewes",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "238318",
-          "name": "Ferdi Kadioglu",
+          "id": "173907",
+          "name": "Marcel Sabitzer",
           "goals": 0.0,
           "assists": 0.0
         },
         {
-          "id": "387489",
-          "name": "Chema Andrés",
+          "id": "413817",
+          "name": "Luca Reggiani",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "349733",
+          "name": "Ethan Nwaneri",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "186381",
+          "name": "Serhou Guirassy",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "178380",
+          "name": "Alexander Meyer",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "387437",
+          "name": "Filippo Mané",
+          "goals": 0.0,
+          "assists": 0.0
+        },
+        {
+          "id": "294317",
+          "name": "Carney Chukwuemeka",
           "goals": 0.0,
           "assists": 0.0
         }
