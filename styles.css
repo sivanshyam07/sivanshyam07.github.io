@@ -29,7 +29,7 @@ body {
       rgba(13, 13, 19, 0.25),
       rgba(13, 13, 19, 0.25)
     ),
-    url("space-background.jpg");
+    url("assets/space-background.jpg");
   background-size: auto, 960px 960px;
   background-repeat: repeat;
 }
@@ -1160,3 +1160,58 @@ body[data-page="beyond"]
   outline: 2px solid #d7adff;
   outline-offset: 4px;
 }
+
+/* Beyond detail pages: compact titles, with descriptions only on the overview. */
+.btc-detail-intro { padding:22px 0 20px; }
+.btc-detail-intro h1 { margin:0; }
+.btc-detail > p:first-child { margin-top:0; }
+.btc-detail .btc-playlist { grid-template-columns:minmax(200px, .8fr) minmax(0, 1.5fr); gap:clamp(24px,4vw,48px); margin:0 0 48px; align-items:center; }
+.btc-playlist > div > p { font-size:clamp(1.05rem,1.4vw,1.18rem); line-height:1.65; margin:0 0 15px; }
+.btc-playlist > div > p:last-child { margin-bottom:0; }
+.btc-playlist h2 { font-size:clamp(1.6rem,3vw,2.15rem); margin:0 0 18px; }
+.music-stats,.music-albums { margin:0 0 48px; }
+.music-stats h2,.music-albums h2 { margin:0 0 12px; }
+.music-stats > p { margin:0 0 25px; }
+.music-stats-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(28px,5vw,64px); }
+.music-stats-grid h3 { margin:0 0 18px; font-size:1.12rem; }
+.music-donut { display:block; width:min(100%,320px); height:auto; margin:0 auto 20px; }
+.music-donut-number { font:700 29px 'Sora',sans-serif; fill:var(--text,#eee9f5); }
+.music-donut-label { font:15px 'Space Grotesk',sans-serif; fill:var(--muted,#b9b0c8); }
+.music-legend { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 20px; }
+.music-legend li { display:grid; grid-template-columns:10px minmax(0,1fr) auto; gap:8px; align-items:center; font-size:.88rem; }
+.music-legend-dot { width:9px; height:9px; border-radius:50%; }
+.music-legend strong { font-weight:500; font-variant-numeric:tabular-nums; }
+.music-other { margin-top:18px; color:var(--muted,#b9b0c8); font-size:.85rem; }
+.music-other summary { cursor:pointer; }
+.music-other p { line-height:1.6; }
+.music-stats-note { color:var(--muted,#b9b0c8); font-size:.78rem; margin:12px 0 0; }
+.music-artist-list { list-style:none; margin:0; padding:0; }
+.music-artist-list li { display:grid; grid-template-columns:46px minmax(0,1fr) auto; align-items:center; gap:13px; padding:9px 0; border-bottom:1px solid var(--line, #ffffff18); }
+.music-artist-list li:first-child { padding-top:0; }
+.music-artist-photo,.music-artist-photo img { display:block; width:46px; height:46px; border-radius:50%; }
+.music-artist-photo img { object-fit:cover; }
+.music-artist-name,.music-album-title { color:inherit; text-decoration:none; }
+.music-track-count { font-size:.85rem; color:var(--muted,#b9b0c8); white-space:nowrap; font-variant-numeric:tabular-nums; }
+.music-album-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px 23px; margin-top:24px; }
+.music-album { min-width:0; }
+.music-album-art { display:block; }
+.music-album-art img { display:block; width:100%; aspect-ratio:1; object-fit:cover; border-radius:9px; }
+.music-album h3 { font-size:1rem; line-height:1.4; margin:14px 0 4px; }
+.music-album .music-album-artist { color:#c6a4eb; font-size:.88rem; line-height:1.4; margin:0 0 12px; }
+.music-album .music-album-description { font-size:.91rem; line-height:1.65; margin:0 0 14px; }
+.music-highlights { font-size:.83rem; line-height:1.5; }
+.music-highlights > strong { display:block; margin-bottom:6px; font-weight:600; }
+.music-highlights ul { list-style:none; margin:0; padding:0; }
+.music-highlights li { margin:3px 0; }
+.music-highlight-link { color:#c6a4eb; text-decoration:none; }
+.music-artist-name:hover,.music-album-title:hover,.music-highlight-link:hover { color:#dfbeff; text-decoration:underline; text-underline-offset:3px; }
+.music-album a:focus-visible,.music-artist-list a:focus-visible { outline:2px solid #d7adff; outline-offset:4px; }
+@media(max-width:1000px) { .music-album-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:700px) {
+  .btc-detail .btc-playlist,.music-stats-grid { grid-template-columns:minmax(0,1fr); gap:26px; }
+  .btc-detail .btc-playlist .btc-snoopy { width:min(100%,300px); max-width:300px; }
+  .music-donut { width:min(100%,280px); }
+  .music-stats,.music-albums,.btc-detail .btc-playlist { margin-bottom:36px; }
+  .music-album-grid { gap:28px 18px; }
+}
+@media(max-width:420px) { .music-album-grid { grid-template-columns:minmax(0,1fr); } }

@@ -505,7 +505,7 @@ function renderBeyond() {
     const loading = svg("text", { x:30, y:250, fill:"#b9b0c8", "font-size":22 });
     loading.textContent = "Loading travel map…";
     root.append(loading);
-    fetch("travel-regions.json")
+    fetch("assets/travel-regions.json")
       .then(response => {
         if (!response.ok) throw new Error("Map file not found");
         return response.json();
@@ -581,14 +581,13 @@ function renderBeyond() {
   if (id !== null) {
     main.append(link("← Beyond the Classroom", "beyond.html", "text-link btc-back"));
     const item = items.find(item => item.id === id);
-    intro.append(el("div", "eyebrow", config.eyebrow),
-      el("h1", "", item ? item.title : "Section not found"));
-    if (item) intro.append(el("p", "", item.description));
+    intro.className += " btc-detail-intro";
+    intro.append(el("h1", "", item ? item.title : "Section not found"));
     main.append(intro);
     if (!item) return;
     document.title = item.title + " | " + data.name;
     const detail = el("section", "btc-detail");
-    paragraphs(detail, item.text || []);
+    if (!item.playlist) paragraphs(detail, item.text || []);
 
     if (item.playlist) {
       const block = el("section", "btc-playlist");
@@ -602,9 +601,116 @@ function renderBeyond() {
       a.append(img, el("span", "", "Open my playlist ↗"));
       const copy = el("div");
       copy.append(el("h2", "", "The mega playlist"), el("p", "", item.playlist.note));
+      paragraphs(copy, item.text || []);
       block.append(a, copy);
       detail.append(block);
     }
+    function spotifyLink(label, href, cls) {
+      const a = link(label, href, cls);
+      a.target = "_blank";
+      a.rel = "noopener";
+      return a;
+    }
+    if (item.stats) {
+      const stats = el("section", "music-stats");
+      stats.append(el("h2", "", "Playlist by the numbers"), el("p", "", item.stats.intro));
+      const columns = el("div", "music-stats-grid");
+      const genres = el("section", "music-genres");
+      genres.append(el("h3", "", "Genre breakdown"));
+      const palette = ["#bb8ee9", "#68bfd4", "#e7ad76", "#e084a8", "#7f9be4", "#a7c97b", "#d5c87b", "#bd8c7b", "#727b94"];
+      const entries = item.stats.genres.slice(0, 8).map(([name, value], i) => ({name, value, color:palette[i]}));
+      const others = item.stats.genres.slice(8);
+      if (others.length) entries.push({name:"Other", value:Math.round(others.reduce((sum, g) => sum + g[1], 0) * 10) / 10, color:palette[8]});
+      const ns = "http://www.w3.org/2000/svg";
+      function svgNode(tag, attrs) {
+        const n = document.createElementNS(ns, tag);
+        Object.entries(attrs).forEach(([key, value]) => n.setAttribute(key, value));
+        return n;
+      }
+      const chart = svgNode("svg", {viewBox:"0 0 240 240", role:"img", "aria-labelledby":"music-chart-title music-chart-description", class:"music-donut"});
+      const title = svgNode("title", {id:"music-chart-title"});
+      title.textContent = "Playlist genre breakdown";
+      const desc = svgNode("desc", {id:"music-chart-description"});
+      desc.textContent = item.stats.genres.map(([n,v]) => n + ": " + v + "%").join("; ");
+      chart.append(title, desc);
+      const total = entries.reduce((sum, e) => sum + e.value, 0);
+      let offset = 0;
+      entries.forEach(entry => {
+        const size = entry.value / total * 100;
+        const circle = svgNode("circle", {cx:120, cy:120, r:88, fill:"none", stroke:entry.color, "stroke-width":38, pathLength:100, "stroke-dasharray":size + " " + (100-size), "stroke-dashoffset":-offset, transform:"rotate(-90 120 120)"});
+        chart.append(circle);
+        offset += size;
+      });
+      const center = svgNode("text", {x:120, y:118, "text-anchor":"middle", class:"music-donut-number"});
+      center.textContent = "50.3%";
+      const subtitle = svgNode("text", {x:120, y:143, "text-anchor":"middle", class:"music-donut-label"});
+      subtitle.textContent = "Hip Hop";
+      chart.append(center, subtitle);
+      genres.append(chart);
+      const legend = el("ul", "music-legend");
+      entries.forEach(entry => {
+        const row = el("li");
+        const dot = el("span", "music-legend-dot");
+        dot.setAttribute("style", "background-color:" + entry.color);
+        dot.setAttribute("aria-hidden", "true");
+        row.append(dot, el("span", "", entry.name), el("strong", "", entry.value.toFixed(1) + "%"));
+        legend.append(row);
+      });
+      genres.append(legend);
+      if (others.length) {
+        const details = el("details", "music-other");
+        details.append(el("summary", "", "What’s in Other?"), el("p", "", others.map(([n,v]) => n + " " + v.toFixed(1) + "%").join(" · ")));
+        genres.append(details);
+      }
+      genres.append(el("p", "music-stats-note", "Percentages rounded; total may differ slightly from 100%."));
+      const artists = el("section", "music-artists");
+      artists.append(el("h3", "", "Most represented artists"));
+      const artistList = el("ol", "music-artist-list");
+      item.stats.artists.forEach(artist => {
+        const row = el("li");
+        const photo = spotifyLink("", artist.href, "music-artist-photo");
+        photo.setAttribute("aria-label", "Listen to " + artist.name + " on Spotify (new tab)");
+        const img = el("img");
+        img.src = artist.image; img.alt = ""; img.loading = "lazy";
+        photo.append(img);
+        row.append(photo, spotifyLink(artist.name, artist.href, "music-artist-name"), el("span", "music-track-count", artist.count + " songs"));
+        artistList.append(row);
+      });
+      artists.append(artistList);
+      columns.append(genres, artists);
+      stats.append(columns);
+      detail.append(stats);
+    }
+    if (item.albums) {
+      const section = el("section", "music-albums");
+      section.append(el("h2", "", "Albums on repeat"));
+      const grid = el("div", "music-album-grid");
+      item.albums.forEach(album => {
+        const card = el("article", "music-album");
+        const cover = spotifyLink("", album.href, "music-album-art");
+        cover.setAttribute("aria-label", "Listen to " + album.title + " by " + album.artist + " on Spotify (new tab)");
+        const img = el("img");
+        img.src = album.image; img.alt = album.title + " album cover"; img.loading = "lazy";
+        cover.append(img);
+        const heading = el("h3");
+        heading.append(spotifyLink(album.title, album.href, "music-album-title"));
+        card.append(cover, heading, el("p", "music-album-artist", album.artist), el("p", "music-album-description", album.description));
+        const highlights = el("div", "music-highlights");
+        highlights.append(el("strong", "", "Highlights"));
+        const list = el("ul");
+        album.highlights.forEach(track => {
+          const row = el("li");
+          row.append(spotifyLink(track.title, track.href, "music-highlight-link"));
+          list.append(row);
+        });
+        highlights.append(list);
+        card.append(highlights);
+        grid.append(card);
+      });
+      section.append(grid);
+      detail.append(section);
+    }
+
     if (item.favorites) {
       const favorites = el("div", "btc-favorites");
       item.favorites.forEach(group => {
