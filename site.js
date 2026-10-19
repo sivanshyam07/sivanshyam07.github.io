@@ -833,6 +833,11 @@ function renderSportsBoard(parent) {
     const panel=el("div","sports-info-content");panel.id=id+"-panel";panel.setAttribute("role","tabpanel");
     function show(i){
       panel.replaceChildren();panel.setAttribute("aria-labelledby",id+"-tab-"+i);
+      if(team.coach?.name){
+        const coachLine=el("p","sports-data-note");
+        coachLine.append(document.createTextNode(team.coach.title+": "),external(team.coach.name,team.coach.source,""));
+        panel.append(coachLine);
+      }
       if(i===0){
         const dl=el("dl","sports-stat-grid");
         (comp.teamStats||[]).forEach(([label,value])=>{const cell=el("div");cell.append(el("dt","",label),el("dd","",value));dl.append(cell);});
