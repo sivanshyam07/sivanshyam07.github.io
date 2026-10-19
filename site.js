@@ -95,7 +95,6 @@ function projectIndex(items = []) {
     );
 
     row.setAttribute("aria-label", "Read about " + item.title);
-    row.classList.add(index % 2 ? "project-preview-right" : "project-preview-left");
 
     const number = el(
       "span",
@@ -200,12 +199,25 @@ function sections(items = []) {
 
     const groups = layouts[item.layout];
 
-    if (item.labType === "wind") {
+        if (item.labType === "wind") {
       section.classList.add("lab-project");
-      if (item.media?.[0]) heading.append(labFigure(item.media[0]));
+
+      if (item.heroMedia) {
+        const photo = labFigure(item.heroMedia);
+        photo.classList.add("lab-hero");
+        heading.append(photo);
+      }
+
       section.append(windPlotTabs(item));
     } else if (item.labType === "tensile") {
       section.classList.add("lab-project");
+
+      if (item.heroMedia) {
+        const photo = labFigure(item.heroMedia);
+        photo.classList.add("lab-hero");
+        heading.append(photo);
+      }
+
       section.append(tensileContent(item));
     } else if (groups) {
       section.classList.add(item.layout + "-project");
@@ -982,6 +994,7 @@ function tensileContent(item) {
     section.append(grid);root.append(section);
   }
   charts("engineering","Engineering stress–strain curves");
+  charts("comparison","Engineering and true-stress comparisons");
   const section=el("section","lab-chart-section");section.append(el("h2","","Reported material properties"));
   const scroll=el("div","lab-table-scroll");scroll.tabIndex=0;scroll.setAttribute("role","region");scroll.setAttribute("aria-label","Material properties comparison; scroll horizontally if needed");
   const table=el("table"),caption=el("caption","","Values from the report’s data-reduction tables. The unknown specimen was tentatively identified as 260 brass.");
@@ -990,6 +1003,5 @@ function tensileContent(item) {
   const body=el("tbody");
   (item.properties||[]).forEach(values => {const row=el("tr");values.forEach((value,i) => {const cell=el(i===0?"th":"td","",value);if(i===0)cell.scope="row";row.append(cell);});body.append(row);});
   table.append(caption,head,body);scroll.append(table);section.append(scroll);root.append(section);
-  charts("comparison","Engineering and true-stress comparisons");
   return root;
 }
