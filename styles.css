@@ -1284,3 +1284,45 @@ body[data-page="beyond"]
   .sports-team-card[open] .sports-expand { margin-top:15px; }
   .sports-team-expanded { padding:18px; }
 }
+
+/* Competition and Football Manager-style information tabs. */
+.sports-team-expanded { display:block; }
+.sports-tabs { display:flex; gap:4px; overflow-x:auto; border-bottom:1px solid var(--line); margin:0 0 20px; scrollbar-width:thin; }
+.sports-tabs button { flex:0 0 auto; border:0; border-bottom:2px solid transparent; border-radius:0; background:transparent; color:var(--muted); padding:10px 14px; font:inherit; font-size:.84rem; cursor:pointer; white-space:nowrap; }
+.sports-tabs button[aria-selected="true"] { color:#dfc2ff; border-bottom-color:var(--accent); background:#b5a0ec09; }
+.sports-tabs button:hover { color:var(--text); background:#b5a0ec10; }
+.sports-tabs button:focus-visible { outline:2px solid var(--accent); outline-offset:-3px; }
+.sports-competition-content { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.6fr); gap:24px; }
+.sports-team-left { min-width:0; display:flex; flex-direction:column; gap:22px; }
+.sports-form { display:flex; align-items:center; gap:5px; margin:0 0 13px; }
+.sports-form > span:first-child { font-size:.74rem; color:var(--muted); margin-right:4px; }
+.sports-form .sports-form-order { font-size:.63rem; color:var(--muted); margin-left:auto; }
+.sports-match-list { list-style:none; margin:0; padding:0; }
+.sports-match-list li { display:grid; grid-template-columns:24px minmax(0,1fr) auto; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid var(--line); }
+.sports-match-list li:first-child { padding-top:0; }
+.sports-match-list li strong { display:block; font-size:.82rem; font-weight:500; }
+.sports-match-list li div > span { display:block; color:var(--muted); font-size:.69rem; }
+.sports-match-list .sports-empty-line { display:block; color:var(--muted); font-size:.8rem; }
+.sports-player-leaders h4 { margin-bottom:9px; }
+.sports-leader-list { margin:0; padding:0; list-style:none; }
+.sports-leader-list li { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:6px 0; border-bottom:1px solid var(--line); font-size:.81rem; }
+.sports-leader-list strong { font-weight:500; font-variant-numeric:tabular-nums; white-space:nowrap; color:#dec6f6; }
+.sports-leader-list small { display:block; color:var(--muted); font-size:.68rem; }
+.sports-data-note,.sports-partial { color:var(--muted); font-size:.68rem; line-height:1.5; margin:8px 0 0; }
+.sports-partial { color:#e2bd81; }
+.sports-info-box { min-width:0; border:1px solid var(--line); border-radius:7px; overflow:hidden; }
+.sports-info-box .sports-tabs { margin:0; gap:0; }
+.sports-info-box .sports-tabs button { flex:1; font-size:.8rem; padding:10px 12px; }
+.sports-info-content { height:190px; overflow-y:auto; overscroll-behavior:contain; padding:12px; scrollbar-width:thin; }
+.sports-stat-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:0; }
+.sports-stat-grid dt { color:var(--muted); font-size:.7rem; }
+.sports-stat-grid dd { margin:1px 0 0; font-size:1rem; font-weight:500; }
+.sports-roster-list { list-style:none; margin:0; padding:0; }
+.sports-roster-list li { display:grid; grid-template-columns:24px minmax(0,1fr) auto; gap:8px; padding:7px 0; border-bottom:1px solid var(--line); font-size:.78rem; }
+.sports-shirt-number,.sports-roster-position { color:var(--muted); font-size:.72rem; }
+@media(max-width:700px) {
+ .sports-competition-content { grid-template-columns:minmax(0,1fr); }
+ .sports-team-left { gap:20px; }
+ .sports-info-content { height:200px; }
+ .sports-tabs button { padding:10px 12px; }
+}
