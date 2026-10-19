@@ -930,3 +930,269 @@ window.PORTFOLIO.beyond = {
   music.playlist.note = "My one mega playlist [weird, I know]. I use Apple Music, so this Spotify version might not be completely up to date.";
   music.favorites.forEach(group => group.songs.forEach(song => { if (song[2].endsWith("2YZcBYcve5hmoxwWqiegqT")) { song[0] = "kiss"; song[1] = "lucille"; } if (song[2].endsWith("2HugUG5L0maVwEPooB0Eux")) song[0] = "MAYARI"; }));
 })();
+
+
+/* AE 2610 labs and project order. Reorder this ID list to change the displayed order. */
+(() => {
+  const projects = window.PORTFOLIO.projects;
+  const additions = [
+  {
+    "id": "wind-tunnel-testing",
+    "title": "Wind Tunnel Testing: Wing Loads and Stall",
+    "labType": "wind",
+    "category": "AE 2610 · Aerodynamics · Experimental Methods",
+    "visible": true,
+    "summary": "Wind tunnel testing of lift, drag, stall, and pitching moment, with and without an end plate.",
+    "cover": "assets/labs/wind-lift-12-with-end-plate.png",
+    "coverAlt": "Lift coefficient vs. angle of attack, 12 m/s, with end plate",
+    "text": [
+      "For Experimental Methods in Aerospace Engineering ([AE 2610](https://ae.gatech.edu/sites/default/files/file/2022/12/AE%202610%20Syllabus%20-%20Introduction%20to%20Experimental%20Methods%20in%20Aerospace.pdf)), our lab group tested how angle of attack, wind speed, and whether or not there was an end plate affected a rectangular wing’s aerodynamic performance. We tested four configurations in a low-turbulence wind tunnel: 12 and 16.5 m/s, each with and without the end plate.",
+      "A six-component load cell measured forces and moments, while a Pitot-static probe and differential pressure transducer measured dynamic pressure. We grouped measurements by angle of attack, calculating lift, drag, lift coefficient, drag coefficient, and pitching moment coefficient from measured forces, angle of attack, and wing geometry.",
+      "The end plate increased the measured maximum lift coefficient at both speeds. It also improved the lift-to-drag ratio around 10° and reduced drag when compared at a specific lift coefficient. Near stall, lift dropped sharply while drag increased and pitching moment changed abruptly.",
+      "The experiment also involved uncertainty propagation and comparison with thin-airfoil theory. The difference in stall behavior between the two wind speeds highlighted the need for repeated tests and careful alignment to better distinguish flow effects from measurement variability."
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/labs/wind-lift-12-with-end-plate.png",
+        "alt": "Lift coefficient vs. angle of attack, 12 m/s, with end plate",
+        "caption": "12 m/s · With end plate",
+        "plotGroup": "lift",
+        "speed": 12,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-lift-16p5-with-end-plate.png",
+        "alt": "Lift coefficient vs. angle of attack, 16.5 m/s, with end plate",
+        "caption": "16.5 m/s · With end plate",
+        "plotGroup": "lift",
+        "speed": 16.5,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-lift-12-without-end-plate.png",
+        "alt": "Lift coefficient vs. angle of attack, 12 m/s, without end plate",
+        "caption": "12 m/s · Without end plate",
+        "plotGroup": "lift",
+        "speed": 12,
+        "endPlate": false
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-lift-16p5-without-end-plate.png",
+        "alt": "Lift coefficient vs. angle of attack, 16.5 m/s, without end plate",
+        "caption": "16.5 m/s · Without end plate",
+        "plotGroup": "lift",
+        "speed": 16.5,
+        "endPlate": false
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-drag-12-with-end-plate.png",
+        "alt": "Drag coefficient vs. angle of attack, 12 m/s, with end plate",
+        "caption": "12 m/s · With end plate",
+        "plotGroup": "drag",
+        "speed": 12,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-drag-16p5-with-end-plate.png",
+        "alt": "Drag coefficient vs. angle of attack, 16.5 m/s, with end plate",
+        "caption": "16.5 m/s · With end plate",
+        "plotGroup": "drag",
+        "speed": 16.5,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-drag-12-without-end-plate.png",
+        "alt": "Drag coefficient vs. angle of attack, 12 m/s, without end plate",
+        "caption": "12 m/s · Without end plate",
+        "plotGroup": "drag",
+        "speed": 12,
+        "endPlate": false
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-drag-16p5-without-end-plate.png",
+        "alt": "Drag coefficient vs. angle of attack, 16.5 m/s, without end plate",
+        "caption": "16.5 m/s · Without end plate",
+        "plotGroup": "drag",
+        "speed": 16.5,
+        "endPlate": false
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-polar-12-with-end-plate.png",
+        "alt": "Drag polar, 12 m/s, with end plate",
+        "caption": "12 m/s · With end plate",
+        "plotGroup": "polar",
+        "speed": 12,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-polar-16p5-with-end-plate.png",
+        "alt": "Drag polar, 16.5 m/s, with end plate",
+        "caption": "16.5 m/s · With end plate",
+        "plotGroup": "polar",
+        "speed": 16.5,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-polar-12-without-end-plate.png",
+        "alt": "Drag polar, 12 m/s, without end plate",
+        "caption": "12 m/s · Without end plate",
+        "plotGroup": "polar",
+        "speed": 12,
+        "endPlate": false
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-polar-16p5-without-end-plate.png",
+        "alt": "Drag polar, 16.5 m/s, without end plate",
+        "caption": "16.5 m/s · Without end plate",
+        "plotGroup": "polar",
+        "speed": 16.5,
+        "endPlate": false
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-moment-12-with-end-plate.png",
+        "alt": "Pitching moment coefficient vs. angle of attack, 12 m/s, with end plate",
+        "caption": "12 m/s · With end plate",
+        "plotGroup": "moment",
+        "speed": 12,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-moment-16p5-with-end-plate.png",
+        "alt": "Pitching moment coefficient vs. angle of attack, 16.5 m/s, with end plate",
+        "caption": "16.5 m/s · With end plate",
+        "plotGroup": "moment",
+        "speed": 16.5,
+        "endPlate": true
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-moment-12-without-end-plate.png",
+        "alt": "Pitching moment coefficient vs. angle of attack, 12 m/s, without end plate",
+        "caption": "12 m/s · Without end plate",
+        "plotGroup": "moment",
+        "speed": 12,
+        "endPlate": false
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/wind-moment-16p5-without-end-plate.png",
+        "alt": "Pitching moment coefficient vs. angle of attack, 16.5 m/s, without end plate",
+        "caption": "16.5 m/s · Without end plate",
+        "plotGroup": "moment",
+        "speed": 16.5,
+        "endPlate": false
+      }
+    ],
+    "plotTabs": [
+      {
+        "id": "lift",
+        "label": "Lift"
+      },
+      {
+        "id": "drag",
+        "label": "Drag"
+      },
+      {
+        "id": "polar",
+        "label": "Drag polar"
+      },
+      {
+        "id": "moment",
+        "label": "Pitching moment"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": "tensile-testing",
+    "title": "Tensile Testing and Material Identification",
+    "labType": "tensile",
+    "category": "AE 2610 · Materials · Mechanical Testing",
+    "visible": true,
+    "summary": "Tensile testing, stress–strain analysis, and identification of an unknown metal through measured material properties.",
+    "cover": "assets/labs/tensile-aluminum-comparison.png",
+    "coverAlt": "2024-T3 aluminum: engineering and true-stress comparison.",
+    "text": [
+      "For Experimental Methods in Aerospace Engineering ([AE 2610](https://ae.gatech.edu/sites/default/files/file/2022/12/AE%202610%20Syllabus%20-%20Introduction%20to%20Experimental%20Methods%20in%20Aerospace.pdf)), our lab group tensile-tested 2024-T3 aluminum and an unknown metal to compare their mechanical properties and investigate the what the unknown material is.",
+      "An Instron electromechanical load frame applied tension until the specimens fractured. Load, extensometer measurements, and specimen dimensions before and after testing provided the data for this analysis.",
+      "Using Excel, we converted the raw data into engineering stress-strain curves and estimated Young’s modulus, ultimate tensile strength, fracture properties, and strain-hardening behavior. The aluminum specimen had the higher engineering ultimate tensile strength, while the unknown specimen had a higher measured elastic modulus and greater elongation.",
+      "Comparing the unknown specimen’s stiffness, strength, and elongation with published properties gave us a tentative guess of the material as 260 brass. The experiment showed how specimen measurements and the choice of fitting interval affect calculated material properties, particularly the elastic modulus."
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "assets/labs/tensile-aluminum-engineering.png",
+        "alt": "2024-T3 aluminum: engineering stress–strain curve.",
+        "caption": "2024-T3 aluminum: engineering stress–strain curve.",
+        "group": "engineering"
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/tensile-unknown-engineering.png",
+        "alt": "Unknown metal: engineering stress–strain curve.",
+        "caption": "Unknown metal: engineering stress–strain curve.",
+        "group": "engineering"
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/tensile-aluminum-comparison.png",
+        "alt": "2024-T3 aluminum: engineering and true-stress comparison.",
+        "caption": "2024-T3 aluminum: engineering and true-stress comparison.",
+        "group": "comparison"
+      },
+      {
+        "type": "image",
+        "src": "assets/labs/tensile-unknown-comparison.png",
+        "alt": "Unknown metal: engineering and true-stress comparison.",
+        "caption": "Unknown metal: engineering and true-stress comparison.",
+        "group": "comparison"
+      }
+    ],
+    "properties": [
+      [
+        "Young’s modulus (GPa)",
+        "79.8",
+        "112.9"
+      ],
+      [
+        "Engineering UTS (MPa)",
+        "492.02",
+        "378.06"
+      ],
+      [
+        "Elongation from specimen dimensions (%)",
+        "23.88",
+        "44.89"
+      ],
+      [
+        "Strain-hardening index, n",
+        "0.1847",
+        "0.2030"
+      ],
+      [
+        "Strength coefficient, K (MPa)",
+        "809.18",
+        "624.83"
+      ]
+    ],
+    "links": []
+  }
+];
+  additions.forEach(project => { const i = projects.sections.findIndex(p => p.id === project.id); if (i === -1) projects.sections.push(project); else projects.sections[i] = project; });
+  const order = ["recycled-pet-voxels", "free-bird", "bank-left", "lox-methane-injector", "wind-tunnel-testing", "tensile-testing"];
+  projects.sections = [...order.map(id => projects.sections.find(p => p.id === id)).filter(Boolean), ...projects.sections.filter(p => !order.includes(p.id))];
+})();

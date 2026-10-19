@@ -1326,3 +1326,47 @@ body[data-page="beyond"]
  .sports-info-content { height:200px; }
  .sports-tabs button { padding:10px 12px; }
 }
+
+/* Title placement follows visible project order, independent of gallery layout. */
+body[data-page="project"] .project-title-left .section-heading { grid-template-columns:minmax(0,1fr) minmax(0,1.6fr); align-items:start; }
+body[data-page="project"] .project-title-right .section-heading { grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); align-items:start; }
+body[data-page="project"] .project-title-left .project-heading { grid-column:1; grid-row:1; }
+body[data-page="project"] .project-title-left .section-heading > div:not(.project-heading) { grid-column:2; grid-row:1; }
+body[data-page="project"] .project-title-right .project-heading { grid-column:2; grid-row:1; }
+body[data-page="project"] .project-title-right .section-heading > div:not(.project-heading) { grid-column:1; grid-row:1; }
+.project-preview-right { grid-template-columns:48px 230px minmax(0,1fr); }
+.project-preview-right .project-number { grid-column:1; grid-row:1; }
+.project-preview-right .project-preview-image { grid-column:2; grid-row:1; }
+.project-preview-right .project-preview-copy { grid-column:3; grid-row:1; }
+.lab-project .section-heading p:first-child { margin-top:0; }
+.lab-project .project-heading .lab-figure { margin-top:24px; }
+.lab-figure { margin:0; min-width:0; }
+.lab-image-link { display:block; }
+.lab-figure img { display:block; width:100%; height:auto; max-height:none; object-fit:contain; border-radius:6px; background:#fff; }
+.lab-figure figcaption { font-size:.8rem; color:var(--muted); line-height:1.5; margin-top:10px; }
+.lab-plots,.lab-results { margin-top:40px; }
+.lab-plots h2,.lab-chart-section h2 { margin:0 0 22px; font-size:1.35rem; }
+.lab-tabs { display:flex; gap:6px; overflow-x:auto; border-bottom:1px solid var(--line); margin-bottom:24px; }
+.lab-tabs button { flex:0 0 auto; border:0; border-bottom:2px solid transparent; border-radius:0; padding:11px 18px; font:inherit; font-size:.9rem; color:var(--muted); background:transparent; cursor:pointer; white-space:nowrap; }
+.lab-tabs button[aria-selected="true"] { color:#dfc2ff; border-bottom-color:var(--accent); background:#b5a0ec0b; }
+.lab-tabs button:hover { color:var(--text); }
+.lab-tabs button:focus-visible { outline:2px solid var(--accent); outline-offset:-3px; }
+.lab-plot-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px; align-items:start; }
+.lab-chart-section + .lab-chart-section { margin-top:36px; }
+.lab-table-scroll { overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:#15131cba; }
+.lab-table-scroll table { border-collapse:collapse; width:100%; min-width:550px; font-size:.9rem; font-variant-numeric:tabular-nums; }
+.lab-table-scroll caption { caption-side:bottom; text-align:left; color:var(--muted); padding:14px; font-size:.78rem; }
+.lab-table-scroll th,.lab-table-scroll td { padding:13px 16px; border-bottom:1px solid var(--line); text-align:left; }
+.lab-table-scroll th { font-weight:500; }
+.lab-table-scroll thead { background:#b5a0ec13; }
+@media(max-width:760px) {
+ body[data-page="project"] .project-title-left .section-heading,body[data-page="project"] .project-title-right .section-heading { grid-template-columns:minmax(0,1fr); gap:28px; }
+ body[data-page="project"] .project-title-left .project-heading,body[data-page="project"] .project-title-right .project-heading { grid-column:1; grid-row:1; }
+ body[data-page="project"] .project-title-left .section-heading > div:not(.project-heading),body[data-page="project"] .project-title-right .section-heading > div:not(.project-heading) { grid-column:1; grid-row:2; }
+ .project-preview-right { grid-template-columns:28px minmax(0,1fr); }
+ .project-preview-right .project-preview-copy { grid-column:2; grid-row:1; }
+ .project-preview-right .project-preview-image { grid-column:2; grid-row:2; }
+ .lab-plot-grid { grid-template-columns:minmax(0,1fr); gap:24px; }
+ .lab-project .project-heading .lab-figure { max-width:480px; }
+ .lab-tabs button { padding:10px 13px; }
+}

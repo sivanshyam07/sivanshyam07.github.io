@@ -95,6 +95,7 @@ function projectIndex(items = []) {
     );
 
     row.setAttribute("aria-label", "Read about " + item.title);
+    row.classList.add(index % 2 ? "project-preview-right" : "project-preview-left");
 
     const number = el(
       "span",
@@ -180,6 +181,11 @@ function sections(items = []) {
 
   items.filter(item => item.visible !== false).forEach(item => {
     const section = el("section", "section");
+    if (page === "project") {
+      const visibleProjects = data.projects.sections.filter(project => project.visible !== false);
+      const position = visibleProjects.findIndex(project => project.id === item.id);
+      section.classList.add(position % 2 === 1 ? "project-title-right" : "project-title-left");
+    }
     const row = el("div", "section-heading");
     const heading = el("div", "project-heading");
     const body = el("div");
@@ -194,7 +200,14 @@ function sections(items = []) {
 
     const groups = layouts[item.layout];
 
-    if (groups) {
+    if (item.labType === "wind") {
+      section.classList.add("lab-project");
+      if (item.media?.[0]) heading.append(labFigure(item.media[0]));
+      section.append(windPlotTabs(item));
+    } else if (item.labType === "tensile") {
+      section.classList.add("lab-project");
+      section.append(tensileContent(item));
+    } else if (groups) {
       section.classList.add(item.layout + "-project");
 
       const gallery = el("div", item.layout + "-gallery");
@@ -907,4 +920,76 @@ function renderSportsBoard(parent) {
     });
     section.append(grid,el("p","sports-data-credit","Data: ESPN / MLB · Updates approximately every 6 hours · Times shown in your local time zone."));
   });
+}
+
+/* Lab figures link to their original extracted images. */
+function labFigure(asset) {
+  const figure = el("figure", "lab-figure");
+  const a = link("", asset.src, "lab-image-link");
+  a.target = "_blank"; a.rel = "noopener";
+  a.setAttribute("aria-label", "Open full-size figure: " + (asset.alt || asset.caption));
+  const img = el("img");img.src = asset.src;img.alt = asset.alt || "";img.loading = "lazy";
+  a.append(img);figure.append(a);
+  if(asset.caption) figure.append(el("figcaption", "", asset.caption));
+  return figure;
+}
+
+function windPlotTabs(item) {
+  const root = el("section", "lab-plots");
+  root.append(el("h2", "", "Wind tunnel results"));
+  const tabs = el("div", "lab-tabs");tabs.setAttribute("role", "tablist");tabs.setAttribute("aria-label", "Aerodynamic measurement");
+  const panel = el("div", "lab-plot-panel");panel.id = item.id + "-plot-panel";panel.setAttribute("role", "tabpanel");
+  const choices = item.plotTabs || [];
+  const buttons = choices.map((choice, index) => {
+    const b = el("button", "", choice.label);b.type = "button";b.id = item.id + "-tab-" + choice.id;
+    b.setAttribute("role", "tab");b.setAttribute("aria-controls", panel.id);
+    b.addEventListener("click", () => show(index));
+    b.addEventListener("keydown", event => {
+      let next=index;
+      if(event.key === "ArrowRight") next=(index+1)%choices.length;
+      else if(event.key === "ArrowLeft") next=(index+choices.length-1)%choices.length;
+      else if(event.key === "Home") next=0;
+      else if(event.key === "End") next=choices.length-1;
+      else return;
+      event.preventDefault();show(next);buttons[next].focus();
+    });
+    tabs.append(b);return b;
+  });
+  function show(index) {
+    buttons.forEach((button,i) => {button.setAttribute("aria-selected",String(i===index));button.tabIndex=i===index?0:-1;});
+    panel.setAttribute("aria-labelledby", buttons[index].id);panel.replaceChildren();
+    const choice=choices[index];
+    const grid=el("div","lab-plot-grid");
+    [12,16.5].forEach(speed => {
+      [true,false].forEach(endPlate => {
+        const asset=item.media.find(asset => asset.plotGroup===choice.id && asset.speed===speed && asset.endPlate===endPlate);
+        if(asset) grid.append(labFigure(asset));
+      });
+    });
+    panel.append(grid);
+  }
+  root.append(tabs,panel);
+  if(choices.length) show(0);
+  return root;
+}
+
+function tensileContent(item) {
+  const root=el("div","lab-results");
+  function charts(group,title) {
+    const section=el("section","lab-chart-section");section.append(el("h2","",title));
+    const grid=el("div","lab-plot-grid");
+    item.media.filter(asset => asset.group===group).forEach(asset => grid.append(labFigure(asset)));
+    section.append(grid);root.append(section);
+  }
+  charts("engineering","Engineering stress–strain curves");
+  const section=el("section","lab-chart-section");section.append(el("h2","","Reported material properties"));
+  const scroll=el("div","lab-table-scroll");scroll.tabIndex=0;scroll.setAttribute("role","region");scroll.setAttribute("aria-label","Material properties comparison; scroll horizontally if needed");
+  const table=el("table"),caption=el("caption","","Values from the report’s data-reduction tables. The unknown specimen was tentatively identified as 260 brass.");
+  const head=el("thead"),tr=el("tr");
+  ["Property","2024-T3 aluminum","Unknown metal"].forEach(label => {const th=el("th","",label);th.scope="col";tr.append(th);});head.append(tr);
+  const body=el("tbody");
+  (item.properties||[]).forEach(values => {const row=el("tr");values.forEach((value,i) => {const cell=el(i===0?"th":"td","",value);if(i===0)cell.scope="row";row.append(cell);});body.append(row);});
+  table.append(caption,head,body);scroll.append(table);section.append(scroll);root.append(section);
+  charts("comparison","Engineering and true-stress comparisons");
+  return root;
 }
