@@ -587,6 +587,7 @@ function renderBeyond() {
     if (!item) return;
     document.title = item.title + " | " + data.name;
     const detail = el("section", "btc-detail");
+    if (item.id === "sports") renderSportsBoard(detail);
     if (!item.playlist) paragraphs(detail, item.text || []);
 
     if (item.playlist) {
@@ -772,4 +773,133 @@ function renderBeyond() {
     cards.append(card);
   });
   main.append(cards);
+}
+
+/* Free, periodically refreshed sports snapshot; the last good data stays visible. */
+function renderSportsBoard(parent) {
+  const section = el("section", "sports-board");
+  section.setAttribute("aria-labelledby", "sports-board-heading");
+  const top = el("div", "sports-board-top");
+  const heading = el("h2", "", "My teams");
+  heading.id = "sports-board-heading";
+  const timestamp = el("p", "sports-updated", "Loading latest saved results…");
+  timestamp.setAttribute("role", "status");
+  top.append(heading, timestamp);
+  section.append(top);
+  parent.append(section);
+
+  // The raw repository URL reflects automated commits without rebuilding Pages.
+  const sources = [
+    "https://raw.githubusercontent.com/sivanshyam07/sivanshyam07.github.io/main/assets/sports-data.json",
+    "assets/sports-data.json"
+  ];
+  const dateFormat = new Intl.DateTimeFormat(undefined, {month:"short", day:"numeric", year:"numeric", hour:"numeric", minute:"2-digit", timeZoneName:"short"});
+  function when(match) {
+    const d = new Date(match.date);
+    if (!Number.isFinite(d.getTime())) return "Date to be confirmed";
+    if (!match.timeConfirmed) return d.toLocaleDateString(undefined, {month:"short",day:"numeric"}) + " · Time TBD";
+    return dateFormat.format(d);
+  }
+  function external(label, href, cls="sports-source-link") {
+    const a = link(label, href, cls); a.target="_blank"; a.rel="noopener"; return a;
+  }
+  function valid(snapshot) {
+    return snapshot && snapshot.version === 1 && Number.isFinite(Date.parse(snapshot.updatedAt)) && Array.isArray(snapshot.teams) && snapshot.teams.length === 6 && snapshot.teams.every(team => Array.isArray(team.standings) && Array.isArray(team.columns) && Array.isArray(team.recent));
+  }
+  Promise.all(sources.map(async url => {
+    try {
+      const response = await fetch(url, {cache:"no-store", signal:AbortSignal.timeout(12000)});
+      if (!response.ok) return null;
+      const snapshot = await response.json();
+      return valid(snapshot) ? snapshot : null;
+    } catch { return null; }
+  })).then(results => {
+    const available = results.filter(Boolean).sort((a,b) => Date.parse(b.updatedAt)-Date.parse(a.updatedAt));
+    if (!available.length) {
+      timestamp.textContent = "Scores are unavailable right now. Please try again later.";
+      section.append(external("View scores on ESPN ↗", "https://www.espn.com"));
+      return;
+    }
+    const snapshot = available[0];
+    const updated = new Date(snapshot.updatedAt);
+    function updateStamp() {
+      timestamp.replaceChildren();
+      const time = el("time", "", dateFormat.format(updated));
+      time.dateTime = updated.toISOString();
+      timestamp.append(document.createTextNode("Last updated: "), time);
+      if (Date.now() - updated.getTime() > 12*60*60*1000) timestamp.append(el("span", "sports-delayed", "Updates delayed"));
+    }
+    updateStamp();
+    const grid = el("div", "sports-team-grid");
+    snapshot.teams.forEach(team => {
+      const card = el("details", "sports-team-card");
+      const summary = el("summary", "sports-team-summary");
+      const identity = el("div", "sports-team-identity");
+      const logo = el("img", "sports-team-logo");
+      logo.src = safeURL(team.logo); logo.alt = ""; logo.loading = "lazy";
+      const names = el("div");
+      names.append(el("h3", "", team.name), el("span", "sports-league", team.league));
+      identity.append(logo, names);
+      const metrics = el("div", "sports-team-metrics");
+      function metric(label, primary, secondary) {
+        const cell = el("div");
+        cell.append(el("span", "sports-metric-label", label), el("strong", "", primary));
+        if (secondary) cell.append(el("span", "sports-metric-secondary", secondary));
+        metrics.append(cell);
+      }
+      const latest = team.latest;
+      metric("Latest result", latest ? latest.scoreFor + "–" + latest.scoreAgainst + " " + latest.result : "No result available", latest ? (latest.home ? "vs " : "at ") + latest.opponent : "");
+      const next = team.next;
+      metric("Next game", next ? (next.home ? "vs " : "at ") + next.opponent : "Not announced", next ? when(next) : "Check back for fixtures");
+      metric(team.positionLabel, "#" + team.position, team.record + " (" + team.recordLabel + ")");
+      const expand = el("span", "sports-expand");
+      expand.append(el("span", "sports-expand-closed", "Results & standings +"), el("span", "sports-expand-open", "Close details −"));
+      summary.append(identity, metrics, expand);
+      card.append(summary);
+      const body = el("div", "sports-team-expanded");
+      if (team.current) body.append(el("p", "sports-snapshot-note", "In progress at last update: " + team.current.opponent + " · " + team.current.scoreFor + "–" + team.current.scoreAgainst + ". Scores are periodic snapshots."));
+      const recent = el("section", "sports-recent");
+      recent.append(el("h4", "", "Recent results"));
+      const list = el("ul");
+      team.recent.forEach(match => {
+        const row = el("li");
+        const result = el("span", "sports-result sports-result-" + match.result, match.result);
+        const text = el("div");
+        text.append(el("strong", "", (match.home ? "vs " : "at ") + match.opponent), el("span", "", when(match)));
+        const score = match.scoreFor + "–" + match.scoreAgainst;
+        row.append(result, text, match.href ? external(score,match.href,"sports-score-link") : el("strong","",score));
+        list.append(row);
+      });
+      if (!team.recent.length) recent.append(el("p", "", "No recent results available."));
+      recent.append(list);
+      const standings = el("section", "sports-standings");
+      standings.append(el("h4", "", team.standingsTitle));
+      if (team.sport !== "soccer") standings.append(el("p", "sports-table-note", "# shows the source’s conference or league seed."));
+      const scroller = el("div", "sports-table-scroll");
+      scroller.tabIndex = 0;
+      scroller.setAttribute("role", "region");
+      scroller.setAttribute("aria-label", team.league + " standings; scroll horizontally if needed");
+      const table = el("table");
+      const caption = el("caption", "sports-sr-only", team.standingsTitle + " · " + team.name + " highlighted");
+      const thead = el("thead"), head = el("tr");
+      ["#", "Team", ...team.columns].forEach(label => {const th=el("th","",label);th.scope="col";head.append(th);});
+      thead.append(head);
+      const tbody = el("tbody");
+      team.standings.forEach(entry => {
+        const row = el("tr", entry.id === team.teamId ? "sports-selected-team" : "");
+        row.append(el("td", "", entry.position));
+        const name = el("th", "", entry.name);name.scope="row";row.append(name);
+        entry.values.forEach(value => row.append(el("td", "", value)));
+        tbody.append(row);
+      });
+      table.append(caption,thead,tbody);scroller.append(table);standings.append(scroller,external("Full standings on ESPN ↗",team.sourceURL));
+      body.append(recent,standings);
+      card.append(body);
+      card.addEventListener("toggle", () => {
+        if (card.open) grid.querySelectorAll("details[open]").forEach(other => {if(other!==card) other.open=false;});
+      });
+      grid.append(card);
+    });
+    section.append(grid, el("p", "sports-data-credit", "Data: ESPN · Refreshes approximately every 6 hours · Times shown in your local time zone."));
+  });
 }
