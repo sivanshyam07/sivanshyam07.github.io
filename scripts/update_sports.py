@@ -135,6 +135,46 @@ def collect(spec):
 # No external Python dependencies or API keys.
 NOW = dt.datetime.now(dt.timezone.utc)
 STAMP = NOW.isoformat(timespec="seconds")
+# Verified club staff. Update names/source/verifiedAt here after coaching changes.
+# ESPN roster coach fields may be outdated or absent; these are maintained entries.
+COACHES = {
+    "dortmund": {
+        "title": "Head coach",
+        "name": "Niko Kovač",
+        "source": "https://www.bvb.de/de/en/teams/football/coaches/niko-kovac.html",
+        "verifiedAt": "2026-10-19"
+    },
+    "brighton": {
+        "title": "Head coach",
+        "name": "Fabian Hürzeler",
+        "source": "https://www.brightonandhovealbion.com/mens-first-team-coaches",
+        "verifiedAt": "2026-10-19"
+    },
+    "roma": {
+        "title": "Head coach",
+        "name": "Gian Piero Gasperini",
+        "source": "https://www.asroma.com/en/teams/staff-men/gian-piero-gasperini",
+        "verifiedAt": "2026-10-19"
+    },
+    "atlanta-united": {
+        "title": "Head coach",
+        "name": "Gerardo “Tata” Martino",
+        "source": "https://www.atlutd.com/club/coaching-staff/tata-martino",
+        "verifiedAt": "2026-10-19"
+    },
+    "falcons": {
+        "title": "Head coach",
+        "name": "Kevin Stefanski",
+        "source": "https://www.atlantafalcons.com/team/coaches-roster/kevin-stefanski",
+        "verifiedAt": "2026-10-19"
+    },
+    "braves": {
+        "title": "Manager",
+        "name": "Walt Weiss",
+        "source": "https://www.mlb.com/braves/roster/coaches",
+        "verifiedAt": "2026-10-19"
+    }
+}
 try:
     PREVIOUS = json.loads(OUTPUT.read_text(encoding="utf-8"))
 except (OSError, ValueError):
@@ -333,6 +373,7 @@ def enrich(spec):
     slug, name, sport, league, team_id, label = spec
     roster_payload = optional(f"https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}/teams/{team_id}/roster")
     roster = roster_rows(roster_payload)
+    base["coach"] = COACHES.get(slug)
     base["roster"] = roster
     base["rosterUpdatedAt"] = STAMP if roster_payload else None
     if sport == "soccer":
