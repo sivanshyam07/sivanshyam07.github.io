@@ -361,6 +361,45 @@ if (page === "home") {
 
 /* Projects, Beyond the Classroom, and Contact pages */
 
+} else if (page === "resume") {
+  const intro = el("section", "page-intro");
+  intro.append(
+    el("h1", "", "Resume"),
+    el("p", "", "My experience, education, and technical skills.")
+  );
+  main.append(intro);
+
+  const resumeURL = safeURL(data.resume);
+
+  if (resumeURL) {
+    const actions = el("div", "links resume-actions");
+
+    const download = link("Download resume ↓", resumeURL);
+    download.setAttribute("download", "Shyam_Sivan_Resume.pdf");
+
+    const open = link("Open PDF ↗", resumeURL);
+    open.target = "_blank";
+    open.rel = "noopener noreferrer";
+
+    actions.append(download, open);
+    main.append(actions);
+
+    const viewer = el("iframe", "resume-viewer");
+    viewer.src = resumeURL;
+    viewer.title = "Shyam Sivan's resume";
+    main.append(viewer);
+
+    main.append(
+      el(
+        "p",
+        "resume-note",
+        "If the preview doesn't appear, use the Open PDF or Download resume link."
+      )
+    );
+  } else {
+    main.append(el("p", "", "Resume coming soon."));
+  }
+
 } else if (page === "beyond") {
   renderBeyond();
 } else {
@@ -470,12 +509,6 @@ if (page === "home") {
     main.append(grid);
 
   } else {
-    if (page === "projects" && safeURL(data.resume)) {
-      const links = el("div", "links");
-      links.append(link("View resume ↗", data.resume));
-      main.append(links);
-    }
-
     if (!(config.sections || []).some(item => item.visible !== false)) {
       const empty = el("section", "empty");
 
