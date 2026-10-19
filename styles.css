@@ -1370,3 +1370,26 @@ body[data-page="project"] .project-title-right .section-heading > div:not(.proje
  .lab-project .project-heading .lab-figure { max-width:480px; }
  .lab-tabs button { padding:10px 13px; }
 }
+/* Consistent graph frames, without cropping or stretching. */
+.lab-plot-grid .lab-image-link {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.lab-plot-grid .lab-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.lab-project .lab-hero img {
+  max-height: 360px;
+  object-fit: contain;
+  background: transparent;
+}
