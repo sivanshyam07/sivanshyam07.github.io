@@ -2462,7 +2462,13 @@
             }
           ]
         }
-      ]
+      ],
+      "coach": {
+        "title": "Head coach",
+        "name": "Niko Kovač",
+        "source": "https://www.bvb.de/de/en/teams/football/coaches/niko-kovac.html",
+        "verifiedAt": "2026-10-19"
+      }
     },
     {
       "id": "brighton",
@@ -4968,7 +4974,13 @@
             }
           ]
         }
-      ]
+      ],
+      "coach": {
+        "title": "Head coach",
+        "name": "Fabian Hürzeler",
+        "source": "https://www.brightonandhovealbion.com/mens-first-team-coaches",
+        "verifiedAt": "2026-10-19"
+      }
     },
     {
       "id": "roma",
@@ -7331,7 +7343,13 @@
             }
           ]
         }
-      ]
+      ],
+      "coach": {
+        "title": "Head coach",
+        "name": "Gian Piero Gasperini",
+        "source": "https://www.asroma.com/en/teams/staff-men/gian-piero-gasperini",
+        "verifiedAt": "2026-10-19"
+      }
     },
     {
       "id": "atlanta-united",
@@ -8439,7 +8457,13 @@
             }
           ]
         }
-      ]
+      ],
+      "coach": {
+        "title": "Head coach",
+        "name": "Gerardo “Tata” Martino",
+        "source": "https://www.atlutd.com/club/coaching-staff/tata-martino",
+        "verifiedAt": "2026-10-19"
+      }
     },
     {
       "id": "falcons",
@@ -9621,7 +9645,13 @@
             ]
           ]
         }
-      ]
+      ],
+      "coach": {
+        "title": "Head coach",
+        "name": "Kevin Stefanski",
+        "source": "https://www.atlantafalcons.com/team/coaches-roster/kevin-stefanski",
+        "verifiedAt": "2026-10-19"
+      }
     },
     {
       "id": "braves",
@@ -10529,7 +10559,13 @@
             ]
           ]
         }
-      ]
+      ],
+      "coach": {
+        "title": "Manager",
+        "name": "Walt Weiss",
+        "source": "https://www.mlb.com/braves/roster/coaches",
+        "verifiedAt": "2026-10-19"
+      }
     }
   ],
   "matchCache": {
