@@ -805,7 +805,7 @@ window.PORTFOLIO.beyond = {
     }
   ],
   "stats": {
-    "intro": "A breakdown of my playlist in numbers: the genres and the artists that make it up:",
+    "intro": "A breakdown of my playlist in numbers; the genres and the artists that make it up:",
     "genres": [
       [
         "Hip Hop",
