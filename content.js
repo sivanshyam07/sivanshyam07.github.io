@@ -1196,3 +1196,36 @@ window.PORTFOLIO.beyond = {
   const order = ["recycled-pet-voxels", "free-bird", "bank-left", "lox-methane-injector", "wind-tunnel-testing", "tensile-testing"];
   projects.sections = [...order.map(id => projects.sections.find(p => p.id === id)).filter(Boolean), ...projects.sections.filter(p => !order.includes(p.id))];
 })();
+(() => {
+  const projects = window.PORTFOLIO.projects.sections;
+
+  const wind = projects.find(
+    project => project.id === "wind-tunnel-testing"
+  );
+
+  const tensile = projects.find(
+    project => project.id === "tensile-testing"
+  );
+
+  if (wind) {
+    wind.cover = "assets/labs/wind-tunnel-setup.png";
+    wind.coverAlt = "Wind tunnel used for aerodynamic testing";
+    wind.heroMedia = {
+      type: "image",
+      src: wind.cover,
+      alt: wind.coverAlt,
+      caption: "Wind tunnel setup."
+    };
+  }
+
+  if (tensile) {
+    tensile.cover = "assets/labs/tensile-test-setup.png";
+    tensile.coverAlt = "Tensile-testing grips and extensometer";
+    tensile.heroMedia = {
+      type: "image",
+      src: tensile.cover,
+      alt: tensile.coverAlt,
+      caption: "Tensile-testing grips and extensometer."
+    };
+  }
+})();
