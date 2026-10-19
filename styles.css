@@ -1444,3 +1444,16 @@ body[data-page="home"] .pathway .text-link {
     grid-template-columns: 1fr;
   }
 }
+body[data-page="resume"] .page-intro,
+body[data-page="projects"] .page-intro {
+  padding-bottom: 0;
+}
+
+body[data-page="resume"] .page-intro p,
+body[data-page="projects"] .page-intro p {
+  margin-bottom: 0;
+}
+
+body[data-page="resume"] .resume-actions {
+  margin-top: 12px;
+}
