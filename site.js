@@ -638,14 +638,14 @@ function renderBeyond() {
       entries.forEach(entry => {
         const size = entry.value / total * 100;
         const circle = svgNode("circle", {cx:120, cy:120, r:88, fill:"none", stroke:entry.color, "stroke-width":38, pathLength:100, "stroke-dasharray":size + " " + (100-size), "stroke-dashoffset":-offset, transform:"rotate(-90 120 120)"});
+                const tooltip = svgNode("title", {});
+        tooltip.textContent =
+          entry.name + ": " + entry.value.toFixed(1) + "%";
+        circle.append(tooltip);
+
         chart.append(circle);
         offset += size;
       });
-      const center = svgNode("text", {x:120, y:118, "text-anchor":"middle", class:"music-donut-number"});
-      center.textContent = "50.3%";
-      const subtitle = svgNode("text", {x:120, y:143, "text-anchor":"middle", class:"music-donut-label"});
-      subtitle.textContent = "Hip Hop";
-      chart.append(center, subtitle);
       genres.append(chart);
       const legend = el("ul", "music-legend");
       entries.forEach(entry => {
