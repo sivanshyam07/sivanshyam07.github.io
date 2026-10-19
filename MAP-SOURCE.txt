@@ -1,5 +1,0 @@
-Country borders: Natural Earth, ne_110m_admin_0_countries.geojson.
-State borders: https://github.com/PublicaMundi/MappingAPI/blob/master/data/geojson/us-states.json
-World panel marks visited countries. US panel marks visited states and DC. Puerto Rico is displayed separately.
-Alaska inset omits far western islands. NJ and PA are confirmed visited.
-Edit window.PORTFOLIO.beyond.travel at the bottom of content.js.

@@ -1,8 +1,0 @@
-1. Open your GitHub repository at the main file list.
-2. Click Add file > Upload files.
-3. Drag the assets folder AND content.js, site.js, styles.css onto the upload area.
-4. Commit changes. GitHub creates the assets folder from your upload.
-5. Keep all HTML files at the root. No HTML changes needed.
-6. Once the website works, you can delete the old root media listed in OLD-ROOT-FILES.txt. Leaving them temporarily is fine.
-
-This package includes the approved music update. All referenced photos, videos, posters, the background, resume, map data, and music artwork are inside assets. Existing subfolders are retained.
