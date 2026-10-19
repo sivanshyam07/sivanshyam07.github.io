@@ -1229,3 +1229,40 @@ window.PORTFOLIO.beyond = {
     };
   }
 })();
+/* Resume navigation and homepage card */
+(() => {
+  const portfolio = window.PORTFOLIO;
+
+  portfolio.navigation = portfolio.navigation.filter(
+    item => item.page !== "resume"
+  );
+
+  const projectsPosition = portfolio.navigation.findIndex(
+    item => item.page === "projects"
+  );
+
+  portfolio.navigation.splice(
+    projectsPosition < 0 ? 1 : projectsPosition,
+    0,
+    {
+      page: "resume",
+      label: "Resume",
+      href: "resume.html"
+    }
+  );
+
+  portfolio.home.pathways = portfolio.home.pathways.filter(
+    item => item.href !== "resume.html"
+  );
+
+  portfolio.home.pathways.unshift({
+    title: "Resume",
+    text: "My experience, education, and technical skills.",
+    label: "View resume",
+    href: "resume.html"
+  });
+
+  portfolio.home.pathways.forEach((item, index) => {
+    item.number = String(index + 1).padStart(2, "0");
+  });
+})();
