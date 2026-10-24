@@ -1266,3 +1266,49 @@ window.PORTFOLIO.beyond = {
     item.number = String(index + 1).padStart(2, "0");
   });
 })();
+
+
+/* OCTOBER LAYOUT SETTINGS — edit these lists as you add photos and places. */
+(() => {
+  const portfolio = window.PORTFOLIO;
+
+  // HOMEPAGE PHOTOS: add one object per photo. No new HTML files needed.
+  // position controls cropping: "center", "center top", "50% 35%", etc.
+  portfolio.home.portraits = [
+    { src: portfolio.portrait, alt: portfolio.portraitAlt, position: "center", fit: "cover" },
+    { src: "assets/portraits/shyam-lander.jpeg", alt: "Working on the Propulsive Landers test setup", position: "center", fit: "contain" },
+    { src: "assets/portraits/shyam-roma.jpeg", alt: "Wearing my Roma jersey in Lisbon", position: "center", fit: "cover" },
+    { src: "assets/portraits/shyam-cafe.jpeg", alt: "Reading at a café", position: "center", fit: "cover" },
+    { src: "assets/portraits/shyam-restaurant.jpeg", alt: "At a restaurant", position: "center", fit: "cover" }
+  ];
+
+  const beyond = portfolio.beyond;
+  const music = beyond.sections.find(item => item.id === "music");
+  const sports = beyond.sections.find(item => item.id === "sports");
+  const photos = beyond.sections.find(item => item.id === "photos");
+  const travel = {
+    id: "places", title: "Places I’ve been", kind: "travel",
+    description: "A little more of the map, one trip at a time."
+  };
+
+  // PHOTOS COVER: replace the blank string when you've picked an image.
+  photos.image = "";
+  photos.imageAlt = "";
+  photos.description = "Random views I’ve captured over the years.";
+  beyond.sections = [music, sports, travel, photos].filter(Boolean);
+
+  // Keep adding ISO three-letter country codes to beyond.travel.countries.
+  // Add a matching entry here for its name, continent, and flag file.
+  beyond.travel.homeCountry = "USA";
+  beyond.travel.homeState = "GA";
+  beyond.travel.countryDetails = {
+    USA: { name: "United States", continent: "North America", flag: "assets/flags/us.svg" },
+    CAN: { name: "Canada", continent: "North America", flag: "assets/flags/ca.svg" },
+    IND: { name: "India", continent: "Asia", flag: "assets/flags/in.svg" },
+    PRT: { name: "Portugal", continent: "Europe", flag: "assets/flags/pt.svg" }
+  };
+  beyond.travel.continentTotals = {
+    "Africa": 54, "Asia": 48, "Europe": 44,
+    "North America": 23, "South America": 12, "Oceania": 14
+  };
+})();

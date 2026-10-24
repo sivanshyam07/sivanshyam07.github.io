@@ -1,0 +1,2 @@
+Country flags and simplified state flags: HatScripts/circle-flags (MIT), https://github.com/HatScripts/circle-flags
+NV, VA, NY, NJ, MA, PA flags: https://github.com/nibsbin/us-state-flags-svg/tree/master/flags (sourced from Wikimedia Commons; see individual SVG metadata).

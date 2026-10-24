@@ -82,55 +82,237 @@ header.append(nav);
 
 const main = document.getElementById("main");
 
+/* Arrow keys only affect the carousel that currently has keyboard focus. */
+function carouselControls(root, label, step, count, select) {
+  const bar = el("div", "carousel-controls");
+  const previous = el("button", "carousel-arrow carousel-previous", "←");
+  const next = el("button", "carousel-arrow carousel-next", "→");
+  previous.type = next.type = "button";
+  previous.setAttribute("aria-label", "Previous " + label);
+  next.setAttribute("aria-label", "Next " + label);
+  const status = el("span", "carousel-status visually-hidden");
+  status.setAttribute("role", "status");
+  status.setAttribute("aria-live", "polite");
+  const dots = el("div", "carousel-dots");
+  dots.setAttribute("role", "group");
+  dots.setAttribute("aria-label", label === "photo" ? "Choose a photo" : "Choose a project");
+  const buttons = Array.from({length:count}, (_,index) => {
+    const dot = el("button", "carousel-dot");
+    dot.type="button";
+    dot.setAttribute("aria-label", "Show " + label + " " + (index+1) + " of " + count);
+    dot.addEventListener("click", () => select(index));dots.append(dot);return dot;
+  });
+  function update(index, description) {
+    buttons.forEach((dot,i) => {
+      if (i === index) dot.setAttribute("aria-current", "true");
+      else dot.removeAttribute("aria-current");
+    });
+    status.textContent = label + " " + (index+1) + " of " + count + (description ? ": " + description : "");
+    previous.disabled = next.disabled = count < 2;
+  }
+  previous.addEventListener("click", () => step(-1));
+  next.addEventListener("click", () => step(1));
+  root.addEventListener("keydown", event => {
+    if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey || event.target.closest("[hidden]")) return;
+    if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+      event.preventDefault();
+      step(event.key === "ArrowLeft" ? -1 : 1);
+    }
+  });
+  bar.append(previous,dots,next,status);
+  return {bar,previous,next,status,dots,update};
+}
+
+function portraitCarousel() {
+  const root=el("div","portrait portrait-carousel");
+  root.setAttribute("role","region");
+  root.setAttribute("aria-label","Photos of "+data.name);
+  root.setAttribute("aria-roledescription","carousel");
+  const photos=(data.home.portraits || []).filter(photo=>safeURL(photo.src));
+  if (!photos.length && safeURL(data.portrait)) photos.push({src:data.portrait,alt:data.portraitAlt});
+  if (!photos.length) {
+    root.append(el("div","portrait-placeholder","Photos coming soon"));return root;
+  }
+  let index=0;
+  const image=el("img");
+  image.decoding="async";
+  const controls=carouselControls(root,"photo",direction=>{
+    index=(index+direction+photos.length)%photos.length;show();
+  },photos.length,selected=>{index=selected;show();});
+  function show() {
+    const photo=photos[index];
+    image.src=photo.src;image.alt=photo.alt || data.name;
+    image.style.objectPosition=photo.position || "center";
+    image.style.objectFit=photo.fit || "cover";
+    controls.update(index,image.alt);
+  }
+  root.append(image,controls.bar);show();return root;
+}
+
+let travelAtlasPromise;
+function loadTravelAtlas() {
+  if (!travelAtlasPromise) travelAtlasPromise = fetch("assets/travel-regions.json")
+    .then(response => {
+      if (!response.ok) throw new Error("Travel map not found");
+      return response.json();
+    }).catch(error => {travelAtlasPromise = null; throw error;});
+  return travelAtlasPromise;
+}
+
+function travelMap(group, compact = false) {
+  const ns = "http://www.w3.org/2000/svg";
+  function svg(tag, attrs = {}) {
+    const node = document.createElementNS(ns, tag);
+    Object.entries(attrs).forEach(([key,value]) => node.setAttribute(key,value));
+    return node;
+  }
+  const root = svg("svg", {viewBox:"0 0 1000 500", role:"img", class:"travel-map"});
+  root.setAttribute("aria-label", group === "countries" ? "Visited countries on the world map" : "Visited US states, DC, and Puerto Rico");
+  const loading = svg("text", {x:30,y:250,fill:"#b9b0c8","font-size":22});
+  loading.textContent = "Loading map…";
+  root.append(loading);
+  loadTravelAtlas().then(atlas => {
+    loading.remove();
+    const shapes = svg("g");
+    root.append(shapes);
+    const travel = data.beyond.travel;
+    const selected = new Set(group === "countries" ? travel.countries : [...travel.states, ...(travel.territories || [])]);
+    const tentative = new Set(travel.tentativeStates || []);
+    atlas.regions.filter(region => region.group === group || (group === "states" && region.group === "territories" && region.code === "PRI")).forEach(region => {
+      const visited = selected.has(region.code);
+      const uncertain = group === "states" && tentative.has(region.code) && !visited;
+      const path = svg("path", {d:region.d, fill:visited ? "#c3a0ef" : uncertain ? "#756284" : "#352c44", stroke:"#100c19", "stroke-width":group === "countries" ? .5 : .8, "fill-rule":"evenodd"});
+      const title = svg("title");
+      title.textContent = region.name + (visited ? " — visited" : uncertain ? " — tentative" : "");
+      path.append(title);
+      shapes.append(path);
+    });
+    if (group === "states") {
+      (atlas.labels || []).filter(label => ["AK","HI","PR"].includes(label.text)).forEach(label => {
+        const text = svg("text", {x:label.x,y:label.y,fill:"#b9b0c8","font-size":11});
+        text.textContent = label.text; shapes.append(text);
+      });
+    }
+    // Fit each map to its own geometry instead of the old combined thumbnail.
+    const bounds = shapes.getBBox();
+    if (bounds.width && bounds.height) {
+      const padding = compact ? 5 : 10;
+      root.setAttribute("viewBox", [bounds.x-padding,bounds.y-padding,bounds.width+padding*2,bounds.height+padding*2].join(" "));
+    }
+  }).catch(() => {loading.textContent = "Map unavailable. Your visited-place lists are below.";});
+  return root;
+}
+
+function renderTravel(parent) {
+  const travel = data.beyond.travel;
+  const info = travel.countryDetails || {};
+  const countries = [...new Set(travel.countries || [])];
+  const states = [...new Set(travel.states || [])].filter(code => code !== "DC");
+  const continents = travel.continentTotals;
+  const percent = (count,total) => (100 * count / total).toFixed(1).replace(/\.0$/, "") + "%";
+  parent.append(el("p", "", "The countries and states I’ve visited so far."));
+  const stats = el("div", "travel-stats");
+  [[countries.length,195,"Countries visited"],[states.length,50,"US states visited"]].forEach(([count,total,label]) => {
+    const card = el("div", "travel-stat");
+    card.append(el("strong", "", percent(count,total)),el("span", "", label),el("small", "", count + " of " + total));
+    stats.append(card);
+  });
+  parent.append(stats);
+  function mapPanel(title,group) {
+    const section = el("section", "travel-map-panel");
+    section.append(el("h2", "", title),travelMap(group),el("p", "travel-legend", "● Visited · Hover over a region for its name"));
+    parent.append(section);
+  }
+  mapPanel("Around the world", "countries");
+  const breakdown = el("section", "travel-continents");
+  breakdown.append(el("h2", "", "By continent"));
+  const grid = el("div", "travel-continent-grid");
+  Object.entries(continents).forEach(([continent,total]) => {
+    const count = countries.filter(code => info[code]?.continent === continent).length;
+    const card = el("div", "travel-continent");
+    const meter = el("progress"); meter.max=total; meter.value=count;
+    meter.setAttribute("aria-label", continent + ": " + count + " of " + total + " countries visited");
+    card.append(el("h3", "", continent),el("p", "", count + " / " + total + " · " + percent(count,total)),meter);
+    grid.append(card);
+  });
+  breakdown.append(grid,el("p", "travel-note", "Percentages use 195 countries and a six-continent grouping. Antarctica has no countries. DC and Puerto Rico are listed separately and don’t count toward the 50-state total. The map is simplified; some small islands aren’t visible."));
+  parent.append(breakdown);
+  function flagList(title,entries,holder=parent,homeCode="") {
+    const section=el("section","travel-list-section");
+    section.append(el("h2","",title));
+    const list=el("ul","travel-place-list travel-horizontal");
+    list.setAttribute("tabindex","0");
+    list.setAttribute("aria-label",title+" visited; scroll horizontally to see more");
+    entries.sort((a,b)=>Number(b.code===homeCode)-Number(a.code===homeCode) || a.name.localeCompare(b.name)).forEach(entry=>{
+      const row=el("li"), flag=el("img","travel-flag");
+      flag.src=entry.flag;flag.alt="";flag.loading="lazy";
+      flag.addEventListener("error",()=>{flag.hidden=true;},{once:true});
+      row.append(flag,el("span","",entry.name));
+      if(entry.code===homeCode) row.append(el("span","travel-home-badge","Home"));
+      list.append(row);
+    });
+    section.append(list);holder.append(section);
+  }
+  flagList("Countries",countries.map(code=>({code,name:info[code]?.name || code,flag:info[code]?.flag || "assets/flags/"+code.toLowerCase()+".svg"})),parent,travel.homeCountry);
+  mapPanel("Across the United States","states");
+  const stateSection=el("div");parent.append(stateSection);
+  loadTravelAtlas().then(atlas=>{
+    const names=Object.fromEntries(atlas.regions.filter(r=>r.group==="states" || r.group==="territories").map(r=>[r.code,r.name]));
+    const entries=(codes,territory=false)=>codes.map(code=>({code,name:names[code] || code,flag:"assets/flags/"+(territory ? code.toLowerCase() : "us-"+code.toLowerCase())+".svg"}));
+    flagList("States",entries(states),stateSection,travel.homeState);
+    if(travel.states.includes("DC")) flagList("Federal district",entries(["DC"]),stateSection);
+    if(travel.territories?.length) flagList("Territories",entries(travel.territories,true),stateSection);
+  }).catch(()=>{stateSection.append(el("p","","State list unavailable. Please check assets/travel-regions.json."));});
+}
+
 /* Projects overview */
 
 function projectIndex(items = []) {
-  const list = el("div", "project-list");
-
-  items.filter(item => item.visible !== false).forEach((item, index) => {
-    const row = link(
-      "",
-      "project.html?id=" + encodeURIComponent(item.id),
-      "project-preview"
-    );
-
-    row.setAttribute("aria-label", "Read about " + item.title);
-
-    const number = el(
-      "span",
-      "project-number",
-      String(index + 1).padStart(2, "0")
-    );
-
-    const copy = el("div", "project-preview-copy");
-    copy.append(el("h2", "", item.title));
-
-    if (item.category) {
-      copy.append(el("p", "project-category", item.category));
-    }
-
-    copy.append(
-      el("p", "project-summary", item.summary || item.text?.[0] || ""),
-      el("span", "text-link", "View project →")
-    );
-
-    row.append(number, copy);
-
-    const cover = item.cover ||
-      (item.media || []).find(asset => asset.type === "image")?.src;
-
+  const projects=items.filter(item=>item.visible!==false);
+  if (!projects.length) return;
+  const root=el("section","project-carousel");
+  root.setAttribute("role","region");root.setAttribute("aria-label","Browse projects");
+  root.setAttribute("aria-roledescription","carousel");root.tabIndex=0;
+  let current=0, gridView=false;
+  const toolbar=el("div","project-view-toolbar"), toggle=el("button","project-view-toggle","View all projects");
+  toggle.type="button";toggle.setAttribute("aria-pressed","false");toggle.setAttribute("aria-controls","project-overview-cards");
+  toolbar.append(toggle);
+  const slots=el("div","project-carousel-slots");slots.id="project-overview-cards";
+  const controls=carouselControls(root,"project",direction=>{
+    if (gridView) return;
+    current=(current+direction+projects.length)%projects.length;show();
+  },projects.length,selected=>{current=selected;show();});
+  function card(index,center) {
+    const item=projects[index];
+    const node=link("","project.html?id="+encodeURIComponent(item.id),"project-slide"+(center?" is-current":""));
+    node.setAttribute("aria-label","Read about "+item.title);
+    const cover=item.cover || (item.media || []).find(asset=>asset.type==="image")?.src;
+    const visual=el("div","project-slide-visual");
     if (safeURL(cover)) {
-      const image = el("img", "project-preview-image");
-      image.src = cover;
-      image.alt = item.coverAlt || item.title;
-      image.loading = "lazy";
-      row.append(image);
+      const image=el("img");image.src=cover;image.alt=item.coverAlt || item.title;image.loading="lazy";visual.append(image);
     }
-
-    list.append(row);
-  });
-
-  main.append(list);
+    const copy=el("div","project-slide-copy");
+    copy.append(el("span","project-slide-number",String(index+1).padStart(2,"0")),el("h2","",item.title));
+    if (item.category) copy.append(el("p","project-category",item.category));
+    copy.append(el("p","project-summary",item.summary || item.text?.[0] || ""),el("span","text-link","View project →"));
+    node.append(visual,copy);return node;
+  }
+  function show() {
+    const cards=[];
+    if (gridView) projects.forEach((_,index)=>cards.push(card(index,false)));
+    else {
+      const offsets=projects.length>2 ? [-1,0,1] : projects.length===2 ? [0,1] : [0];
+      offsets.forEach(offset=>cards.push(card((current+offset+projects.length)%projects.length,offset===0)));
+    }
+    slots.replaceChildren(...cards);
+    root.dataset.count=String(projects.length);root.classList.toggle("is-grid-view",gridView);
+    controls.bar.hidden=gridView;
+    toggle.textContent=gridView ? "Back to carousel" : "View all projects";
+    toggle.setAttribute("aria-pressed",String(gridView));
+    controls.update(current,projects[current].title);
+  }
+  toggle.addEventListener("click",()=>{gridView=!gridView;show();});
+  root.append(toolbar,slots,controls.bar);main.append(root);show();
 }
 
 /* Images and videos */
@@ -291,23 +473,7 @@ if (page === "home") {
   paragraphs(intro, data.home.intro);
   hero.append(intro);
 
-  const portrait = el("div", "portrait");
-
-  if (safeURL(data.portrait)) {
-    const img = el("img");
-    img.src = data.portrait;
-    img.alt = data.portraitAlt;
-    portrait.append(img);
-  } else {
-    const placeholder = el("div", "portrait-placeholder");
-
-    placeholder.append(
-      el("strong", "", "SS"),
-      el("span", "", "Portrait coming soon")
-    );
-
-    portrait.append(placeholder);
-  }
+  const portrait = portraitCarousel();
 
   hero.append(portrait);
   main.append(hero);
@@ -548,62 +714,6 @@ function renderBeyond() {
   const id = ["life-experiences", "about-me", "model-un"].includes(requested)
     ? "photos" : requested;
 
-  function map() {
-    const ns = "http://www.w3.org/2000/svg";
-    function svg(tag, attrs = {}) {
-      const node = document.createElementNS(ns, tag);
-      Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value));
-      return node;
-    }
-    const root = svg("svg", {
-      viewBox: "0 0 1000 500", role: "img", class: "btc-map",
-      "aria-label": "Visited countries and US states"
-    });
-    root.append(svg("rect", { width:1000, height:500, fill:"#100c19" }));
-    const loading = svg("text", { x:30, y:250, fill:"#b9b0c8", "font-size":22 });
-    loading.textContent = "Loading travel map…";
-    root.append(loading);
-    fetch("assets/travel-regions.json")
-      .then(response => {
-        if (!response.ok) throw new Error("Map file not found");
-        return response.json();
-      })
-      .then(atlas => {
-        loading.remove();
-        const visited = config.travel || {};
-        atlas.regions.forEach(region => {
-          const selected = (visited[region.group] || []).includes(region.code);
-          const tentative = region.group === "states" &&
-            (visited.tentativeStates || []).includes(region.code);
-          const shape = svg("path", {
-            d:region.d, fill:selected ? "#c3a0ef" : tentative ? "#756284" : "#302638",
-            stroke:"#100c19", "stroke-width":region.group === "countries" ? .6 : 1,
-            "fill-rule":"evenodd"
-          });
-          const title = svg("title");
-          title.textContent = region.name + (selected ? " — visited" : tentative ? " — tentative" : "");
-          shape.append(title);
-          root.append(shape);
-        });
-        atlas.labels.forEach(label => {
-          const text = svg("text", { x:label.x, y:label.y, fill:"#b9b0c8", "font-size":17, "font-family":"sans-serif" });
-          text.textContent = label.text;
-          root.append(text);
-        });
-        const legend = [[20,"#c3a0ef","Visited"]];
-        if ((visited.tentativeStates || []).length) legend.push([175,"#756284","Tentative"]);
-        legend.forEach(([x,color,label]) => {
-          root.append(svg("rect", { x, y:440, width:14, height:14, rx:3, fill:color }));
-          const text = svg("text", { x:x+23, y:453, fill:"#b9b0c8", "font-size":17, "font-family":"sans-serif" });
-          text.textContent = label;
-          root.append(text);
-        });
-      })
-      .catch(() => { loading.textContent = "Upload travel-regions.json to show the map."; });
-    return root;
-  }
-
-
   function gallery(media = []) {
     const grid = el("div", "btc-gallery");
     media.forEach(asset => {
@@ -645,6 +755,7 @@ function renderBeyond() {
     if (!item) return;
     document.title = item.title + " | " + data.name;
     const detail = el("section", "btc-detail");
+    if (item.kind === "travel") renderTravel(detail);
     if (item.id === "sports") renderSportsBoard(detail);
     if (!item.playlist) paragraphs(detail, item.text || []);
 
@@ -808,29 +919,29 @@ function renderBeyond() {
     return;
   }
 
-  intro.append(el("div", "eyebrow", config.eyebrow),
-    el("h1", "", config.title), el("p", "", config.intro));
-  main.append(intro);
-  const cards = el("div", "btc-cards");
+  const board = el("section", "btc-board");
+  const heading = el("h1", "btc-board-title", config.title);
+  heading.id = "beyond-board-title";
+  board.setAttribute("aria-labelledby", heading.id);
+  const cards = el("div", "btc-cards btc-quad");
   items.forEach(item => {
-    const card = link("", "beyond.html?id=" + encodeURIComponent(item.id),
-      "btc-card" + (item.kind === "photos" ? " btc-card-wide" : ""));
+    const card = link("", "beyond.html?id=" + encodeURIComponent(item.id), "btc-card");
+    card.setAttribute("aria-label", item.title);
     const visual = el("div", "btc-cover");
-    if (item.kind === "photos") visual.append(map());
+    if (item.kind === "travel") visual.append(travelMap("countries", true));
     else if (safeURL(item.image)) {
-      const img = el("img");
-      img.src = item.image;
-      img.alt = item.imageAlt || item.title;
-      visual.append(img);
+      const img = el("img");img.src=item.image;img.alt=item.imageAlt || item.title;visual.append(img);
+    } else {
+      visual.classList.add("btc-cover-pending");
+      visual.append(el("span", "", "Cover coming soon"));
     }
     const copy = el("div", "btc-copy");
-    const arrow = el("span", "btc-arrow", "↗");
-    arrow.setAttribute("aria-hidden", "true");
-    copy.append(el("h2", "", item.title), arrow, el("p", "", item.description));
-    card.append(visual, copy);
-    cards.append(card);
+    const arrow = el("span", "btc-arrow", "↗");arrow.setAttribute("aria-hidden", "true");
+    copy.append(el("h2", "", item.title),arrow);
+    if (item.description) copy.append(el("p", "", item.description));
+    card.append(visual,copy);cards.append(card);
   });
-  main.append(cards);
+  board.append(cards,heading);main.append(board);
 }
 
 /* Periodic sports snapshots, competition tabs, and squad/stat views. */
