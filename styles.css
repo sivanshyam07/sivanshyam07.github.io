@@ -1674,3 +1674,50 @@ button, input, textarea, select { font-family: inherit; }
 }
 @media(hover:none) { .portrait-carousel .carousel-arrow { opacity:1; } }
 @media(prefers-reduced-motion:reduce) { .portrait-carousel .carousel-arrow { transition:none; } }
+
+/* Let the Projects introduction use the full available line. */
+body[data-page="projects"] .page-intro p {
+  max-width:none;
+}
+@media(min-width:1000px) {
+  body[data-page="projects"] .page-intro p { white-space:nowrap; font-size:clamp(.9rem,1.4vw,1.05rem); }
+}
+
+/* Accurate, data-driven visited / not-yet-visited donut charts. */
+.travel-stat.travel-donut-card {
+  display:grid; grid-template-columns:140px minmax(0,1fr);
+  gap:18px; align-items:center; padding:22px;
+}
+.travel-donut { width:140px; aspect-ratio:1; position:relative; }
+.travel-donut svg { display:block; width:100%; height:100%; overflow:visible; }
+.travel-donut-remaining { stroke:#3c324b; }
+.travel-donut-visited { stroke:#bd8df0; }
+.travel-donut .travel-donut-value {
+  position:absolute; inset:0; display:grid; place-items:center;
+  font-size:1.55rem; color:var(--accent); pointer-events:none;
+}
+.travel-donut-copy h2 { margin:0; font-size:1.1rem; line-height:1.4; }
+.travel-donut-copy > p { margin:5px 0 10px; font-size:.95rem; }
+.travel-donut-key { list-style:none; padding:0; margin:0; font-size:.78rem; color:var(--muted); }
+.travel-donut-key li { display:flex; align-items:center; gap:7px; margin:4px 0; }
+.travel-donut-swatch { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+.travel-donut-swatch.visited { background:#bd8df0; }
+.travel-donut-swatch.remaining { background:#3c324b; }
+
+/* Lists sit inside their map panels and stay on a single scrolling row. */
+.travel-map-panel .travel-list-section { margin:14px 0 0; }
+.travel-map-panel .travel-list-section h3 { font-size:1rem; margin:0 0 8px; }
+.travel-world-panel .travel-map { min-height:0; }
+.travel-us-lists { margin:0 0 18px; }
+.travel-us-lists .travel-list-section { margin:0; }
+.travel-place-kind { color:var(--muted); font-size:.7rem; }
+@media(max-width:1000px) {
+  .travel-stat.travel-donut-card { grid-template-columns:110px minmax(0,1fr); gap:12px; padding:16px; }
+  .travel-donut { width:110px; }
+  .travel-donut .travel-donut-value { font-size:1.3rem; }
+}
+@media(max-width:650px) {
+  .travel-stat.travel-donut-card { grid-template-columns:minmax(0,1fr); justify-items:center; text-align:center; padding:14px 10px; }
+  .travel-donut-copy h2 { font-size:.95rem; }
+  .travel-donut-key li { justify-content:center; }
+}

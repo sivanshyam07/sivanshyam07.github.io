@@ -178,7 +178,7 @@ function travelMap(group, compact = false) {
     const travel = data.beyond.travel;
     const selected = new Set(group === "countries" ? travel.countries : [...travel.states, ...(travel.territories || [])]);
     const tentative = new Set(travel.tentativeStates || []);
-    atlas.regions.filter(region => region.group === group || (group === "states" && region.group === "territories" && region.code === "PRI")).forEach(region => {
+    atlas.regions.filter(region => region.code !== "ATA" && (region.group === group || (group === "states" && region.group === "territories" && region.code === "PRI"))).forEach(region => {
       const visited = selected.has(region.code);
       const uncertain = group === "states" && tentative.has(region.code) && !visited;
       const path = svg("path", {d:region.d, fill:visited ? "#c3a0ef" : uncertain ? "#756284" : "#352c44", stroke:"#100c19", "stroke-width":group === "countries" ? .5 : .8, "fill-rule":"evenodd"});
@@ -204,65 +204,93 @@ function travelMap(group, compact = false) {
 }
 
 function renderTravel(parent) {
-  const travel = data.beyond.travel;
-  const info = travel.countryDetails || {};
-  const countries = [...new Set(travel.countries || [])];
-  const states = [...new Set(travel.states || [])].filter(code => code !== "DC");
-  const continents = travel.continentTotals;
-  const percent = (count,total) => (100 * count / total).toFixed(1).replace(/\.0$/, "") + "%";
-  parent.append(el("p", "", "The countries and states I’ve visited so far."));
-  const stats = el("div", "travel-stats");
-  [[countries.length,195,"Countries visited"],[states.length,50,"US states visited"]].forEach(([count,total,label]) => {
-    const card = el("div", "travel-stat");
-    card.append(el("strong", "", percent(count,total)),el("span", "", label),el("small", "", count + " of " + total));
-    stats.append(card);
-  });
-  parent.append(stats);
-  function mapPanel(title,group) {
-    const section = el("section", "travel-map-panel");
-    section.append(el("h2", "", title),travelMap(group),el("p", "travel-legend", "● Visited · Hover over a region for its name"));
-    parent.append(section);
+  const travel=data.beyond.travel;
+  const info=travel.countryDetails || {};
+  const countries=[...new Set(travel.countries || [])];
+  const states=[...new Set(travel.states || [])].filter(code=>code!=="DC");
+  const percent=(count,total)=>(100*count/total).toFixed(1).replace(/\.0$/,"")+"%";
+  parent.append(el("p","","The countries and states I’ve visited so far."));
+
+  function donut(count,total,label) {
+    const card=el("section","travel-stat travel-donut-card");
+    const chart=el("div","travel-donut");
+    const ns="http://www.w3.org/2000/svg";
+    const svg=document.createElementNS(ns,"svg");
+    svg.setAttribute("viewBox","0 0 120 120");
+    svg.setAttribute("role","img");
+    svg.setAttribute("aria-label",label+": "+count+" of "+total+", "+percent(count,total));
+    function circle(cls,title) {
+      const node=document.createElementNS(ns,"circle");
+      Object.entries({cx:60,cy:60,r:46,fill:"none","stroke-width":12,class:cls,pathLength:100}).forEach(([key,value])=>node.setAttribute(key,value));
+      const text=document.createElementNS(ns,"title");text.textContent=title;node.append(text);svg.append(node);return node;
+    }
+    circle("travel-donut-remaining","Not yet visited: "+(total-count)+" of "+total+" ("+percent(total-count,total)+")");
+    const visited=circle("travel-donut-visited","Visited: "+count+" of "+total+" ("+percent(count,total)+")");
+    visited.setAttribute("stroke-dasharray",(100*count/total)+" "+(100-100*count/total));
+    visited.setAttribute("transform","rotate(-90 60 60)");
+    const center=el("strong","travel-donut-value",percent(count,total));
+    center.setAttribute("aria-hidden","true");chart.append(svg,center);
+    const copy=el("div","travel-donut-copy");
+    copy.append(el("h2","",label),el("p","",count+" of "+total));
+    const legend=el("ul","travel-donut-key");
+    [["Visited",count,"visited"],["Not yet visited",total-count,"remaining"]].forEach(([name,value,cls])=>{
+      const row=el("li"),swatch=el("span","travel-donut-swatch "+cls);swatch.setAttribute("aria-hidden","true");
+      row.append(swatch,el("span","",name+" · "+value));legend.append(row);
+    });
+    copy.append(legend);card.append(chart,copy);return card;
   }
-  mapPanel("Around the world", "countries");
-  const breakdown = el("section", "travel-continents");
-  breakdown.append(el("h2", "", "By continent"));
-  const grid = el("div", "travel-continent-grid");
-  Object.entries(continents).forEach(([continent,total]) => {
-    const count = countries.filter(code => info[code]?.continent === continent).length;
-    const card = el("div", "travel-continent");
-    const meter = el("progress"); meter.max=total; meter.value=count;
-    meter.setAttribute("aria-label", continent + ": " + count + " of " + total + " countries visited");
-    card.append(el("h3", "", continent),el("p", "", count + " / " + total + " · " + percent(count,total)),meter);
-    grid.append(card);
-  });
-  breakdown.append(grid,el("p", "travel-note", "Percentages use 195 countries and a six-continent grouping. Antarctica has no countries. DC and Puerto Rico are listed separately and don’t count toward the 50-state total. The map is simplified; some small islands aren’t visible."));
-  parent.append(breakdown);
-  function flagList(title,entries,holder=parent,homeCode="") {
+  const stats=el("div","travel-stats");
+  stats.append(donut(countries.length,195,"Countries visited"),donut(states.length,50,"US states visited"));
+  parent.append(stats);
+
+  function flagList(title,entries,holder,homeCode="") {
     const section=el("section","travel-list-section");
-    section.append(el("h2","",title));
+    section.append(el("h3","",title));
     const list=el("ul","travel-place-list travel-horizontal");
     list.setAttribute("tabindex","0");
     list.setAttribute("aria-label",title+" visited; scroll horizontally to see more");
     entries.sort((a,b)=>Number(b.code===homeCode)-Number(a.code===homeCode) || a.name.localeCompare(b.name)).forEach(entry=>{
-      const row=el("li"), flag=el("img","travel-flag");
+      const row=el("li"),flag=el("img","travel-flag");
       flag.src=entry.flag;flag.alt="";flag.loading="lazy";
       flag.addEventListener("error",()=>{flag.hidden=true;},{once:true});
       row.append(flag,el("span","",entry.name));
       if(entry.code===homeCode) row.append(el("span","travel-home-badge","Home"));
+      if(entry.kind) row.append(el("span","travel-place-kind",entry.kind));
       list.append(row);
     });
     section.append(list);holder.append(section);
   }
-  flagList("Countries",countries.map(code=>({code,name:info[code]?.name || code,flag:info[code]?.flag || "assets/flags/"+code.toLowerCase()+".svg"})),parent,travel.homeCountry);
-  mapPanel("Across the United States","states");
-  const stateSection=el("div");parent.append(stateSection);
+
+  const world=el("section","travel-map-panel travel-world-panel");
+  world.append(el("h2","","Around the world"),travelMap("countries"),el("p","travel-legend","● Visited · Hover over a region for its name"));
+  // Country flags occupy the lower part of the panel, beneath the map.
+  flagList("Countries",countries.map(code=>({code,name:info[code]?.name || code,flag:info[code]?.flag || "assets/flags/"+code.toLowerCase()+".svg"})),world,travel.homeCountry);
+  parent.append(world);
+
+  const breakdown=el("section","travel-continents");
+  breakdown.append(el("h2","","By continent"));
+  const grid=el("div","travel-continent-grid");
+  Object.entries(travel.continentTotals).forEach(([continent,total])=>{
+    const count=countries.filter(code=>info[code]?.continent===continent).length;
+    const card=el("div","travel-continent"),meter=el("progress");
+    meter.max=total;meter.value=count;
+    meter.setAttribute("aria-label",continent+": "+count+" of "+total+" countries visited");
+    card.append(el("h3","",continent),el("p","",count+" / "+total+" · "+percent(count,total)),meter);grid.append(card);
+  });
+  breakdown.append(grid,el("p","travel-note","Percentages use 195 countries and a six-continent grouping. DC and Puerto Rico are listed separately and don’t count toward the 50-state total. The map is simplified; some small islands aren’t visible."));
+  parent.append(breakdown);
+
+  const usa=el("section","travel-map-panel travel-us-panel");
+  const stateLists=el("div","travel-us-lists");
+  usa.append(el("h2","","Across the United States"),stateLists,travelMap("states"),el("p","travel-legend","● Visited · Hover over a region for its name"));
+  parent.append(usa);
   loadTravelAtlas().then(atlas=>{
     const names=Object.fromEntries(atlas.regions.filter(r=>r.group==="states" || r.group==="territories").map(r=>[r.code,r.name]));
-    const entries=(codes,territory=false)=>codes.map(code=>({code,name:names[code] || code,flag:"assets/flags/"+(territory ? code.toLowerCase() : "us-"+code.toLowerCase())+".svg"}));
-    flagList("States",entries(states),stateSection,travel.homeState);
-    if(travel.states.includes("DC")) flagList("Federal district",entries(["DC"]),stateSection);
-    if(travel.territories?.length) flagList("Territories",entries(travel.territories,true),stateSection);
-  }).catch(()=>{stateSection.append(el("p","","State list unavailable. Please check assets/travel-regions.json."));});
+    const entries=states.map(code=>({code,name:names[code] || code,flag:"assets/flags/us-"+code.toLowerCase()+".svg"}));
+    if(travel.states.includes("DC")) entries.push({code:"DC",name:"Washington, DC",flag:"assets/flags/us-dc.svg",kind:"Federal district"});
+    (travel.territories || []).forEach(code=>entries.push({code,name:names[code] || code,flag:"assets/flags/"+code.toLowerCase()+".svg",kind:"Territory"}));
+    flagList("States, DC & territories",entries,stateLists,travel.homeState);
+  }).catch(()=>{stateLists.append(el("p","","State list unavailable. Please check assets/travel-regions.json."));});
 }
 
 /* Projects overview */
