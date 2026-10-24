@@ -178,7 +178,14 @@ function travelMap(group, compact = false) {
     const travel = data.beyond.travel;
     const selected = new Set(group === "countries" ? travel.countries : [...travel.states, ...(travel.territories || [])]);
     const tentative = new Set(travel.tentativeStates || []);
-    atlas.regions.filter(region => region.code !== "ATA" && (region.group === group || (group === "states" && region.group === "territories" && region.code === "PRI"))).forEach(region => {
+    atlas.regions.filter(region => region.code !== "ATA" && (
+      region.group === group || (
+        group === "states" && region.group === "territories" && region.code === "PRI" &&
+        // The atlas contains a world-map copy and a US-inset copy of Puerto Rico.
+        // Use only the inset here so the US view isn't stretched by the other copy.
+        Number(region.d.match(/-?\d+(?:\.\d+)?/)[0]) > 600
+      )
+    )).forEach(region => {
       const visited = selected.has(region.code);
       const uncertain = group === "states" && tentative.has(region.code) && !visited;
       const path = svg("path", {d:region.d, fill:visited ? "#c3a0ef" : uncertain ? "#756284" : "#352c44", stroke:"#100c19", "stroke-width":group === "countries" ? .5 : .8, "fill-rule":"evenodd"});
@@ -248,7 +255,7 @@ function renderTravel(parent) {
     section.append(el("h3","",title));
     const list=el("ul","travel-place-list travel-horizontal");
     list.setAttribute("tabindex","0");
-    list.setAttribute("aria-label",title+" visited; scroll horizontally to see more");
+    list.setAttribute("aria-label",title+" visited; scroll to see more");
     entries.sort((a,b)=>Number(b.code===homeCode)-Number(a.code===homeCode) || a.name.localeCompare(b.name)).forEach(entry=>{
       const row=el("li"),flag=el("img","travel-flag");
       flag.src=entry.flag;flag.alt="";flag.loading="lazy";
@@ -281,8 +288,15 @@ function renderTravel(parent) {
   parent.append(breakdown);
 
   const usa=el("section","travel-map-panel travel-us-panel");
+  const layout=el("div","travel-us-layout");
   const stateLists=el("div","travel-us-lists");
-  usa.append(el("h2","","Across the United States"),stateLists,travelMap("states"),el("p","travel-legend","● Visited · Hover over a region for its name"));
+  stateLists.setAttribute("tabindex","0");
+  stateLists.setAttribute("role","region");
+  stateLists.setAttribute("aria-label","Visited states, DC and territories; scroll to see more");
+  const map=el("div","travel-us-map");
+  map.append(travelMap("states"),el("p","travel-legend","● Visited · Hover over a region for its name"));
+  layout.append(stateLists,map);
+  usa.append(el("h2","","Across the United States"),layout);
   parent.append(usa);
   loadTravelAtlas().then(atlas=>{
     const names=Object.fromEntries(atlas.regions.filter(r=>r.group==="states" || r.group==="territories").map(r=>[r.code,r.name]));

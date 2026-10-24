@@ -1292,8 +1292,8 @@ window.PORTFOLIO.beyond = {
   };
 
   // PHOTOS COVER: replace the blank string when you've picked an image.
-  photos.image = "";
-  photos.imageAlt = "";
+  photos.image = "assets/photos-cover-lighthouse.png";
+  photos.imageAlt = "Rocky coastline with a red-and-white lighthouse";
   photos.description = "Random views I’ve captured over the years.";
   beyond.sections = [music, sports, travel, photos].filter(Boolean);
 
