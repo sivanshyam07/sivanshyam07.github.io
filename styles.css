@@ -1910,3 +1910,46 @@ body[data-page="projects"] .page-intro p {
     grid-row: auto;
   }
 }
+/* Injector: independent image columns */
+.coaxial-project .coaxial-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.coaxial-left,
+.coaxial-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.coaxial-project .coaxial-gallery .coaxial-left > figure,
+.coaxial-project .coaxial-gallery .coaxial-right > figure {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  overflow: visible;
+}
+
+.coaxial-project .coaxial-gallery .coaxial-left img,
+.coaxial-project .coaxial-gallery .coaxial-right img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+  padding: 0;
+}
+
+@media (max-width: 760px) {
+  .coaxial-project .coaxial-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
