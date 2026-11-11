@@ -1341,35 +1341,35 @@ window.PORTFOLIO.beyond = {
     {
       "type": "image",
       "src": "assets/coaxial-swirl-outer-chamber.png",
-      "group": "parts",
+      "group": "left",
       "alt": "Outer swirl chamber modeled in SolidWorks",
       "caption": "My SolidWorks model of the outer swirl chamber."
     },
     {
       "type": "image",
       "src": "assets/coaxial-swirl-top-cap-side.png",
-      "group": "parts",
+      "group": "right",
       "alt": "Side view of the top cap modeled in SolidWorks",
       "caption": "My SolidWorks model of the top cap — side view."
     },
     {
       "type": "image",
       "src": "assets/coaxial-swirl-top-cap.png",
-      "group": "parts",
+      "group": "right",
       "alt": "Isometric view of the top cap modeled in SolidWorks",
       "caption": "My SolidWorks model of the top cap — isometric view."
     },
     {
       "type": "image",
       "src": "assets/coaxial-swirl-outer-casing.png",
-      "group": "parts",
+      "group": "left",
       "alt": "Outer casing modeled in SolidWorks",
       "caption": "My SolidWorks model of the outer casing."
     },
     {
       "type": "image",
       "src": "assets/coaxial-swirl-reference-flow.png",
-      "group": "parts",
+      "group": "right",
       "alt": "Flow visualization from the UCSB RPL reference project",
       "caption": "Reference flow model from Andrew Furst / UCSB RPL’s original LOX/methane injector project."
     }
