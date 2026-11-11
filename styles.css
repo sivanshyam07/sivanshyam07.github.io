@@ -1814,3 +1814,34 @@ body[data-page="projects"] .page-intro p {
   .coaxial-gallery .coaxial-parts { grid-template-columns:minmax(0,1fr); }
   .coaxial-parts img[src$="coaxial-swirl-reference-flow.png"] { height:auto; max-height:420px; }
 }
+/* Injector images: preserve the original framing and proportions. */
+.coaxial-project figure {
+  overflow: visible;
+}
+
+.coaxial-project .project-heading > figure img,
+.coaxial-project .coaxial-parts img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+  padding: 0;
+}
+
+.coaxial-project .coaxial-parts {
+  align-items: start;
+}
+
+/* Keep the flow reference reasonably sized without cropping it. */
+.coaxial-parts > figure:has(
+  img[src$="coaxial-swirl-reference-flow.png"]
+) {
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+}
