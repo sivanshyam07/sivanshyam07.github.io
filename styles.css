@@ -1845,3 +1845,68 @@ body[data-page="projects"] .page-intro p {
   max-width: 640px;
   margin-inline: auto;
 }
+.coaxial-project .coaxial-parts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.coaxial-project .coaxial-parts > figure:has(
+  img[src$="coaxial-swirl-outer-chamber.png"]
+) {
+  grid-column: 1;
+  grid-row: 1;
+  order: 1;
+}
+
+.coaxial-project .coaxial-parts > figure:has(
+  img[src$="coaxial-swirl-outer-casing.png"]
+) {
+  grid-column: 1;
+  grid-row: 2;
+  order: 2;
+}
+
+.coaxial-project .coaxial-parts > figure:has(
+  img[src$="coaxial-swirl-top-cap-side.png"]
+) {
+  grid-column: 2;
+  grid-row: 1;
+  order: 3;
+}
+
+.coaxial-project .coaxial-parts > figure:has(
+  img[src$="coaxial-swirl-top-cap.png"]
+) {
+  grid-column: 2;
+  grid-row: 2;
+  order: 4;
+}
+
+.coaxial-project .coaxial-parts > figure:has(
+  img[src$="coaxial-swirl-reference-flow.png"]
+) {
+  grid-column: 2;
+  grid-row: 3;
+  order: 5;
+  width: 100%;
+  max-width: 320px;
+  justify-self: center;
+  margin-inline: auto;
+}
+
+.coaxial-project .coaxial-parts img[src$="coaxial-swirl-reference-flow.png"] {
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .coaxial-project .coaxial-parts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .coaxial-project .coaxial-parts > figure:has(img[src]) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
