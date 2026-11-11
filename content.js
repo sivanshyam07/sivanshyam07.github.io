@@ -1323,8 +1323,8 @@ window.PORTFOLIO.beyond = {
   "layout": "coaxial",
   "visible": true,
   "summary": "Coaxial swirl injector development for a NOX/paraffin hybrid lander, including SolidWorks modeling and ANSYS CFD support informed by UCSB RPL’s published design.",
-  "cover": "assets/coaxial-swirl-assembly.png",
-  "coverAlt": "CAD view of the coaxial swirl injector model",
+  "cover": "assets/coaxial-swirl-outer-chamber.png",
+  "coverAlt": "My SolidWorks model of the outer swirl chamber",
   "text": [
     "In Propulsive Landers, we investigated a coaxial swirl injector design for our NOX/paraffin hybrid propulsion system. We used UCSB RPL’s coaxial swirl injector work, including Andrew Furst’s project and their team’s design packet, as references for our design, modeling, and analysis, adjusting it for our hybrid lander's vehicle constraints.",
     "I modeled the top cap, outer swirl chamber, and outer casing in SolidWorks and assisted with CFD work in ANSYS. Our preliminary analysis showed an improvement in flow behavior and atomization potential compared to our prior showerhead design, supporting further investigation and testing of this concept. We proposed investigating showerhead rings for wall film cooling and impinging elements to improve mixing based on the simulation findings.",
@@ -1333,31 +1333,45 @@ window.PORTFOLIO.beyond = {
   "media": [
     {
       "type": "image",
-      "src": "assets/coaxial-swirl-assembly.png",
+      "src": "assets/coaxial-swirl-reference-assembly.png",
       "group": "hero",
-      "alt": "CAD view of the injector model",
-      "caption": "CAD view of the injector model."
-    },
-    {
-      "type": "image",
-      "src": "assets/coaxial-swirl-top-cap.png",
-      "group": "parts",
-      "alt": "SolidWorks model of the top cap",
-      "caption": "Top cap modeled in SolidWorks."
+      "alt": "UCSB RPL reference injector assembly cutaway",
+      "caption": "Full-assembly cutaway from the UCSB RPL reference design. Credit: Andrew Furst / UCSB RPL (LOX/methane reference project)."
     },
     {
       "type": "image",
       "src": "assets/coaxial-swirl-outer-chamber.png",
       "group": "parts",
-      "alt": "SolidWorks model of the outer swirl chamber",
-      "caption": "Outer swirl chamber modeled in SolidWorks."
+      "alt": "Outer swirl chamber modeled in SolidWorks",
+      "caption": "My SolidWorks model of the outer swirl chamber."
     },
     {
       "type": "image",
-      "src": "assets/coaxial-swirl-profile.png",
+      "src": "assets/coaxial-swirl-top-cap-side.png",
       "group": "parts",
-      "alt": "Side profile of the injector CAD model",
-      "caption": "Side view of the CAD model."
+      "alt": "Side view of the top cap modeled in SolidWorks",
+      "caption": "My SolidWorks model of the top cap — side view."
+    },
+    {
+      "type": "image",
+      "src": "assets/coaxial-swirl-top-cap.png",
+      "group": "parts",
+      "alt": "Isometric view of the top cap modeled in SolidWorks",
+      "caption": "My SolidWorks model of the top cap — isometric view."
+    },
+    {
+      "type": "image",
+      "src": "assets/coaxial-swirl-outer-casing.png",
+      "group": "parts",
+      "alt": "Outer casing modeled in SolidWorks",
+      "caption": "My SolidWorks model of the outer casing."
+    },
+    {
+      "type": "image",
+      "src": "assets/coaxial-swirl-reference-flow.png",
+      "group": "parts",
+      "alt": "Flow visualization from the UCSB RPL reference project",
+      "caption": "Reference flow model from Andrew Furst / UCSB RPL’s original LOX/methane injector project."
     }
   ],
   "links": [

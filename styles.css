@@ -1804,3 +1804,13 @@ body[data-page="projects"] .page-intro p {
   .coaxial-parts { grid-template-columns:minmax(0,1fr); }
   .coaxial-parts img { height:auto; max-height:360px; }
 }
+
+
+/* Corrected injector gallery: four component views, then the credited flow reference. */
+.coaxial-gallery .coaxial-parts { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.coaxial-parts > figure:has(img[src$="coaxial-swirl-reference-flow.png"]) { grid-column:1 / -1; }
+.coaxial-parts img[src$="coaxial-swirl-reference-flow.png"] { height:360px; max-height:none; object-fit:contain; }
+@media(max-width:760px) {
+  .coaxial-gallery .coaxial-parts { grid-template-columns:minmax(0,1fr); }
+  .coaxial-parts img[src$="coaxial-swirl-reference-flow.png"] { height:auto; max-height:420px; }
+}
