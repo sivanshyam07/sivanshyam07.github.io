@@ -1312,3 +1312,67 @@ window.PORTFOLIO.beyond = {
     "North America": 23, "South America": 12, "Oceania": 14
   };
 })();
+
+
+/* Coaxial swirl injector: add or edit its text and media here. */
+(() => {
+  const project = {
+  "id": "coaxial-swirl-injector",
+  "title": "Coaxial Swirl Injector Development",
+  "category": "Propulsive Landers · SolidWorks · ANSYS CFD",
+  "layout": "coaxial",
+  "visible": true,
+  "summary": "Coaxial swirl injector development for a NOX/paraffin hybrid lander, including SolidWorks modeling and ANSYS CFD support informed by UCSB RPL’s published design.",
+  "cover": "assets/coaxial-swirl-assembly.png",
+  "coverAlt": "CAD view of the coaxial swirl injector model",
+  "text": [
+    "In Propulsive Landers, we investigated a coaxial swirl injector design for our NOX/paraffin hybrid propulsion system. We used UCSB RPL’s coaxial swirl injector work, including Andrew Furst’s project and their team’s design packet, as references for our design, modeling, and analysis, adjusting it for our hybrid lander's vehicle constraints.",
+    "I modeled the top cap, outer swirl chamber, and outer casing in SolidWorks and assisted with CFD work in ANSYS. Our preliminary analysis showed an improvement in flow behavior and atomization potential compared to our prior showerhead design, supporting further investigation and testing of this concept. We proposed investigating showerhead rings for wall film cooling and impinging elements to improve mixing based on the simulation findings.",
+    "This summer project gave me experience with translating a researched injector concept into CAD components for our requirements and analyzing simulation findings within a team."
+  ],
+  "media": [
+    {
+      "type": "image",
+      "src": "assets/coaxial-swirl-assembly.png",
+      "group": "hero",
+      "alt": "CAD view of the injector model",
+      "caption": "CAD view of the injector model."
+    },
+    {
+      "type": "image",
+      "src": "assets/coaxial-swirl-top-cap.png",
+      "group": "parts",
+      "alt": "SolidWorks model of the top cap",
+      "caption": "Top cap modeled in SolidWorks."
+    },
+    {
+      "type": "image",
+      "src": "assets/coaxial-swirl-outer-chamber.png",
+      "group": "parts",
+      "alt": "SolidWorks model of the outer swirl chamber",
+      "caption": "Outer swirl chamber modeled in SolidWorks."
+    },
+    {
+      "type": "image",
+      "src": "assets/coaxial-swirl-profile.png",
+      "group": "parts",
+      "alt": "Side profile of the injector CAD model",
+      "caption": "Side view of the CAD model."
+    }
+  ],
+  "links": [
+    {
+      "label": "Design reference: Andrew Furst / UCSB RPL",
+      "href": "https://www.furstandrewj.com/rpl-coaxial-swirl-injector.html"
+    },
+    {
+      "label": "UCSB RPL reference design packet",
+      "href": "https://www.furstandrewj.com/uploads/1/3/0/0/130068254/rpl_swirl_injector_design_packet_draft.pdf"
+    }
+  ]
+};
+  const projects = window.PORTFOLIO.projects.sections;
+  const existing = projects.findIndex(item => item.id === project.id);
+  if (existing >= 0) projects.splice(existing, 1);
+  projects.splice(Math.min(1, projects.length), 0, project);
+})();
