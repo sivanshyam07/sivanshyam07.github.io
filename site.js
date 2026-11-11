@@ -399,7 +399,7 @@ function sections(items = []) {
   rocket: ["nose", "parts", "analysis"],
   glider: ["initial", "final"],
   injector: ["geometry", "mesh", "cfd"],
-  coaxial: ["parts"],
+  coaxial: ["left", "right"],
   voxel: ["process", "results", "design"]
 };
 
