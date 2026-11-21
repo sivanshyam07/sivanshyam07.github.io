@@ -544,7 +544,7 @@ window.PORTFOLIO.beyond = {
           "Earl Sweatshirt",
           "https://open.spotify.com/track/0XC5GEMHo5slOLuWVybIMQ",
           "https://cdn-images.dzcdn.net/images/cover/cdb4b70aedc8e36df31a54127f5b528d/250x250-000000-80-0-0.jpg"
-        )
+        ]
       ]
     },
     {
