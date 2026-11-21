@@ -429,7 +429,7 @@ window.PORTFOLIO.beyond = {
       ],
       playlist: {
         image: "assets/music-snoopy.png",
-        href: "https://open.spotify.com/playlist/11fr5tV0yhsAbRM3de9jnG",
+        href: "https://open.spotify.com/playlist/0lhwhWsvqVWDa6KrtB66iN",
         note: "One mega playlist. Weird, I know. I use Apple Music, so this Spotify version might not be completely up to date."
       },
       favorites: [
@@ -806,88 +806,46 @@ window.PORTFOLIO.beyond = {
   ],
   "stats": {
     "intro": "A breakdown of my playlist in numbers; the genres and the artists that make it up:",
-    "genres": [
-      [
-        "Hip Hop",
-        50.3
-      ],
-      [
-        "Pop",
-        15.6
-      ],
-      [
-        "Rock",
-        11.4
-      ],
-      [
-        "R&B",
-        6.2
-      ],
-      [
-        "Electronic",
-        6.0
-      ],
-      [
-        "Jazz",
-        4.6
-      ],
-      [
-        "Traditional Music",
-        1.9
-      ],
-      [
-        "Latin",
-        1.5
-      ],
-      [
-        "Folk",
-        0.8
-      ],
-      [
-        "Easy Listening",
-        0.4
-      ],
-      [
-        "Classical",
-        0.4
-      ],
-      [
-        "Christian",
-        0.4
-      ],
-      [
-        "Country",
-        0.4
-      ],
-      [
-        "Blues",
-        0.2
-      ]
+     "genres": [
+      ["Hip Hop", 49.7],
+      ["Pop", 15.5],
+      ["Rock", 11.9],
+      ["R&B", 6.4],
+      ["Electronic", 5.9],
+      ["Jazz", 4.7],
+      ["Traditional Music", 1.5],
+      ["Latin", 1.5],
+      ["Folk", 1.1],
+      ["Easy Listening", 0.4],
+      ["Classical", 0.4],
+      ["Christian", 0.4],
+      ["Country", 0.4],
+      ["Blues", 0.2]
     ],
     "artists": [
       {
         "name": "Westside Gunn",
-        "count": 30,
+        "count": 32,
         "href": "https://open.spotify.com/artist/0ABk515kENDyATUdpCKVfW",
         "image": "assets/music/artist-westside-gunn.jpg"
       },
       {
         "name": "lucille",
-        "count": 21,
+        "count": 24,
         "href": "https://open.spotify.com/artist/0g6CutYJWOLpnIfjju8n8o",
         "image": "assets/music/artist-lucille.jpg"
+      },
+      {
+        "name": "Stove God Cooks",
+        "count": 15,
+        "href": "https://open.spotify.com/artist/35fcckhFq2cF2u7hIG0fPv",
+        "image": "assets/music/artist-stove-god-cooks.jpg"
       },
       {
         "name": "Boldy James",
         "count": 12,
         "href": "https://open.spotify.com/artist/4fpwOzxFRMVGfd197dKIdY",
         "image": "assets/music/artist-boldy-james.jpg"
-      },
-      {
-        "name": "Stove God Cooks",
-        "count": 12,
-        "href": "https://open.spotify.com/artist/35fcckhFq2cF2u7hIG0fPv",
-        "image": "assets/music/artist-stove-god-cooks.jpg"
       },
       {
         "name": "Kanye West",
@@ -909,7 +867,7 @@ window.PORTFOLIO.beyond = {
       },
       {
         "name": "JPEGMAFIA",
-        "count": 10,
+        "count": 11,
         "href": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO",
         "image": "assets/music/artist-jpegmafia.jpg"
       },
