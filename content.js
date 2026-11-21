@@ -515,35 +515,35 @@ window.PORTFOLIO.beyond = {
     {
       title: "On repeat",
       songs: [
-        song(
-          "Drink",
+        [
+          "Sweet Tooth",
           "Destroy Boys",
-          "1BPrb82sw4NISXgRfdBFRS",
+          "https://open.spotify.com/track/3DT2cNy2Rh7O7htQrkuhtE",
           "assets/music/song-cover-4.jpg"
-        ),
-        song(
-          "Kiss",
-          "Lucille",
-          "2YZcBYcve5hmoxwWqiegqT",
-          "assets/music/song-cover-8.jpg"
-        ),
-        song(
-          "Roommates",
-          "Malcolm Todd",
-          "5vPUv0xziXbV4lnWeVNXNq",
-          "assets/music/song-cover-5.jpg"
-        ),
-        song(
-          "Strawberry Blonde",
-          "Under High Street",
-          "3nvP8i9h7VvC5s48O1i1Ub",
-          "assets/music/song-cover-2.jpg"
-        ),
-        song(
-          "Mayari",
-          "bunii",
-          "2HugUG5L0maVwEPooB0Eux",
-          "assets/music/song-cover-9.jpg"
+        ],
+        [
+          "Rolls Royce Break Lights",
+          "Stove God Cooks",
+          "https://open.spotify.com/track/21WnIiIMJ817J0SGkjvWVq",
+          "https://cdn-images.dzcdn.net/images/cover/d7c487e6a01e18f7e2772ffc3c48c518/250x250-000000-80-0-0.jpg"
+        ],
+        [
+          "paranoia",
+          "lucille",
+          "https://open.spotify.com/track/46IGI2cW9P4qaezTRjzEsP",
+          "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ef/b0/6c/efb06ccc-fb14-5965-9873-70258973c6d0/0748777365136.jpg/100x100bb.jpg"
+        ],
+        [
+          "I'm Tryna Sweet Chin Music Adrien Zenz",
+          "Ghais Guevara",
+          "https://open.spotify.com/track/7dLXIS74JFS4aId2aZP86z",
+          "https://cdn-images.dzcdn.net/images/cover/f46709a658fb7a0ecfa020f9762d8946/250x250-000000-80-0-0.jpg"
+        ],
+        [
+          "Chum",
+          "Earl Sweatshirt",
+          "https://open.spotify.com/track/0XC5GEMHo5slOLuWVybIMQ",
+          "https://cdn-images.dzcdn.net/images/cover/cdb4b70aedc8e36df31a54127f5b528d/250x250-000000-80-0-0.jpg"
         )
       ]
     },
